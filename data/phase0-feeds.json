@@ -1,0 +1,63 @@
+{
+  "imot.io": [
+    {
+      "net": "youtube",
+      "src": "https://youtube.com/@imot_io",
+      "ok": false,
+      "why": "страница канала: HTTP None"
+    }
+  ],
+  "mango-office.ru": [
+    {
+      "net": "youtube",
+      "src": "https://www.youtube.com/mangotelecom",
+      "ok": false,
+      "why": "страница канала: HTTP None"
+    }
+  ],
+  "roistat.com": [
+    {
+      "net": "youtube",
+      "src": "https://www.youtube.com/c/roistatcom",
+      "ok": false,
+      "why": "страница канала: HTTP None"
+    },
+    {
+      "net": "dzen",
+      "src": "https://dzen.ru/id/5d566b1344742600acf0f11e",
+      "ok": false,
+      "why": "RSS по типовым адресам не отдаётся"
+    }
+  ],
+  "bewise.ai": [
+    {
+      "net": "youtube",
+      "src": "https://www.youtube.com/@bewiseai",
+      "ok": false,
+      "why": "страница канала: HTTP None"
+    }
+  ],
+  "okk.ectem.ru": [
+    {
+      "net": "youtube",
+      "src": "https://www.youtube.com/@alex_ectem",
+      "ok": false,
+      "why": "страница канала: HTTP None"
+    },
+    {
+      "net": "youtube",
+      "src": "https://youtube.com/@alex_ectem?si=8xe1YYAhMHsbK46R",
+      "ok": false,
+      "why": "страница канала: HTTP None"
+    }
+  ],
+  "speechanalytics.ru": [
+    {
+      "net": "youtube",
+      "src": "https://www.youtube.com/channel/UCvi-IXzsZCd7SPghtEVdZMA",
+      "ok": false,
+      "channel_id": "UCvi-IXzsZCd7SPghtEVdZMA",
+      "why": "лента: HTTP None"
+    }
+  ]
+}

@@ -1,0 +1,4331 @@
+[
+  {
+    "group": "1",
+    "name": "Rechka.ai",
+    "domain": "rechka.ai",
+    "csv_url": "https://rechka.ai",
+    "home_url": "https://rechka.ai/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://rechka.ai/",
+    "redirected": false,
+    "bytes": 1356911,
+    "visible_chars": 18174,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "User-agent: *\nAllow: /\nDisallow: /wp-admin/\nDisallow: /wp-includes/\n\nSitemap: https://rechka.ai/sitemap.xml\nSitemap: https://rechka.ai/blog/sitemap_index.xml\nSitemap: https://rechka.ai/sitemap-pages.xml\nHost: rechka.ai\n",
+    "links": [
+      {
+        "href": "https://rechka.ai/",
+        "text": ""
+      },
+      {
+        "href": "https://rechka.ai/",
+        "text": ""
+      },
+      {
+        "href": "https://rechka.ai/",
+        "text": ""
+      },
+      {
+        "href": "https://rechka.ai/",
+        "text": ""
+      },
+      {
+        "href": "https://rechka.ai/pages/consent/",
+        "text": "согласие на обработку персональных данных"
+      },
+      {
+        "href": "https://rechka.ai/pages/privacy-policy/",
+        "text": "политикой конфиденциальности"
+      },
+      {
+        "href": "https://rechka.ai/pages/consent/",
+        "text": "согласие на обработку персональных данных"
+      },
+      {
+        "href": "https://rechka.ai/pages/privacy-policy/",
+        "text": "политикой конфиденциальности"
+      },
+      {
+        "href": "https://rechka.ai/pages/consent/",
+        "text": "согласие на обработку персональных данных"
+      },
+      {
+        "href": "https://rechka.ai/pages/privacy-policy/",
+        "text": "политикой конфиденциальности"
+      },
+      {
+        "href": "https://rechka.ai/pages/consent/",
+        "text": "согласие на обработку персональных данных"
+      },
+      {
+        "href": "https://rechka.ai/pages/privacy-policy/",
+        "text": "политикой конфиденциальности"
+      },
+      {
+        "href": "https://rechka.ai/pages/consent/",
+        "text": "согласие на обработку персональных данных"
+      },
+      {
+        "href": "https://rechka.ai/pages/privacy-policy/",
+        "text": "политикой конфиденциальности"
+      },
+      {
+        "href": "https://rechka.ai/cases",
+        "text": "Посмотреть все кейсы"
+      },
+      {
+        "href": "https://t.me/rechkaai",
+        "text": "t.me/rechkaai"
+      },
+      {
+        "href": "https://t.me/rechkaai",
+        "text": "t.me/rechkaai"
+      },
+      {
+        "href": "https://t.me/rechkaai",
+        "text": "t.me/rechkaai"
+      },
+      {
+        "href": "https://rechka.ai/pages/consent/",
+        "text": "согласие на обработку персональных данных"
+      },
+      {
+        "href": "https://rechka.ai/pages/privacy-policy/",
+        "text": "политикой конфиденциальности"
+      },
+      {
+        "href": "https://rechka.ai/pages/consent/",
+        "text": "согласие на обработку персональных данных"
+      },
+      {
+        "href": "https://rechka.ai/pages/privacy-policy/",
+        "text": "политикой конфиденциальности"
+      },
+      {
+        "href": "https://rechka.ai/pages/consent/",
+        "text": "согласие на обработку персональных данных"
+      },
+      {
+        "href": "https://rechka.ai/pages/privacy-policy/",
+        "text": "политикой конфиденциальности"
+      },
+      {
+        "href": "https://rechka.ai/pages/consent/",
+        "text": "согласие на обработку персональных данных"
+      },
+      {
+        "href": "https://rechka.ai/pages/privacy-policy/",
+        "text": "политикой конфиденциальности"
+      },
+      {
+        "href": "https://rechka.ai/pages/consent/",
+        "text": "согласие на обработку персональных данных"
+      },
+      {
+        "href": "https://rechka.ai/pages/privacy-policy/",
+        "text": "политикой конфиденциальности"
+      },
+      {
+        "href": "https://rechka.ai/",
+        "text": ""
+      },
+      {
+        "href": "http://t.me/rechkaai",
+        "text": "Получить консультацию @rechkaai"
+      },
+      {
+        "href": "http://t.me/rechkaainews",
+        "text": "Подписаться на новости @rechkaainews"
+      },
+      {
+        "href": "https://rechka.ai/blog",
+        "text": "Блог"
+      },
+      {
+        "href": "https://rechka.ai/oferta",
+        "text": "Договор-оферта"
+      },
+      {
+        "href": "https://rechka.ai/pages/privacy-policy/",
+        "text": "Политика конфиденциальности"
+      },
+      {
+        "href": "https://tilda.cc/",
+        "text": "Made on Tilda"
+      }
+    ],
+    "link_count": 35
+  },
+  {
+    "group": "1",
+    "name": "SalesAI.ru",
+    "domain": "salesai.ru",
+    "csv_url": "https://salesai.ru",
+    "home_url": "https://salesai.ru/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://salesai.ru/",
+    "redirected": false,
+    "bytes": 217941,
+    "visible_chars": 15576,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "# ============================================================\n# SalesAI Main Site Robots.txt\n# Strategy: Block AI Training / Allow AI Search & Inference\n# ============================================================\n# Updated:  2026-05-02\n# Owner:    OOO SalesAI, INN 9725078219\n# Contact:  info@salesai.ru\n# Site:     https://salesai.ru\n# ============================================================\n\n\n# ------------------------------------------------------------\n# 1. GENERAL CRAWLING RULES\n# Standard search engines (Google, Yandex, Bing) are welcome.\n# ------------------------------------------------------------\n\nUser-agent: *\nAllow: /\nAllow: /llms.txt\nAllow: /llms-full.txt\n\nDisallow: /admin/\nDisallow: /demo/\nDisallow: /embed/\nDisallow: /login/\nDisallow: /dashboard/\nDisallow: /private/\nDisallow: /strategy/\nDisallow: /*.pdf$\n\n\n# ------------------------------------------------------------\n# 2. AI ANSWER ENGINES — ALLOW\n# Critical for B2B discovery. These crawlers cite sources\n# and drive high-intent inbound traffic to /pricing and /comparison.\n# ------------------------------------------------------------\n\n# OpenAI SearchGPT — finds prices and features in real time.\nUser-agent: OAI-SearchBot\nAllow: /\n\n# ChatGPT users browsing the web (\"Browse with Bing\").\nUser-agent: ChatGPT-User\nAllow: /\n\n# Perplexity AI — answer engine with mandatory source citations.\nUser-agent: PerplexityBot\nAllow: /\n\n\n# ------------------------------------------------------------\n# 3. AI TRAINING CRAWLERS — DISALLOW\n# Protect proprietary IP: 70-node KAG ontology, competitor\n# battle cards, customer cases, pricing strategy.\n# ------------------------------------------------------------\n\n# OpenAI training crawler.\nUser-agent: GPTBot\nDisallow: /\n\n# Anthropic / Claude training.\nUser-agent: ClaudeBot\nDisallow: /\n\nUser-agent: anthropic-ai\nDisallow: /\n\n# Google AI training (Gemini, Vertex AI).\n# Note: Standard Googlebot for Search remains allowed via \"*\" rule.\nUser-agent: Google-Extended\nDisallow: /\n\n# Apple Intelligence training.\nUser-agent: Applebot-Extended\nDisallow: /\n\n# Meta AI training.\nUser-agent: FacebookBot\nDisallow: /\n\n# Cohere AI training.\nUser-agent: cohere-ai\nDisallow: /\n\n\n# ------------------------------------------------------------\n# 4. AGGRESSIVE SCRAPERS & DATASET BUILDERS — DISALLOW\n# These bots populate Common Crawl and other open datasets\n# used to train nearly all open-source AI models.\n# Blocking them is the single most effective IP protection.\n# ------------------------------------------------------------\n\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: CommonCrawl\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: Diffbot\nDisallow: /\n\nUser-agent: ImagesiftBot\nDisallow: /\n\nUser-agent: Omgilibot\nDisallow: /\n\n\n# ------------------------------------------------------------\n# 5. SITEMAPS & LLM CONTEXT FILES\n# ------------------------------------------------------------\n\nSitemap: https://salesai.ru/sitemap.xml\nSitemap: https://blog.salesai.ru/sitemap.xml\n\n# LLM-friendly context files (Markdown, served as text/plain):\n#   /llms.txt        — concise summary for AI assistants\n#   /llms-full.txt   — comprehensive documentation\n",
+    "links": [
+      {
+        "href": "https://salesai.ru/articles/7-faktov-iz-razbora-zvonkov-b2b/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://salesai.ru/",
+        "text": ""
+      },
+      {
+        "href": "https://salesai.ru/",
+        "text": "SalesAI 2.0"
+      },
+      {
+        "href": "https://salesai.ru/cases/",
+        "text": "Кейсы"
+      },
+      {
+        "href": "https://salesai.ru/solutions/",
+        "text": "Решения"
+      },
+      {
+        "href": "https://salesai.ru/articles/",
+        "text": "Статьи"
+      },
+      {
+        "href": "https://salesai.ru/pricing/",
+        "text": "Тариф"
+      },
+      {
+        "href": "https://salesai.ru/comparison/",
+        "text": "Сравнения"
+      },
+      {
+        "href": "https://app.salesai.ru",
+        "text": "Войти"
+      },
+      {
+        "href": "https://salesai.ru/cases/bina-group-kontrol-zvonkov-rost-konversii/",
+        "text": "Читать полный кейс →"
+      },
+      {
+        "href": "https://salesai.ru/solutions/bitrix24-salesai-integration/",
+        "text": "Bitrix24Готовый модуль интеграции. Поля сделки обновляются автоматически."
+      },
+      {
+        "href": "https://salesai.ru/solutions/amocrm-salesai-integration/",
+        "text": "AmoCRMСкоринг, задачи и комментарии — прямо в карточке сделки."
+      },
+      {
+        "href": "https://salesai.ru/solutions/aspro-cloud-salesai-integration/",
+        "text": "Aspro.CloudНативная интеграция с российской CRM для торговли и производства."
+      },
+      {
+        "href": "https://salesai.ru/solutions/",
+        "text": "ExolveТелефония и SMS от МТС. Звонки загружаются по API."
+      },
+      {
+        "href": "https://salesai.ru/solutions/mts-link-salesai-integration/",
+        "text": "MTS LinkКорпоративная телефония и видеоконференции. Подключение за 5 минут."
+      },
+      {
+        "href": "https://salesai.ru/docs/api-pipeline/",
+        "text": "API / OAuthЛюбая CRM или самописная система через REST API и Webhooks."
+      },
+      {
+        "href": "https://salesai.ru/cases/bina-group-kontrol-zvonkov-rost-konversii",
+        "text": "Химическая промышленностьBINA GROUP+18%рост конверсии"
+      },
+      {
+        "href": "https://salesai.ru/cases/neftegaz-process-mining-kontrol-zvonkov-rost-konversii",
+        "text": "НефтегазНефтегазовая компания+15%рост конверсии"
+      },
+      {
+        "href": "https://salesai.ru/cases/onlayn-kampus-universiteta-kontrol-prodazh",
+        "text": "EdTechОнлайн-кампус университета100%звонков под контролем в сезон"
+      },
+      {
+        "href": "https://salesai.ru/cases/logistika-kontrol-zvonkov-pilot",
+        "text": "ЛогистикаЛогистическая компания20 минонбординг РОПов"
+      },
+      {
+        "href": "https://salesai.ru/cases/8-dney-ot-lida-do-oplaty-team",
+        "text": "ITIT-компания (СПб)8 днейот заявки до оплаты"
+      },
+      {
+        "href": "https://salesai.ru/cases/kontrol-prodazh-distribyutora-motornyh-masel",
+        "text": "ГСМ / смазочныеДистрибьютор моторных масел×2выручки при +3 п.п. к hit rate"
+      },
+      {
+        "href": "https://salesai.ru/solutions/rechevaya-analitika-dlya-upravlyayushchey-kompanii-zhkkh",
+        "text": "ЖКХУК ЖКХ+34%рост конверсии"
+      },
+      {
+        "href": "https://salesai.ru/solutions/avtomatizatsiya-protsessov-otsenki-kachestva-raboty-kontaktnogo-tsentra-banka",
+        "text": "БанкиБанк+100%охват контроля"
+      },
+      {
+        "href": "https://salesai.ru/solutions/otsenka-kachestva-zvonkov-s-ispolzovaniem-ii-dlya-avtodilerov",
+        "text": "АвтодилерыАвтодилер+35%сервисная выручка"
+      },
+      {
+        "href": "https://salesai.ru/solutions/II-analiz-zvonkov-kak-rukovoditel-otdela-prodazh-riteyla",
+        "text": "РитейлB2B ритейл (Horeca)+25%повторных заказов"
+      },
+      {
+        "href": "https://salesai.ru/solutions/rost-prodazh-dlya-zhiloy-nedvizhimosti",
+        "text": "НедвижимостьДевелопер+22%рост конверсии"
+      },
+      {
+        "href": "https://salesai.ru/solutions/rost-prodazh-dlya-zhiloy-nedvizhimosti",
+        "text": "НедвижимостьСеть агентств+15%рост маржинальности"
+      },
+      {
+        "href": "https://salesai.ru/solutions/rechevaya-analitika-s-II-dlya-okhrannykh-predpriyatiy-i-sluzhb-bezopasnosti",
+        "text": "БезопасностьЧОП-90%времени ОКК"
+      },
+      {
+        "href": "https://salesai.ru/cases/bina-group-kontrol-zvonkov-rost-konversii",
+        "text": "Химическая промышленностьBINA GROUP+18%рост конверсии"
+      },
+      {
+        "href": "https://salesai.ru/cases/neftegaz-process-mining-kontrol-zvonkov-rost-konversii",
+        "text": "НефтегазНефтегазовая компания+15%рост конверсии"
+      },
+      {
+        "href": "https://salesai.ru/cases/onlayn-kampus-universiteta-kontrol-prodazh",
+        "text": "EdTechОнлайн-кампус университета100%звонков под контролем в сезон"
+      },
+      {
+        "href": "https://salesai.ru/cases/logistika-kontrol-zvonkov-pilot",
+        "text": "ЛогистикаЛогистическая компания20 минонбординг РОПов"
+      },
+      {
+        "href": "https://salesai.ru/cases/8-dney-ot-lida-do-oplaty-team",
+        "text": "ITIT-компания (СПб)8 днейот заявки до оплаты"
+      },
+      {
+        "href": "https://salesai.ru/cases/kontrol-prodazh-distribyutora-motornyh-masel",
+        "text": "ГСМ / смазочныеДистрибьютор моторных масел×2выручки при +3 п.п. к hit rate"
+      },
+      {
+        "href": "https://salesai.ru/solutions/rechevaya-analitika-dlya-upravlyayushchey-kompanii-zhkkh",
+        "text": "ЖКХУК ЖКХ+34%рост конверсии"
+      },
+      {
+        "href": "https://salesai.ru/solutions/avtomatizatsiya-protsessov-otsenki-kachestva-raboty-kontaktnogo-tsentra-banka",
+        "text": "БанкиБанк+100%охват контроля"
+      },
+      {
+        "href": "https://salesai.ru/solutions/otsenka-kachestva-zvonkov-s-ispolzovaniem-ii-dlya-avtodilerov",
+        "text": "АвтодилерыАвтодилер+35%сервисная выручка"
+      },
+      {
+        "href": "https://salesai.ru/solutions/II-analiz-zvonkov-kak-rukovoditel-otdela-prodazh-riteyla",
+        "text": "РитейлB2B ритейл (Horeca)+25%повторных заказов"
+      },
+      {
+        "href": "https://salesai.ru/solutions/rost-prodazh-dlya-zhiloy-nedvizhimosti",
+        "text": "НедвижимостьДевелопер+22%рост конверсии"
+      },
+      {
+        "href": "https://salesai.ru/solutions/rost-prodazh-dlya-zhiloy-nedvizhimosti",
+        "text": "НедвижимостьСеть агентств+15%рост маржинальности"
+      },
+      {
+        "href": "https://salesai.ru/solutions/rechevaya-analitika-s-II-dlya-okhrannykh-predpriyatiy-i-sluzhb-bezopasnosti",
+        "text": "БезопасностьЧОП-90%времени ОКК"
+      },
+      {
+        "href": "https://salesai.ru/",
+        "text": "SalesAI 2.0Превращаем разговоры в прибыль"
+      },
+      {
+        "href": "https://salesai.ru/security/",
+        "text": "Безопасность данных уровня Энтерпрайз"
+      },
+      {
+        "href": "https://telegram.me/vpofsales",
+        "text": ""
+      },
+      {
+        "href": "https://salesai.ru/features/#control-team",
+        "text": "Контролировать сотрудников"
+      },
+      {
+        "href": "https://salesai.ru/features/#funnel-analytics",
+        "text": "Найти дыры в воронке"
+      },
+      {
+        "href": "https://salesai.ru/features/#onboarding",
+        "text": "Обучить новичков"
+      },
+      {
+        "href": "https://salesai.ru/features/#conversion",
+        "text": "Увеличить конверсию"
+      },
+      {
+        "href": "https://salesai.ru/features/#revenue",
+        "text": "Управлять прибылью"
+      },
+      {
+        "href": "https://salesai.ru/features/",
+        "text": "Все функции"
+      },
+      {
+        "href": "https://salesai.ru/pricing/",
+        "text": "Стоимость"
+      },
+      {
+        "href": "https://salesai.ru/security/",
+        "text": "Безопасность"
+      },
+      {
+        "href": "https://salesai.ru/enterprise/",
+        "text": "Энтерпрайз"
+      },
+      {
+        "href": "https://salesai.ru/free/",
+        "text": "Free тариф"
+      },
+      {
+        "href": "https://salesai.ru/mcp/",
+        "text": "MCP-сервер"
+      },
+      {
+        "href": "https://salesai.ru/docs/",
+        "text": "Документация"
+      },
+      {
+        "href": "https://salesai.ru/releases/",
+        "text": "Release Notes"
+      },
+      {
+        "href": "https://salesai.ru/articles/pochemu-net-besplatnyh-pilotov/",
+        "text": "Условия пилота"
+      },
+      {
+        "href": "https://salesai.ru/cases/",
+        "text": "Все кейсы"
+      },
+      {
+        "href": "https://salesai.ru/solutions/rechevaya-analitika-dlya-upravlyayushchey-kompanii-zhkkh/",
+        "text": "Управляющая компания ЖКХ"
+      },
+      {
+        "href": "https://salesai.ru/solutions/rost-prodazh-dlya-zhiloy-nedvizhimosti/",
+        "text": "Жилая недвижимость"
+      },
+      {
+        "href": "https://salesai.ru/solutions/otsenka-kachestva-zvonkov-s-ispolzovaniem-ii-dlya-avtodilerov/",
+        "text": "Автодилеры"
+      },
+      {
+        "href": "https://salesai.ru/solutions/avtomatizatsiya-protsessov-otsenki-kachestva-raboty-kontaktnogo-tsentra-banka/",
+        "text": "Банки и КЦ"
+      },
+      {
+        "href": "https://salesai.ru/solutions/II-analiz-zvonkov-kak-rukovoditel-otdela-prodazh-riteyla/",
+        "text": "Ритейл, FMCG, Horeca"
+      },
+      {
+        "href": "https://salesai.ru/comparison/",
+        "text": "Все сравнения"
+      },
+      {
+        "href": "https://salesai.ru/comparison/salesai-vs-imot/",
+        "text": "vs Imot"
+      },
+      {
+        "href": "https://salesai.ru/comparison/salesai-vs-mango-office/",
+        "text": "vs Mango"
+      },
+      {
+        "href": "https://salesai.ru/comparison/salesai-vs-bewise/",
+        "text": "vs Bewise"
+      },
+      {
+        "href": "https://salesai.ru/comparison/salesai-vs-audioinsights/",
+        "text": "vs Audioinsights"
+      },
+      {
+        "href": "https://salesai.ru/comparison/salesai-vs-yandex-speechsense/",
+        "text": "vs Yandex SpeechSense"
+      },
+      {
+        "href": "https://salesai.ru/comparison/salesai-vs-most-ai/",
+        "text": "vs Most.AI"
+      },
+      {
+        "href": "https://salesai.ru/comparison/salesai-vs-rechka-ai/",
+        "text": "vs Rechka.ai"
+      },
+      {
+        "href": "https://salesai.ru/comparison/salesai-vs-n8n-chatgpt/",
+        "text": "vs N8N + ChatGPT"
+      },
+      {
+        "href": "https://salesai.ru/comparison/salesai-vs-metamentor/",
+        "text": "vs MetaMentor"
+      },
+      {
+        "href": "https://blog.salesai.ru/bezopasnost-mcp-serverov-pri-integratsii-s-crm",
+        "text": "vs MCP Server"
+      },
+      {
+        "href": "https://salesai.ru/tools/",
+        "text": "Инструменты"
+      },
+      {
+        "href": "https://salesai.ru/tools/roi-calculator/",
+        "text": "ROI Калькулятор"
+      },
+      {
+        "href": "https://salesai.ru/tools/unit-economics-calculator/",
+        "text": "Калькулятор Unit-экономики"
+      },
+      {
+        "href": "https://salesai.ru/tools/funnel-health-calculator/",
+        "text": "Калькулятор здоровья воронки B2B"
+      },
+      {
+        "href": "https://salesai.ru/tools/rop-assessment/",
+        "text": "Тест квалификации РОПа"
+      },
+      {
+        "href": "https://salesai.ru/tools/nrr-grr-calculator/",
+        "text": "Калькулятор NRR/GRR"
+      },
+      {
+        "href": "https://salesai.ru/tools/lead-loss-audit/",
+        "text": "Аудит 27 точек слива лидов"
+      },
+      {
+        "href": "https://salesai.ru/tools/audit-gotovnosti-k-ii/",
+        "text": "Оценка готовности к ИИ"
+      },
+      {
+        "href": "https://salesai.ru/tools/sales-compensation-calculator/",
+        "text": "Калькулятор мотивации"
+      },
+      {
+        "href": "https://salesai.ru/tools/qau/",
+        "text": "Индекс ИИ-грамотности"
+      },
+      {
+        "href": "https://salesai.ru/tools/onboarding-plan-generator/",
+        "text": "План внедрения SalesAI"
+      },
+      {
+        "href": "https://salesai.ru/articles/upravlyaemyy-rost-prodazh-chto-eto/",
+        "text": "Что такое Управляемый Рост Продаж (УРП)"
+      },
+      {
+        "href": "https://salesai.ru/articles/sem-klyuchevyh-metrik-ropa/",
+        "text": "7 ключевых метрик для РОПа"
+      },
+      {
+        "href": "https://salesai.ru/articles/sto-procentov-zvonkov-vs-vyborochnaya-proslushka/",
+        "text": "Зачем РОПу нужен полный контроль"
+      },
+      {
+        "href": "https://salesai.ru/articles/kastomnye-metodologii-pod-gruppy/",
+        "text": "Как выбрать методику квалификации лидов"
+      },
+      {
+        "href": "https://salesai.ru/articles/ai-okk-protiv-kontrolerov/",
+        "text": "Как выгодно экономить на контроле качества звонков"
+      },
+      {
+        "href": "https://salesai.ru/about/",
+        "text": "О нас"
+      },
+      {
+        "href": "https://salesai.ru/contacts/",
+        "text": "Контакты"
+      },
+      {
+        "href": "https://blog.salesai.ru",
+        "text": "Блог"
+      },
+      {
+        "href": "https://telegram.me/vpofsales",
+        "text": "Канал для Директоров по продажам"
+      },
+      {
+        "href": "https://salesai.ru/comp/rules/",
+        "text": "Правила доступа к программе для ЭВМ и сайту ООО «СЕЙЛЗАИ»"
+      },
+      {
+        "href": "https://salesai.ru/comp/policy-personal-data/",
+        "text": "Политика обработки персональных данных"
+      },
+      {
+        "href": "https://salesai.ru/comp/cookie/",
+        "text": "Политика обработки файлов cookie"
+      },
+      {
+        "href": "https://salesai.ru/comp/soglasie-na-obrabotku-personalnyh-dannyh/",
+        "text": "Согласие на обработку персональных данных"
+      },
+      {
+        "href": "https://salesai.ru/comp/soglasie-na-novostnuyu-i-reklamnuyu-rassylku/",
+        "text": "Согласие на получение новостной и рекламной рассылки"
+      },
+      {
+        "href": "https://salesai.ru/comp/rekvizity/",
+        "text": "ООО \"СейлзАИ\""
+      },
+      {
+        "href": "https://salesai.ru/comp/policy-personal-data/",
+        "text": "Данные обрабатываются в соответствии с ФЗ-152"
+      },
+      {
+        "href": "https://pd.rkn.gov.ru/operators-registry/operators-list/?id=77-23-151249",
+        "text": "Оператор персональных данных РКН 77-23-151249"
+      },
+      {
+        "href": "https://www.gosuslugi.ru/itorgs/registry?query=28642",
+        "text": "Аккредитованная ИТ-компания. Номер в реестре: 28642"
+      },
+      {
+        "href": "https://salesai.ru/comp/policy-personal-data/",
+        "text": "Политика обработки персональных данных"
+      },
+      {
+        "href": "https://salesai.ru/comp/cookie/",
+        "text": "Политика обработки файлов cookie"
+      }
+    ],
+    "link_count": 107
+  },
+  {
+    "group": "1",
+    "name": "Imot.io",
+    "domain": "imot.io",
+    "csv_url": "https://imot.io",
+    "home_url": "https://imot.io/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://imot.io/",
+    "redirected": false,
+    "bytes": 4403581,
+    "visible_chars": 24718,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "User-Agent: *\nDisallow: /page81887656.html\nDisallow: /about\nDisallow: /page30660181.html\nDisallow: /page30662068.html\nDisallow: /page30657222.html\nDisallow: /error\nDisallow: /page54132895.html\nDisallow: /casenm\nDisallow: /page54132945.html\nDisallow: /caseam\nDisallow: /page27254916.html\nDisallow: /onlinepbx\nDisallow: /page28288470.html\nDisallow: /aisamurai\nDisallow: /page44805527.html\nDisallow: /bz\nDisallow: /page20118108.html\nDisallow: /archive\nDisallow: /page29860964.html\nDisallow: /copy24_08_22\nDisallow: /page16352173.html\nDisallow: /page29755564.html\nDisallow: /edited\nDisallow: /page27489563.html\nDisallow: /keys_eng\nDisallow: /page30206005.html\nDisallow: /quiz\nDisallow: /page57542733.html\nDisallow: /cash\nDisallow: /page30729676.html\nDisallow: /page30730203.html\nDisallow: /page32895890.html\nDisallow: /123\nDisallow: /page114751056.html\nDisallow: /headermedia\nDisallow: /page115289886.html\nDisallow: /footermedia\nDisallow: /page72833553.html\nDisallow: /kak-brusnika-perestroila-kontrol-kachestva-zvonkov-v-koll-centre\nDisallow: /page73681489.html\nDisallow: /kak-developer-perestroil-kontrol-kachestva-zvonkov-v-kontakt-centre\nDisallow: /page113465396.html\nDisallow: /kak-brusnika-perestroili-kontrol-kachestva-zvonkov-v-kontakt-centre\nDisallow: /page55145847.html\nDisallow: /round-table\nDisallow: /page55902417.html\nDisallow: /confuse2024utm_sourcevebinaramputm_mediumcpaamputm_campaignusedesk\nDisallow: /page55362457.html\nDisallow: /pmfz\nDisallow: /page55902035.html\nDisallow: /pmfzutm_sourceofflineamputm_mediumd181paamputm_campaignpmfz\nDisallow: /page55390135.html\nDisallow: /skillmed\nDisallow: /page55902649.html\nDisallow: /skillmedutm_sourceofflineamputm_mediumcpaamputm_campaignskillmed\nDisallow: /page55784765.html\nDisallow: /bkperm\nDisallow: /page55902853.html\nDisallow: /bkpermutm_sourceofflineamputm_mediumcpaamputm_campaignbkperm\nDisallow: /page57530121.html\nDisallow: /utm_sourcemcuamputm_mediumcpaamputm_campaignmcu\nDisallow: /page58208691.html\nDisallow: /utm_sourceofflineamputm_mediumcpaamputm_campaignfootforum\nDisallow: /page58259179.html\nDisallow: /podarocutm_sourcemarketing\nDisallow: /page59502839.html\nDisallow: /medic-vodomecum\nDisallow: /page59992357.html\nDisallow: /bonus\nDisallow: /page60180555.html\nDisallow: /partners-bonus\nDisallow: /page60253169.html\nDisallow: /ionichevskaya\nDisallow: /page60253779.html\nDisallow: /dobrivskaya\nDisallow: /page60253861.html\nDisallow: /uis2\nDisallow: /page60253985.html\nDisallow: /platon\nDisallow: /page60254033.html\nDisallow: /lemenkov\nDisallow: /page60254151.html\nDisallow: /domashenko\nDisallow: /page60254221.html\nDisallow: /partners-bonus7\nDisallow: /page60378933.html\nDisallow: /hemeramed\nDisallow: /page61531213.html\nDisallow: /bk\nDisallow: /page62172867.html\nDisallow: /tomoru2\nDisallow: /page62173075.html\nDisallow: /tomoru3\nDisallow: /page62173193.html\nDisallow: /tomoru4\nDisallow: /page62173245.html\nDisallow: /tomoru5\nDisallow: /page64089725.html\nDisallow: /bkufa\nDisallow: /page65783689.html\nDisallow: /samus\nDisallow: /page66361057.html\nDisallow: /skillmed2025\nDisallow: /page66467795.html\nDisallow: /zdravyug2025\nDisallow: /page66781069.html\nDisallow: /imexpert2025\nDisallow: /page69040697.html\nDisallow: /samara_expo2025\nDisallow: /page69176473.html\nDisallow: /loyme_webinar\nDisallow: /page70872795.html\nDisallow: /mcu\nDisallow: /page74511443.html\nDisallow: /zdravyug\nDisallow: /page114058306.html\nDisallow: /demo\nDisallow: /page45800689.html\nDisallow: /webinar-b2c\nDisallow: /page73762857.html\nDisallow: /calculator\nDisallow: /page74082361.html\nDisallow: /test1\nDisallow: /page74211405.html\nDisallow: /test12\nDisallow: /page113707946.html\nDisallow: /tilda/form*\nDisallow: /tilda/rec*\nDisallow: /tilda/click*\nDisallow: /tilda/scroll*\nDisallow: /tilda/popup*\nDisallow: /tilda/cart*\nDisallow: /tilda/product*\nDisallow: /tilda/event*\nDisallow:\n\n\nSitemap: https://imot.io/sitemap.xml\nSitemap: https://imot.io/sitemap-feeds.xml\n",
+    "links": [
+      {
+        "href": "https://app.imot.io/ru",
+        "text": ""
+      },
+      {
+        "href": "https://imot.io/en",
+        "text": "EN"
+      },
+      {
+        "href": "https://imot.io/support",
+        "text": "Контакты"
+      },
+      {
+        "href": "https://imot.io/media",
+        "text": "Медиа"
+      },
+      {
+        "href": "https://imot.io/doc",
+        "text": "Прием врача"
+      },
+      {
+        "href": "https://imot.io/medic",
+        "text": "Контакт-центр"
+      },
+      {
+        "href": "https://imot.io/developers",
+        "text": "Недвижимость"
+      },
+      {
+        "href": "https://imot.io/partners",
+        "text": "Партнерам"
+      },
+      {
+        "href": "https://imot.io/about",
+        "text": "О компании"
+      },
+      {
+        "href": "https://imot.io/tarif",
+        "text": "Тарифы"
+      },
+      {
+        "href": "https://imot.io/cases",
+        "text": "Кейсы"
+      },
+      {
+        "href": "https://imot.io/",
+        "text": "О платформе"
+      },
+      {
+        "href": "https://imot.io/",
+        "text": ""
+      },
+      {
+        "href": "https://app.imot.io/ru",
+        "text": ""
+      },
+      {
+        "href": "https://app.imot.io/ru",
+        "text": ""
+      },
+      {
+        "href": "https://imot.io/en",
+        "text": "EN"
+      },
+      {
+        "href": "https://imot.io/support",
+        "text": "Контакты"
+      },
+      {
+        "href": "https://imot.io/media",
+        "text": "Медиа"
+      },
+      {
+        "href": "https://imot.io/doc",
+        "text": "Прием врача"
+      },
+      {
+        "href": "https://imot.io/medic",
+        "text": "Контакт-центр"
+      },
+      {
+        "href": "https://imot.io/developers",
+        "text": "Недвижимость"
+      },
+      {
+        "href": "https://imot.io/partners",
+        "text": "Партнерам"
+      },
+      {
+        "href": "https://imot.io/about",
+        "text": "О компании"
+      },
+      {
+        "href": "https://imot.io/tarif",
+        "text": "Тарифы"
+      },
+      {
+        "href": "https://imot.io/cases",
+        "text": "Кейсы"
+      },
+      {
+        "href": "https://imot.io/",
+        "text": "О платформе"
+      },
+      {
+        "href": "https://imot.io/",
+        "text": ""
+      },
+      {
+        "href": "https://imot.io/",
+        "text": ""
+      },
+      {
+        "href": "https://imot.io/",
+        "text": "Решения"
+      },
+      {
+        "href": "https://imot.io/medic",
+        "text": "Контакт-центр клиники"
+      },
+      {
+        "href": "https://imot.io/doc",
+        "text": "Прием врача"
+      },
+      {
+        "href": "https://imot.io/developers",
+        "text": "Недвижимость"
+      },
+      {
+        "href": "https://imot.io/#popup:enterprise",
+        "text": "Enterprise [скоро]"
+      },
+      {
+        "href": "https://imot.io/#function",
+        "text": "Функции"
+      },
+      {
+        "href": "https://imot.io/cases",
+        "text": "Кейсы"
+      },
+      {
+        "href": "https://imot.io/tarif",
+        "text": "Тарифы"
+      },
+      {
+        "href": "https://imot.io/about",
+        "text": "О компании"
+      },
+      {
+        "href": "https://imot.io/media",
+        "text": "Медиа"
+      },
+      {
+        "href": "https://imot.io/partners",
+        "text": "Партнёрам"
+      },
+      {
+        "href": "https://imot.io/documents",
+        "text": "Документы"
+      },
+      {
+        "href": "https://imot.io/support",
+        "text": "Контакты"
+      },
+      {
+        "href": "https://track.ad2sub.ru/r/sonya-lichka-sayt-7j8USw",
+        "text": ""
+      },
+      {
+        "href": "https://track.ad2sub.ru/r/perehody-s-sayta-4jQfvQ",
+        "text": ""
+      },
+      {
+        "href": "https://imot.io/",
+        "text": "RU"
+      },
+      {
+        "href": "https://imot.io/en",
+        "text": "EN"
+      },
+      {
+        "href": "https://imot.io/tpost/o-chem-zvonyat-kliniki",
+        "text": "→"
+      },
+      {
+        "href": "https://track.ad2sub.ru/r/partnerka-EUAp1g",
+        "text": "О чём пациенты спрашивают, когда звонят в клинику"
+      },
+      {
+        "href": "https://track.ad2sub.ru/r/partnerka-EUAp1g",
+        "text": "Исследование"
+      },
+      {
+        "href": "https://imot.io/growth-hacking-v-medicine-kejs-kliniki-fomina-i-imot-io",
+        "text": "Кейс в блоге"
+      },
+      {
+        "href": "https://imot.io/kak-developer-perestroil-kontrol-kachestva-zvonkov-v-kontakt-centre",
+        "text": "Кейс в блоге"
+      },
+      {
+        "href": "https://imot.io/kak-rechevaya-analitika-pomogla-uskorit-sdelki-v-edtech-prodazhah",
+        "text": "Кейс в блоге"
+      },
+      {
+        "href": "https://imot.io/documents",
+        "text": "Все документы"
+      },
+      {
+        "href": "https://imot.io/case2",
+        "text": "ровайдер «Экотелеком»"
+      },
+      {
+        "href": "https://imot.io/case2",
+        "text": "Весь кейс"
+      },
+      {
+        "href": "https://imot.io/case4",
+        "text": "Весь кейс"
+      },
+      {
+        "href": "https://imot.io/case5",
+        "text": "Весь кейс"
+      },
+      {
+        "href": "https://imot.io/case3",
+        "text": "Весь кейс"
+      },
+      {
+        "href": "https://imot.io/case1",
+        "text": "Весь кейс"
+      },
+      {
+        "href": "https://imot.io/vnedrenie-rechevoj-analitiki-v-gospitale-na-yauze",
+        "text": "Весь кейс"
+      },
+      {
+        "href": "https://imot.io/kejs-o-vnedrenii-rechevoj-analitiki-imot-io-v-stomatologiyah",
+        "text": "Весь кейс"
+      },
+      {
+        "href": "https://imot.io/edtech-kak-uslyshat-kazhdogo-studenta-i-poluchit-10-procentov-prodazh",
+        "text": "Весь кейс"
+      },
+      {
+        "href": "https://imot.io/tarif",
+        "text": "Смотреть тарифы"
+      },
+      {
+        "href": "https://app.weeek.net/s/document-document-NTAxNDI3fDljMDg1NjUwLWZhM2EtNDRlYS05MjMyLTAyMGRiYzkwN2MyNw==",
+        "text": "Все чаты"
+      },
+      {
+        "href": "https://app.weeek.net/s/document-document-NTAxNDI3fDljMDg1NjUwLWZhM2EtNDRlYS05MjMyLTAyMGRiYzkwN2MyNw==",
+        "text": "Все сервисы"
+      },
+      {
+        "href": "https://app.weeek.net/s/document-document-NTAxNDI3fDljMDg1NjUwLWZhM2EtNDRlYS05MjMyLTAyMGRiYzkwN2MyNw==",
+        "text": "Все сервисы"
+      },
+      {
+        "href": "https://app.weeek.net/s/document-document-NTAxNDI3fDljMDg1NjUwLWZhM2EtNDRlYS05MjMyLTAyMGRiYzkwN2MyNw==",
+        "text": "Все CRM"
+      },
+      {
+        "href": "https://imot.io/partners",
+        "text": "О партнёрской программе"
+      },
+      {
+        "href": "https://imot.io/politica",
+        "text": "Политику конфиденциальности"
+      },
+      {
+        "href": "https://imot.io/agreement",
+        "text": "согласие"
+      },
+      {
+        "href": "https://track.ad2sub.ru/r/ls-kuzhukina-PZqe9Q",
+        "text": "Telegram"
+      },
+      {
+        "href": "https://imot.io/doc",
+        "text": "Прием врача"
+      },
+      {
+        "href": "https://imot.io/medic",
+        "text": "Колл-центр клиники"
+      },
+      {
+        "href": "https://imot.io/developers",
+        "text": "Недвижимость"
+      },
+      {
+        "href": "https://imot.io/support",
+        "text": "Контакты"
+      },
+      {
+        "href": "https://imot.io/media",
+        "text": "Медиа"
+      },
+      {
+        "href": "https://imot.io/#popup:enterprise",
+        "text": "Enterprise"
+      },
+      {
+        "href": "https://imot.io/partners",
+        "text": "Партнерам"
+      },
+      {
+        "href": "https://imot.io/tarif",
+        "text": "Тарифы"
+      },
+      {
+        "href": "https://imot.io/cases",
+        "text": "Кейсы и решения"
+      },
+      {
+        "href": "https://imot.io/about",
+        "text": "О компании"
+      },
+      {
+        "href": "https://imot.io/",
+        "text": "О платформе"
+      },
+      {
+        "href": "https://imot.io/",
+        "text": ""
+      },
+      {
+        "href": "https://track.ad2sub.ru/r/sonya-lichka-sayt-7j8USw",
+        "text": "Telegram"
+      },
+      {
+        "href": "https://yandex.ru/maps/-/CCUZMMqBLC",
+        "text": "121205, г. Москва, Сколково, ул. Большой бульвар 42, стр. 1, этаж 4, пом. 139"
+      },
+      {
+        "href": "https://imot.io/documents",
+        "text": "Акредитации"
+      },
+      {
+        "href": "https://imot.io/cookies",
+        "text": "Политика использования cookie"
+      },
+      {
+        "href": "https://imot.io/partnershipagreement",
+        "text": "Партнёрское соглашение"
+      },
+      {
+        "href": "https://imot.io/nda",
+        "text": "Соглашение конфеденциальности"
+      },
+      {
+        "href": "https://imot.io/agreement",
+        "text": "Согласие на обработку ПД"
+      },
+      {
+        "href": "https://imot.io/politica",
+        "text": "Политика конфиденциальности"
+      },
+      {
+        "href": "https://imot.io/documents",
+        "text": "Правовая информация"
+      },
+      {
+        "href": "https://track.ad2sub.ru/r/perehody-s-sayta-4jQfvQ",
+        "text": ""
+      },
+      {
+        "href": "https://rutube.ru/channel/39907739/videos/",
+        "text": ""
+      },
+      {
+        "href": "https://youtube.com/@imot_io",
+        "text": ""
+      },
+      {
+        "href": "https://t.me/akkuratno_ds",
+        "text": "Разработка сайта"
+      },
+      {
+        "href": "https://track.ad2sub.ru/r/perehody-s-sayta-4jQfvQ",
+        "text": "Читать"
+      },
+      {
+        "href": "https://imot.io/politica",
+        "text": "Политику конфиденциальности"
+      },
+      {
+        "href": "https://imot.io/agreement",
+        "text": "согласие"
+      },
+      {
+        "href": "https://imot.io/politica",
+        "text": "Политику конфиденциальности"
+      },
+      {
+        "href": "https://imot.io/agreement",
+        "text": "согласие"
+      },
+      {
+        "href": "https://imot.io/politica",
+        "text": "Политику конфиденциальности"
+      },
+      {
+        "href": "https://imot.io/agreement",
+        "text": "согласие"
+      },
+      {
+        "href": "https://imot.io/politica",
+        "text": "Политику конфиденциальности"
+      },
+      {
+        "href": "https://imot.io/agreement",
+        "text": "согласие"
+      },
+      {
+        "href": "https://imot.io/politica",
+        "text": "cookies"
+      }
+    ],
+    "link_count": 105
+  },
+  {
+    "group": "1",
+    "name": "Re:call",
+    "domain": "recall-ai.ru",
+    "csv_url": "https://recall-ai.ru",
+    "home_url": "https://recall-ai.ru/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://recall-ai.ru/",
+    "redirected": false,
+    "bytes": 253381,
+    "visible_chars": 9955,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "User-Agent: *\nAllow: /\n\nHost: https://recall-ai.ru\nSitemap: https://recall-ai.ru/sitemap.xml\n",
+    "links": [
+      {
+        "href": "https://recall-ai.ru/",
+        "text": ""
+      },
+      {
+        "href": "https://recall-ai.ru/tariffs",
+        "text": "Тарифы и цены"
+      },
+      {
+        "href": "https://recall-ai.ru/partner-program",
+        "text": "Партнерская программа"
+      },
+      {
+        "href": "https://recall-ai.ru/partners",
+        "text": "Наши партнёры"
+      },
+      {
+        "href": "https://recall-ai.ru/articles",
+        "text": "Статьи"
+      },
+      {
+        "href": "https://recall-ai.ru/#contact-form",
+        "text": "Контакты"
+      },
+      {
+        "href": "https://recall-ai.ru/company-values",
+        "text": "Ценности компании"
+      },
+      {
+        "href": "https://recall-ai.ru/tariffs",
+        "text": "Тарифы и цены"
+      },
+      {
+        "href": "https://recall-ai.ru/partner-program",
+        "text": "Партнерская программа"
+      },
+      {
+        "href": "https://recall-ai.ru/partners",
+        "text": "Наши партнёры"
+      },
+      {
+        "href": "https://recall-ai.ru/articles",
+        "text": "Статьи"
+      },
+      {
+        "href": "https://recall-ai.ru/#contact-form",
+        "text": "Контакты"
+      },
+      {
+        "href": "https://recall-ai.ru/company-values",
+        "text": "Ценности компании"
+      },
+      {
+        "href": "https://telegram.me/+79255317800",
+        "text": ""
+      },
+      {
+        "href": "https://wa.me/79255317800",
+        "text": ""
+      },
+      {
+        "href": "https://app-recall.seo-start.ru/upload.aspx",
+        "text": "Загрузите звонок"
+      },
+      {
+        "href": "https://app-recall.seo-start.ru/recall-analysis-v3.aspx?archiveId=1263&hmac=mPPalXkyBCIzk3N5DZX1bs8RMVrCXT5kIgeob9Y6AsU=",
+        "text": "Посмотреть анализы"
+      },
+      {
+        "href": "https://app-recall.seo-start.ru/recall-analysis-v3.aspx?archiveId=2295&hmac=DKjyaxp8fVrvD3aDd9jyu4j5XbxBFHCn7p4Aw3i0w8g=",
+        "text": "Посмотреть анализы"
+      },
+      {
+        "href": "https://t.me/+79255317800",
+        "text": ""
+      },
+      {
+        "href": "https://wa.me/+79255317800",
+        "text": ""
+      },
+      {
+        "href": "https://yandex.ru/maps/-/CLdQJ-nc",
+        "text": "Мы на Яндекс.Картах"
+      },
+      {
+        "href": "https://recall-ai.ru/pdf-viewer/privacy-policy",
+        "text": "Политикой конфиденциальности"
+      },
+      {
+        "href": "https://recall-ai.ru/",
+        "text": ""
+      },
+      {
+        "href": "https://recall-ai.ru/pdf-viewer/privacy-policy",
+        "text": "Политика конфиденциальности"
+      },
+      {
+        "href": "https://recall-ai.ru/pdf-viewer/terms-of-service",
+        "text": "Договор оферты"
+      },
+      {
+        "href": "https://recall-ai.ru/#features",
+        "text": "Возможности"
+      },
+      {
+        "href": "https://recall-ai.ru/#solutions",
+        "text": "Отраслевые решения"
+      },
+      {
+        "href": "https://recall-ai.ru/#cases",
+        "text": "Кейсы"
+      },
+      {
+        "href": "https://recall-ai.ru/#crm",
+        "text": "Интеграции"
+      },
+      {
+        "href": "https://recall-ai.ru/#faq",
+        "text": "Вопросы и ответы"
+      },
+      {
+        "href": "https://recall-ai.ru/tariffs",
+        "text": "Актуальные тарифы"
+      },
+      {
+        "href": "https://recall-ai.ru/#contact-form",
+        "text": "Контакты"
+      },
+      {
+        "href": "https://recall-ai.ru/articles",
+        "text": "Статьи"
+      },
+      {
+        "href": "https://recall-ai.ru/company-values",
+        "text": "Ценности компании"
+      },
+      {
+        "href": "https://recall-ai.ru/partners",
+        "text": "Партнеры Re:call"
+      },
+      {
+        "href": "https://telegram.me/+79255317800",
+        "text": ""
+      },
+      {
+        "href": "https://wa.me/79255317800",
+        "text": ""
+      },
+      {
+        "href": "https://recall-ai.ru/pdf-viewer/privacy-policy",
+        "text": "Политика конфиденциальности"
+      },
+      {
+        "href": "https://recall-ai.ru/pdf-viewer/terms-of-service",
+        "text": "Договор оферты"
+      }
+    ],
+    "link_count": 39
+  },
+  {
+    "group": "1",
+    "name": "Mango Office",
+    "domain": "mango-office.ru",
+    "csv_url": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/speech-analytics/",
+    "home_url": "https://www.mango-office.ru/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://www.mango-office.ru/",
+    "redirected": false,
+    "bytes": 412520,
+    "visible_chars": 21285,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "User-agent: *\nHost: https://www.mango-office.ru\nSitemap: https://www.mango-office.ru/sitemap_000.xml\nDisallow: */index.php\nDisallow: /promopage/\nDisallow: /*/promopage/\nDisallow: /landing/\nDisallow: /*test\nDisallow: /*/devices/*/filter/\nDisallow: /*/auth/recover-password-account/*\nDisallow: /partner-promo/*\nDisallow: /shop/fast_order/\nDisallow: /shop/tariffs/choose/\nDisallow: /develop/\nDisallow: /bitrix/\nDisallow: /upload/\nDisallow: /searching/\nDisallow: /pages/findwidget/\nDisallow: /pages/idesk/vats/call_map/\nDisallow: /pages/idesk/vats/voice_menu/\nDisallow: /pages/idesk/automated_calls/\nDisallow: /pages/idesk/analytics/\nDisallow: /pages/idesk/vats/videoconf/\nDisallow: /pages/idesk/vats/audioconf/\nDisallow: /pages/idesk/vats/sip_trunk/\nDisallow: /pages/idesk/vats/ldap/\nDisallow: /pages/idesk/analytics/\nDisallow: /products/obnovleniya/\nDisallow: /tariffs/crm/for_free/\nDisallow: /auth/\nDisallow: /auth.php\nDisallow: /personal/\nDisallow: /ajax/\nDisallow: /ajax_new/\nDisallow: /include/\nDisallow: /data/\nDisallow: /pages/idesk/\nDisallow: /pages/showroom/\nDisallow: /products/mejgorod/\nDisallow: /*/searching/\nDisallow: /*cityCode=\nDisallow: /*SECTION_CODE=\nDisallow: /*PAGE_NAME=search\nDisallow: /*PAGE_NAME=user_post\nDisallow: /*PAGE_NAME=detail_slide_show\nDisallow: /*PAGEN_1=\nDisallow: /*PAGEN_2=\nDisallow: /*/slide_show/\nDisallow: /*/gallery/*order=*\nDisallow: /*?print=\nDisallow: /*?roistat\nDisallow: /*&amp;print=\nDisallow: /*register=yes\nDisallow: /*forgot_password=yes\nDisallow: /*change_password=yes\nDisallow: /*login=yes\nDisallow: /*logout=yes\nDisallow: /*auth=yes\nDisallow: /*action=ADD_TO_COMPARE_LIST\nDisallow: /*action=DELETE_FROM_COMPARE_LIST\nDisallow: /*action=ADD2BASKET\nDisallow: /*action=BUY\nDisallow: /*print_course=Y\nDisallow: /*bitrix_*=\nDisallow: /*backurl=*\nDisallow: /*BACKURL=*\nDisallow: /*back_url=*\nDisallow: /*BACK_URL=*\nDisallow: /*arrFilter_pf\nDisallow: /*back_url_admin=*\nDisallow: /*index.php$\nDisallow: /*iframe*\nDisallow: /search/\nDisallow: /products/frame.php\nDisallow: /tariffs/call-center\nDisallow: /pages/free_numbers/\nDisallow: /pages/statistic/\nDisallow: /pages/showroom-promo/\nDisallow: /tariffs/connect_cc/\nDisallow: /shop/tariffs/vpbx_detail/\nDisallow: /shop/cart/\nDisallow: /handlers/\nDisallow: /yenisite.resizer2/\nDisallow: /uikit/\nDisallow: /demo/\nDisallow: /promopage/\nDisallow: /promo-page/\nDisallow: /hr-form/\nDisallow: /partners_*\nDisallow: *?utm_source\nDisallow: *?_openstat\nDisallow: *?p=\nDisallow: *.doc\nDisallow: *.docx\nDisallow: *.pdf\nDisallow: *.odt\nDisallow: *.xls\nDisallow: *.xlsx\nDisallow: *.rtf\nDisallow: /callback-ru.php\nDisallow: /shop/devices/sertificates/\nDisallow: /*?*bxrand=\nDisallow: /*?*from=\nDisallow: /*?*clear_cache=\nDisallow: /*?*sphrase_id=\nDisallow: /*?*_is_mobile=\nDisallow: /*?*ncc=\nDisallow: /*?*CITY_CODE=\nDisallow: /*?*source=\nDisallow: /*?*SURVEY_ID=\nDisallow: /*?*TEMPLATE=\nDisallow: /*?*calltouch_tm=\nDisallow: /*?*token=\nDisallow: /*?*bannerId=\nDisallow: /*?*bulk_email_rid=\nDisallow: /*?*IS_PROMO=\nDisallow: /*?*SEARCH_STRING=\nDisallow: /*?*SIZEN_1=\nDisallow: /*?*SORTING=\nDisallow: /*?*auth_ticket=\nDisallow: /*?*block_key=\nDisallow: /*?*frame=\nDisallow: /*?*is_registration=\nDisallow: /*?*uri=\nDisallow: /*?*v=\nDisallow: /*?*cov_external_url=\nDisallow: /*?*debug=\nDisallow: /*?*url=\nDisallow: /*?*edit=\nDisallow: /*?*tariffCode=\nDisallow: /*?*id=\nDisallow: /*?*element=\nDisallow: /*?*price=\nDisallow: /products/integraciya/ready-made/\nAllow: /journal/*test*\nClean-param: utma&f\nClean-param: PATH\nClean-param: _is_robot\nClean-param: referrer\nClean-param: citycode\nClean-param: mango\nClean-param: productId\nClean-param: viewMode\nClean-param: anchor\nClean-param: tab\nClean-param: setChain\nClean-param: FRAME_LOAD&AGENT_CODE\nClean-param: ORDER_ID\nClean-param: PARENT_CODE\nClean-param: etext\nClean-param: _is_mobile\nClean-param: auth_ticket\nClean-param: bitrix_include_areas\nClean-param: ncc\nClean-param: _is_mobile\nClean-param: accept_webp\nClean-param: 0[productId]\nClean-param: 0%5BproductId%5D",
+    "links": [
+      {
+        "href": "https://www.mango-office.ru/promo-page/podderzka-malogo-biznesa/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/support/",
+        "text": "Поддержка"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/",
+        "text": "Купить"
+      },
+      {
+        "href": "https://www.mango-office.ru/",
+        "text": ""
+      },
+      {
+        "href": "https://www.mango-office.ru/products/ip-telefoniya/",
+        "text": "IP-Телефония"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/golosovoe-menyu-ivr/",
+        "text": "Голосовое приветствие и меню"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/raspredelenie-zvonkov/",
+        "text": "Распределение вызовов"
+      },
+      {
+        "href": "https://www.mango-office.ru/support/tsentr_obrabotki_vyzovov/bystryy_start_tsov/razdel_biznes_analitika/",
+        "text": "Бизнес-аналитика"
+      },
+      {
+        "href": "https://www.mango-office.ru/support/virtualnaya_ats/rukovodstvo_polzovatelya/speech_analytics/",
+        "text": "Речевая аналитика"
+      },
+      {
+        "href": "https://www.mango-office.ru/customers/edo/",
+        "text": "Электронный документооборот"
+      },
+      {
+        "href": "https://www.mango-office.ru/promo-page/podderzka-malogo-biznesa/",
+        "text": "https://www.mango-office.ru/promo-page/podderzka-malogo-biznesa/"
+      },
+      {
+        "href": "https://www.mango-office.ru/support/calltracking_vs_analytics/integratsiya/envybox/",
+        "text": ""
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/",
+        "text": "Облачное решение"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/numbers/",
+        "text": "Номера"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/karusel-nomerov/",
+        "text": "Карусель номеров"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/mango-talker/",
+        "text": "Корпоративный мессенджер"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/recall_missed/",
+        "text": "Перезвон по пропущенным"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/",
+        "text": "Единое решение"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/vozmozhnosti/",
+        "text": "10+ каналов коммуникации"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/vozmozhnosti/queue/",
+        "text": "Мониторинг обращений"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/vozmozhnosti/outgoing_calls/",
+        "text": "исходящего обзвона"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/speech-analytics/",
+        "text": "Речевая аналитика"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/quality-management/",
+        "text": "Контроль качества"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/ai/voice-robot/",
+        "text": "Голосовые роботы"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/vozmozhnosti/chat-bot/",
+        "text": "Чат-боты"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/calltracking/",
+        "text": "Коллтрекинг"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/calltracking/vozmozhnosti/multichannel-analytics/",
+        "text": "Мультиканальная аналитика"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/competitor_analysis/",
+        "text": "Анализ конкурентов"
+      },
+      {
+        "href": "https://www.mango-office.ru/upload/vats-versions.pdf",
+        "text": "Скачать файл"
+      },
+      {
+        "href": "https://www.mango-office.ru/upload/cc-versions.pdf",
+        "text": "Скачать файл"
+      },
+      {
+        "href": "https://www.mango-office.ru/upload/dct-version.pdf",
+        "text": "Скачать файл"
+      },
+      {
+        "href": "https://www.mango-office.ru/promo-page/vats-vygoda/",
+        "text": "https://www.mango-office.ru/promo-page/vats-vygoda/"
+      },
+      {
+        "href": "https://s3.mango-office.ru/mango.talker/versions/windows/x64/mango-talker-setup.exe",
+        "text": ""
+      },
+      {
+        "href": "https://s3.mango-office.ru/mango.talker/versions/macos/x64/mango-talker-setup.dmg",
+        "text": ""
+      },
+      {
+        "href": "https://chatfs.mango-office.ru/v1/file/6c4604e0b1f255a1c8f59b73534af9dd953f272bd9e81eb5cdf12f58d047fdcb385b9fdf8fbcc3a0814289163f936b2814d9781bb8442bf1a20f0bb30fc1c9cbe02924a49e48840cb782ba515bcbf80b5c442a0a4e032a9a5c6fe563dc240730d74e78ed606c24917528f136d0a82b339d5f5d1a96b08f4149a342baf91b9bdadc17dc877d3126cf2f3e4f56a4bc4afb42f0f79bb22911f3b72079f18a3b7508e2012cedcaaac480d5383f99039b2db233308d5f8dbdbce7e04cf68c5e474596fa2b697675e6489c16360d8b4735c2991148bcdf019c01aabe00504978af35ff7c1ef6846a8761daec46c421c7d6f5d1bb6c2498e55df9c9bb6212c2ad335120/mtsetup_5_11_alt104k.run",
+        "text": ""
+      },
+      {
+        "href": "https://www.mango-office.ru/mtalker_agreement/",
+        "text": "пользовательского соглашения"
+      },
+      {
+        "href": "https://www.mango-office.ru/support/tekhnicheskaya_podderzhka/mango_talker_menu/sistemnyeytrebovaniyaymytalker/",
+        "text": "Системные требования для приложения"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/stareyshaya-poliklinika-noveyshie-tekhnologii/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/dobroflot/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/vkusvill/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/pkhali-khinkali-i-khacho-i-puri/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/ooo-gorodskaya-resursosnabzhayushchaya-kompaniya/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/ag-experts/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/yclients/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/roza-khutor/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/valo/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/unistroy/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/norma/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/m-video-eldorado/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/smartway/",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/tidings/mango-office-obedinil-iianaliz-zvonkov-i-perepisok/",
+        "text": "MANGO OFFICE объединил ИИ-анализ звонков и переписок"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/tidings/pochemu-sayt-mango-office-mozhet-perestat-otkryvatsya-v-nekotorykh-brauzerakh-i-chto-s-etim-delat-/",
+        "text": "Почему сайт MANGO OFFICE может перестать открываться в некоторых браузерах — и что с этим делать"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/tidings/aktualizatsiya-tarifov-17-08/",
+        "text": "Актуализация тарифов"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/tidings/mango-office-i-miralodzhik-anonsirovali-eksklyuzivnoe-partnerstvo/",
+        "text": "MANGO OFFICE и МираЛоджик анонсировали эксклюзивное партнерство"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/tidings/",
+        "text": "Читать другие новости"
+      },
+      {
+        "href": "https://www.mango-office.ru/events/hr_ekosistema_v_detalyakh_sobiraem_tekhnologii_na_baze_potoka/",
+        "text": "HR-экосистема в деталях: собираем технологии на базе «Потока»"
+      },
+      {
+        "href": "https://www.mango-office.ru/events/hospitality_sales_forum_2026/",
+        "text": "Hospitality Sales Forum 2026"
+      },
+      {
+        "href": "https://www.mango-office.ru/events/upravlenie_meditsinskim_biznesom_v_rossii_2026/",
+        "text": "Управление медицинским бизнесом в России 2026"
+      },
+      {
+        "href": "https://www.mango-office.ru/events/mango_fresh_partners/",
+        "text": "Mango Fresh Partners"
+      },
+      {
+        "href": "https://www.mango-office.ru/events/",
+        "text": "Календарь мероприятий"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/press/aleksey-gorbunov-mango-office-o-bolshikh-dannykh-chat-botakh-i-trendakh-rynka/",
+        "text": "Алексей Горбунов, MANGO OFFICE: о больших данных, чат-ботах и трендах рынка"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/press/ekspert-mango-office-anton-but-vystupil-na-konferentsii-tadviser-unifitsirovannye-kommunikatsii-2025/",
+        "text": "Эксперт MANGO OFFICE Антон Бут выступил на конференции TAdviser «Унифицированные коммуникации 2025»"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/press/zoopark-messendzherov-chto-eto-i-pochemu-on-snizhaet-upravlyaemost-biznesa/",
+        "text": "Зоопарк мессенджеров − что это, и почему он снижает управляемость бизнеса"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/press/defitsit-kadrov-rost-zarplat-i-tseny-trafika-klientov-kak-zhit-kompaniyam/",
+        "text": "Дефицит кадров, рост зарплат и цены трафика клиентов: как жить компаниям"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/press/",
+        "text": "Все публикации"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/yclients/",
+        "text": "YCLIENTS"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/m-video-eldorado/",
+        "text": "М.Видео-Эльдорадо"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/valo/",
+        "text": "VALO"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/dobroflot/",
+        "text": "Доброфлот"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/",
+        "text": "Все кейсы"
+      },
+      {
+        "href": "https://www.mango-office.ru/tariffs/for_free/",
+        "text": "https://www.mango-office.ru/tariffs/for_free/"
+      },
+      {
+        "href": "https://www.mango-office.ru/policies/personal-agreement/",
+        "text": "обработку своих данных"
+      },
+      {
+        "href": "https://www.mango-office.ru/support/klientskoe_obsluzhivanie/dokumenty/soglasie-na-poluchenie-reklamy/",
+        "text": "получение рекламной информации"
+      },
+      {
+        "href": "https://www.cnews.ru/reviews/vats_i_ip-telefoniya_2024/review_table/9635537d1af3a95eea8bb55d29d4dff7aa7cea12",
+        "text": "CNews"
+      },
+      {
+        "href": "https://www.mango-office.ru/",
+        "text": ""
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/",
+        "text": "Виртуальная АТС"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/ip-telefoniya/",
+        "text": "ИПТ (IP-телефония)"
+      },
+      {
+        "href": "https://www.mango-office.ru/numbers_and_tariffs/virtual_mobile_number/",
+        "text": "Виртуальный номер"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/etiketka/",
+        "text": "Этикетка"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/mav-servis-markirovki-massovykh-vyzovov/",
+        "text": "МАВ сервис"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/karusel-nomerov/",
+        "text": "Карусель номеров"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/mango-talker/",
+        "text": "Корпоративный мессенджер"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/videoconferencii/",
+        "text": "Видеоконференции"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/zapis-razgovorov/",
+        "text": "Запись разговоров"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/golosovoe-menyu-ivr/",
+        "text": "Голосовое меню"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/mobile-mango-office/",
+        "text": "Мобильный личный кабинет"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/sip-trunk/",
+        "text": "Виртуальная магистраль связи"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/otpravka_sms/",
+        "text": "СМС-рассылки"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/raspredelenie-zvonkov/",
+        "text": "Распределение звонков"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/mango-mobile/",
+        "text": "Манго Мобайл"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/ldap/",
+        "text": "Интеграция с ОПДкРК"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/avtoinformator-o-vremeni-do-otveta-operatora/",
+        "text": "Автоинформатор"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/avtosekretar/",
+        "text": "Автосекретарь"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/obratnyj_zvonok/",
+        "text": "Обратный звонок с сайта"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/",
+        "text": "Все возможности ВАТС"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/",
+        "text": "Омниканальный контакт-центр"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/vozmozhnosti/outgoing_calls/",
+        "text": "Исходящий обзвон"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/vozmozhnosti/omnikanalnost/",
+        "text": "Омниканальные коммуникации"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/personnel-management/",
+        "text": "Управление персоналом"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/vozmozhnosti/workplace/",
+        "text": "Рабочее место сотрудника"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/reports-constructor/",
+        "text": "Конструктор отчетов"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/vozmozhnosti/admin-robot/",
+        "text": "Робот-администратор"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/resheniya/workforce-management/",
+        "text": "Управление рабочими ресурсами"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/knowledge-base/",
+        "text": "База знаний"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/sdelki/",
+        "text": "Управление сделками"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/open-api-for-crm/",
+        "text": "ПИП (API) для УВК (CRM)"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/vozmozhnosti/onlayn-chat-dlya-sayta/",
+        "text": "Чат для сайта"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/vozmozhnosti/employee_control/",
+        "text": "Оценка эффективности работы"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/vozmozhnosti/",
+        "text": "Все возможности колл-центра"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/",
+        "text": "Интеграции"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/api/",
+        "text": "Интеграции по ПИП (API)"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/webhook/",
+        "text": "Вебхуки"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/1c/",
+        "text": "Интеграция с 1С"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/marketplace/",
+        "text": "Все интеграции"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/ai/voice-robot/",
+        "text": "Голосовой робот"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/vozmozhnosti/chat-bot/",
+        "text": "Чат-бот"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/speech-analytics/",
+        "text": "Речевая аналитика"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/ai/",
+        "text": "Искусственный интеллект"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/quality-management/",
+        "text": "Управление качеством (QM)"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/business_analytics/",
+        "text": "Бизнес-аналитика"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/marketing-technologies/",
+        "text": "Сервисы для маркетинга"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/calltracking/",
+        "text": "Коллтрекинг"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/calltracking/vozmozhnosti/multichannel-analytics/",
+        "text": "Мультиканальная аналитика"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/competitor_analysis/",
+        "text": "Анализ конкурентов"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/calltracking/vozmozhnosti/analytics/",
+        "text": "Сквозная аналитика"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/tovarnaya-analitika/",
+        "text": "Товарная аналитика"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/calltracking/vozmozhnosti/email-tracking/",
+        "text": "Email-трекинг"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/calltracking/vozmozhnosti/romi/",
+        "text": "Окупаемость инвестиций"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/messenger-marketing/",
+        "text": "Мессенджер‑маркетинг"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/calltracking/vozmozhnosti/robot-analitik/",
+        "text": "Робот-аналитик"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/calltracking/vozmozhnosti/lead-catcher/",
+        "text": "Робот-маркетолог"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/calltracking/vozmozhnosti/multiregional/",
+        "text": "Мультирегиональный коллтрекинг"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/resheniya/telefonizatsiya-ofisa/",
+        "text": "Телефонизация офиса"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/ib/",
+        "text": "Информационная безопасность"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/resheniya/enterprise/",
+        "text": "Крупному бизнесу"
+      },
+      {
+        "href": "https://www.mango-office.ru/numbers_and_tariffs/krasivye_nomera/",
+        "text": "Красивые номера"
+      },
+      {
+        "href": "https://www.mango-office.ru/numbers_and_tariffs/international_number/",
+        "text": "Международный номер"
+      },
+      {
+        "href": "https://www.mango-office.ru/numbers_and_tariffs/besplatnyy-vyzov-8800/",
+        "text": "Бесплатный вызов 8−800"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/remote-work/organization/",
+        "text": "Организация удаленной работы"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/",
+        "text": "Все решения"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/devices/",
+        "text": "Оборудование"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/devices/wired-sip-phones/",
+        "text": "ПУС (SIP) телефоны стационарные"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/devices/web-kamery/",
+        "text": "Веб-камеры"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/devices/headsets/",
+        "text": "Профессиональные гарнитуры"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/devices/network-devices/",
+        "text": "Сетевое оборудование"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/devices/video-phones/",
+        "text": "Видео- и конференц- телефоны"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/devices/wireless-sip-phones/",
+        "text": "ПУС (SIP) телефоны беспроводные"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/devices/voip-gateways/",
+        "text": "VoIP шлюзы"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/devices/modem/",
+        "text": "Мобильный Интернет 4G"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/devices/mobilnye-telefony/",
+        "text": "Мобильные телефоны"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/devices/accessory/",
+        "text": "Аксессуары"
+      },
+      {
+        "href": "https://s3.mango-office.ru/mango.talker/versions/macos/x64/mango-talker-setup.dmg",
+        "text": ""
+      },
+      {
+        "href": "https://s3.mango-office.ru/mango.talker/versions/windows/x64/mango-talker-setup.exe",
+        "text": ""
+      },
+      {
+        "href": "https://chatfs.mango-office.ru/v1/file/6c4604e0b1f255a1c8f59b73534af9dd953f272bd9e81eb5cdf12f58d047fdcb385b9fdf8fbcc3a0814289163f936b2814d9781bb8442bf1a20f0bb30fc1c9cbe02924a49e48840cb782ba515bcbf80b5c442a0a4e032a9a5c6fe563dc240730d74e78ed606c24917528f136d0a82b339d5f5d1a96b08f4149a342baf91b9bdadc17dc877d3126cf2f3e4f56a4bc4afb42f0f79bb22911f3b72079f18a3b7508e2012cedcaaac480d5383f99039b2db233308d5f8dbdbce7e04cf68c5e474596fa2b697675e6489c16360d8b4735c2991148bcdf019c01aabe00504978af35ff7c1ef6846a8761daec46c421c7d6f5d1bb6c2498e55df9c9bb6212c2ad335120/mtsetup_5_11_alt104k.run",
+        "text": ""
+      },
+      {
+        "href": "https://www.mango-office.ru/support/",
+        "text": "Поддержка"
+      },
+      {
+        "href": "https://www.mango-office.ru/partner/",
+        "text": "Партнерам"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/tidings/",
+        "text": "Новости"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/delivery/",
+        "text": "Доставка"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/payment/",
+        "text": "Оплата"
+      },
+      {
+        "href": "https://www.mango-office.ru/about/",
+        "text": "О компании"
+      },
+      {
+        "href": "https://www.mango-office.ru/contacts/",
+        "text": "Контакты"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/",
+        "text": "Журнал"
+      },
+      {
+        "href": "https://www.rustore.ru/catalog/app/com.mango.mlk",
+        "text": ""
+      },
+      {
+        "href": "https://www.mango-office.ru/policies/privacy/",
+        "text": "Политика обработки персональных данных"
+      },
+      {
+        "href": "https://www.mango-office.ru/policies/personal-agreement/",
+        "text": "Согласие на обработку персональных данных"
+      },
+      {
+        "href": "https://www.mango-office.ru/license/",
+        "text": "Лицензионный договор"
+      },
+      {
+        "href": "https://www.mango-office.ru/recommendation-technologies/",
+        "text": "На информационном ресурсе применяются рекомендательные технологии"
+      },
+      {
+        "href": "https://www.mango-office.ru/policies/cookie/",
+        "text": "Политика использования файлов «cookie»"
+      },
+      {
+        "href": "https://www.mango-office.ru/policies/personal-data-processing/",
+        "text": "Поручение на обработку персональных данных"
+      },
+      {
+        "href": "https://www.mango-office.ru/law-enforcement-info/",
+        "text": "Для правоохранительных органов и судов"
+      },
+      {
+        "href": "https://www.mango-office.ru/terms_of_service/",
+        "text": "Условия оказания услуг связи"
+      },
+      {
+        "href": "https://www.mango-office.ru/policies/site-privacy/",
+        "text": "Политика конфиденциальности"
+      },
+      {
+        "href": "https://www.mango-office.ru/policies/anti-corruption/",
+        "text": "О противодействии коррупции"
+      },
+      {
+        "href": "https://vk.com/mangotelecom",
+        "text": "ВКонтакте"
+      },
+      {
+        "href": "https://www.youtube.com/mangotelecom",
+        "text": "YouTube"
+      },
+      {
+        "href": "https://telegram.me/mango_office",
+        "text": "Telegram"
+      },
+      {
+        "href": "https://max.ru/mango_office_bot",
+        "text": "MAX"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/",
+        "text": "Продукты"
+      },
+      {
+        "href": "https://www.mango-office.ru/promo-page/communications/",
+        "text": "MANGO OFFICE — Единые бизнес-коммуникации Для всех отделов компании на любом устройстве, включая: звонки корпоративный мессенджер видеовстречи"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/",
+        "text": "Виртуальная АТС"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/price/",
+        "text": "Цена"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/kak-nachat/",
+        "text": "Как подключить"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/",
+        "text": "Омниканальный контакт-центр"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/tariffs/",
+        "text": "Цена"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/vozmozhnosti/outgoing_calls/",
+        "text": "Исходящий обзвон"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/mango-dialogi/",
+        "text": "МангоДиалоги"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/calltracking/",
+        "text": "Коллтрекинг и сервисы для маркетинга"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/speech-analytics/",
+        "text": "Речевая аналитика"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/ai/voice-robot/",
+        "text": "Роботы"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/karusel-nomerov/",
+        "text": "Карусель номеров"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/mango-talker/",
+        "text": "Корпоративный мессенджер"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/videoconferencii/",
+        "text": "Видеоконференции"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/etiketka/",
+        "text": "Этикетка Новинка"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/mav-servis-markirovki-massovykh-vyzovov/",
+        "text": "Массовые вызовы (МАВ) Новинка"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/zapis-razgovorov/",
+        "text": "Запись разговоров"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/golosovoe-menyu-ivr/",
+        "text": "Голосовое меню (IVR)"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/mango-mobile/",
+        "text": "Манго Мобайл Рекомендуем"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya-s-messenger-max-dlya-biznesa/",
+        "text": "Мессенджер MAX Новинка"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/marketplace/",
+        "text": "Готовые интеграции"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/calltracking/vozmozhnosti/analytics/",
+        "text": "Сквозная аналитика"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/devices/",
+        "text": "Оборудование"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/ldap/",
+        "text": "Интеграции с LDAP"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/",
+        "text": "Решения"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/dlya-malogo-biznesa/",
+        "text": "Для малого бизнеса"
+      },
+      {
+        "href": "https://www.mango-office.ru/promo-page/vats-smb/",
+        "text": "Для среднего бизнеса"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/big-clients/",
+        "text": "Для крупного бизнеса"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/auto/",
+        "text": "Автосервисы и дилеры"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/resheniya/dispetcherskaya-sluzhba/",
+        "text": "ЖКХ и УК"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/medicine/",
+        "text": "Медицина"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/nedvizhimost/",
+        "text": "Недвижимость"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/communikacii-dlya-gostinnits-i-oteley/",
+        "text": "Отели и турагентства"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/obrazovanie/",
+        "text": "Образование"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/",
+        "text": "Все отрасли"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/hr/",
+        "text": "Массовый подбор персонала"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/resheniya/organizatciya-s-nulya/",
+        "text": "Колл-центр"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/marketing-technologies/",
+        "text": "Маркетинг"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/sales-department/",
+        "text": "Отдел продаж"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/restaurants/",
+        "text": "Служба доставки"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/contact-center/resheniya/cold-sales/",
+        "text": "Обзвон клиентов"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/service-desk/",
+        "text": "Служба поддержки"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/it",
+        "text": "ИТ-отдел"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/tekstovye-obrashcheniya/",
+        "text": "Текстовые обращения"
+      },
+      {
+        "href": "https://www.mango-office.ru/resheniya/",
+        "text": "Все бизнес-задачи"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/virtualnaya_ats/etiketka/",
+        "text": "Маркировка звонков для бизнеса Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/numbers_and_tariffs/",
+        "text": "Номера"
+      },
+      {
+        "href": "https://www.mango-office.ru/numbers_and_tariffs/gorodskoy-nomer/",
+        "text": "Городские номера"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/numbers/",
+        "text": "Выбрать номер"
+      },
+      {
+        "href": "https://www.mango-office.ru/tariffs/connection/",
+        "text": "Тарифы"
+      },
+      {
+        "href": "https://www.mango-office.ru/numbers_and_tariffs/besplatnyy-vyzov-8800/",
+        "text": "8-800"
+      },
+      {
+        "href": "https://www.mango-office.ru/shop/numbers/",
+        "text": "Номера"
+      },
+      {
+        "href": "https://www.mango-office.ru/tariffs/8800/",
+        "text": "Тарифы"
+      },
+      {
+        "href": "https://www.mango-office.ru/numbers_and_tariffs/virtual_mobile_number/",
+        "text": "Виртуальные мобильные номера"
+      },
+      {
+        "href": "https://www.mango-office.ru/tariffs/connection/mobile/",
+        "text": "Тарифы"
+      },
+      {
+        "href": "https://www.mango-office.ru/numbers_and_tariffs/star-numbers/",
+        "text": "Короткие номера"
+      },
+      {
+        "href": "https://www.mango-office.ru/numbers_and_tariffs/international_number/",
+        "text": "Международные номера"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/mango-mobile/",
+        "text": "Виртуальная АТС в смартфоне Подключить"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/",
+        "text": "Интеграции"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/",
+        "text": "Интеграции"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/price/",
+        "text": "Стоимость"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/marketplace/",
+        "text": "Каталог интеграций"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/ready/",
+        "text": "Готовые интеграции"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/api/",
+        "text": "Кастомные интеграции"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/webhook/",
+        "text": "Вебхуки"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/integrations-voice-robot/",
+        "text": "Интеграция с роботами"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/docs/",
+        "text": "Документация"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/bitrix24/",
+        "text": "Битрикс24"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/amocrm/",
+        "text": "amoCRM"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/retailcrm/",
+        "text": "retailCRM"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/yclients/",
+        "text": "YCLIENTS"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/bpmsoft/",
+        "text": "BPMSoft"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/creatio/",
+        "text": "Creatio"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/megaplan/",
+        "text": "Мегаплан"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/crm-online-business-ru/",
+        "text": "БИЗНЕС.РУ"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/ldap/",
+        "text": "LDAP"
+      },
+      {
+        "href": "https://www.mango-office.ru/products/integraciya/marketplace/",
+        "text": "Все интеграции"
+      },
+      {
+        "href": "https://www.mango-office.ru/partner/",
+        "text": "Партнёрам"
+      },
+      {
+        "href": "https://www.mango-office.ru/partner/",
+        "text": "Стать партнёром Подробнее"
+      },
+      {
+        "href": "https://www.mango-office.ru/promopage/consenta/",
+        "text": "Для физических лиц"
+      },
+      {
+        "href": "https://www.mango-office.ru/partner/",
+        "text": "Для юридических лиц"
+      },
+      {
+        "href": "https://partners.mango-office.ru/desktop/",
+        "text": "Партнёрский личный кабинет"
+      },
+      {
+        "href": "https://www.mango-office.ru/about/",
+        "text": "О компании"
+      },
+      {
+        "href": "https://www.mango-office.ru/about/",
+        "text": "О компании Единое решение для бизнес-коммуникацийот лидера рынка UCcогласно рейтингу Market.CNews в 2024 году"
+      },
+      {
+        "href": "https://www.mango-office.ru/success/",
+        "text": "Клиентские кейсы"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/",
+        "text": "Журнал"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/newsletter/",
+        "text": "Бизнес-рецепты"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/for-marketing/",
+        "text": "Энциклопедия маркетолога"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/glossary/",
+        "text": "Глоссарий"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/tidings/",
+        "text": "Новости"
+      },
+      {
+        "href": "https://www.mango-office.ru/use_mango/",
+        "text": "Отзывы"
+      },
+      {
+        "href": "https://www.mango-office.ru/journal/press/",
+        "text": "Пресс-центр"
+      },
+      {
+        "href": "https://www.mango-office.ru/about/career/",
+        "text": "Карьера"
+      },
+      {
+        "href": "https://www.mango-office.ru/events/",
+        "text": "Мероприятия"
+      }
+    ],
+    "link_count": 272
+  },
+  {
+    "group": "1",
+    "name": "Roistat",
+    "domain": "roistat.com",
+    "csv_url": "https://roistat.com",
+    "home_url": "https://roistat.com/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://roistat.com/ru/",
+    "redirected": true,
+    "bytes": 252463,
+    "visible_chars": 14188,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "User-agent: Yandex\nDisallow: */license/\nDisallow: */license\nDisallow: */privacy\nDisallow: */terms\nDisallow: */msa\nDisallow: */dpa\nDisallow: *?utm_*\nDisallow: *&utm_*\nDisallow: *?roistat=*\nDisallow: *&roistat=*\nDisallow: *?roistat_*\nDisallow: *&roistat_*\nDisallow: *?Roistat=*\nDisallow: *&Roistat=*\nDisallow: *?rs=*\nDisallow: *&rs=*\nDisallow: *?rs_stat=*\nDisallow: *&rs_stat=*\nDisallow: *?ref=*\nDisallow: *&ref=*\nDisallow: *?source=*\nDisallow: *&source=*\nDisallow: *?from=*\nDisallow: *&from=*\nDisallow: *?click_id=*\nDisallow: *&click_id=*\nDisallow: *?clckid=*\nDisallow: *&clckid=*\nDisallow: *?xid=*\nDisallow: *&xid=*\nDisallow: *?subid=*\nDisallow: *&subid=*\nDisallow: *?wm_id=*\nDisallow: *&wm_id=*\nDisallow: *?hashtoken=*\nDisallow: *&hashtoken=*\nDisallow: *?public_key=*\nDisallow: *&public_key=*\nDisallow: *?smartleads_*\nDisallow: *&smartleads_*\nDisallow: *?beta_test=*\nDisallow: *&beta_test=*\nDisallow: *?block=*\nDisallow: *&block=*\nDisallow: *?coupon=*\nDisallow: *&coupon=*\nDisallow: *?tags=*\nDisallow: *&tags=*\nDisallow: *?month=*\nDisallow: *&month=*\nDisallow: *?etext=*\nDisallow: *&etext=*\nDisallow: *?yclid=*\nDisallow: *&yclid=*\nDisallow: *?yadclid=*\nDisallow: *&yadclid=*\nDisallow: *?yadordid=*\nDisallow: *&yadordid=*\nDisallow: *?yadiscount=*\nDisallow: *&yadiscount=*\nDisallow: *?yagla=*\nDisallow: *&yagla=*\nDisallow: *?ybaip=*\nDisallow: *&ybaip=*\nDisallow: *?yhyd=*\nDisallow: *&yhyd=*\nDisallow: *?yqrid=*\nDisallow: *&yqrid=*\nDisallow: *?yprqee=*\nDisallow: *&yprqee=*\nDisallow: *?_ym_*\nDisallow: *&_ym_*\nDisallow: *?gclid=*\nDisallow: *&gclid=*\nDisallow: *?gad_source=*\nDisallow: *&gad_source=*\nDisallow: *?gad_campaignid=*\nDisallow: *&gad_campaignid=*\nDisallow: *?gad=*\nDisallow: *&gad=*\nDisallow: *?gbraid=*\nDisallow: *&gbraid=*\nDisallow: *?wbraid=*\nDisallow: *&wbraid=*\nDisallow: *?gcmes=*\nDisallow: *&gcmes=*\nDisallow: *?gcmlg=*\nDisallow: *&gcmlg=*\nDisallow: *?_gl=*\nDisallow: *&_gl=*\nDisallow: *?fbclid=*\nDisallow: *&fbclid=*\nDisallow: *?tgclid=*\nDisallow: *&tgclid=*\nDisallow: *?aviclid=*\nDisallow: *&aviclid=*\nDisallow: *?msclkid=*\nDisallow: *&msclkid=*\nDisallow: *?vk_id=*\nDisallow: *&vk_id=*\nAllow: /ml/business-audit/\nAllow: /ml/enterprise-end-to-end-analytics/\nAllow: /ml/chat-analytics/\nDisallow: /ml/\nDisallow: /pl/\nDisallow: */price-direct\nDisallow: /ru/blog/\nDisallow: /rublog/bez-rubriki/\nDisallow: /partners/marketplace/*\nDisallow: /ru/partners/marketplace/*\nDisallow: /ru/cases/increased-roi\nDisallow: /ru/cases/reduced-cpl\nDisallow: /ru/cases/deecreased-ad-costs\nDisallow: /ru/cases/more-cases\nDisallow: /ru/partners/partnership-offer\nDisallow: /*?*\nDisallow: /*tel:*\nDisallow: /test/*\nDisallow: /ru/test/*\nDisallow: /ru/features_new\nDisallow: /ru/price_new\nDisallow: /ru/chat_new\nDisallow: */spec\nDisallow: */documents/\nDisallow: /ru/page-template*\nDisallow: /ru/vacancy-old*\nDisallow: /ru/connection/check\nDisallow: /ru/features/analytics-new\nDisallow: /ru/features/multi-channel-analytics-new\nDisallow: /ru/features/events-test\nDisallow: /ru/index_new-test\nDisallow: /ru/index_new\nDisallow: /ru/price-test\nDisallow: /ru/features/calltracking-new\nDisallow: /ru/features/dashboard-new\nDisallow: /ru/features/reports-callback\nDisallow: /ru/features/email-test\nDisallow: /files/\nDisallow: /rublog/blog/\nDisallow: /rublog/marketing-slovar/\nDisallow: /rublog/glossary/page/*\nDisallow: /rublog/tag/*\nDisallow: /ru/msp\nDisallow: /kg/*\nDisallow: /ru/commission/new\nDisallow: /ru/commission/old\nDisallow: /ru/product/rpa\nDisallow: /ru/rublo\nDisallow: /ru/product/chat\nDisallow: /ru/libs/bootstrap/fonts/glyphicons-halflings-regular.eot\nDisallow: /ru/features/audit\nDisallow: /ru/features/usability\nDisallow: /ru/operator-data-policy/*\nDisallow: /ru/features/mobile-app\nDisallow: /lm/marketing-kpi/*\nDisallow: /ru/order/send\nDisallow: /ru/integrations/messg\nDisallow: /ru/integrations/lpmotor/crm-messg\nDisallow: /rublog/alina-dragun/\nDisallow: /ru/integrations/linkrr-messg \nDisallow: /ru/integrations/marquiz-messg\nDisallow: /ru/integrations/bitrix24-messg\nDisallow: /ru/integrations/",
+    "links": [
+      {
+        "href": "https://roistat.com/ru/",
+        "text": ""
+      },
+      {
+        "href": "https://roistat.com/ru/features",
+        "text": "Продукты"
+      },
+      {
+        "href": "https://roistat.com/ru/features/analytics",
+        "text": "Сквозная аналитика"
+      },
+      {
+        "href": "https://roistat.com/ru/features/reports",
+        "text": "Отчёты и BI"
+      },
+      {
+        "href": "https://roistat.com/ru/features/multi-channel-analytics",
+        "text": "Мультиканальная аналитика"
+      },
+      {
+        "href": "https://roistat.com/ru/features/product-analytics",
+        "text": "Товарная аналитика"
+      },
+      {
+        "href": "https://roistat.com/ru/features/calltracking",
+        "text": "Коллтрекинг"
+      },
+      {
+        "href": "https://roistat.com/ru/features/emailtracking",
+        "text": "Email-трекинг"
+      },
+      {
+        "href": "https://roistat.com/ru/features/dashboard",
+        "text": "Дашборд"
+      },
+      {
+        "href": "https://roistat.com/ru/features/cohorts",
+        "text": "Когортный анализ"
+      },
+      {
+        "href": "https://roistat.com/ru/features/split-testing",
+        "text": "А/Б-тесты"
+      },
+      {
+        "href": "https://roistat.com/ru/features/mediaplan",
+        "text": "Медиаплан PRO new"
+      },
+      {
+        "href": "https://roistat.com/ru/features/events",
+        "text": "События"
+      },
+      {
+        "href": "https://roistat.com/ru/features/assistant",
+        "text": "Ассистент"
+      },
+      {
+        "href": "https://roistat.com/ru/features/radar",
+        "text": "Радар"
+      },
+      {
+        "href": "https://roistat.com/ru/features/applications-management",
+        "text": "Управление заявками"
+      },
+      {
+        "href": "https://roistat.com/ml/chat-analytics/",
+        "text": "Аналитика чатов"
+      },
+      {
+        "href": "https://roistat.com/ru/features/language-audit",
+        "text": "Сканер иностранных слов"
+      },
+      {
+        "href": "https://roistat.com/ru/features/channel-audit",
+        "text": "Аудитор рекламных кампаний"
+      },
+      {
+        "href": "https://roistat.com/ru/features/seo-audit",
+        "text": "SEO-аудитор"
+      },
+      {
+        "href": "https://roistat.com/ru/features/bid-manager",
+        "text": "Управление ставками"
+      },
+      {
+        "href": "https://roistat.com/ru/features/ad-optimizer",
+        "text": "Оптимизатор рекламы new"
+      },
+      {
+        "href": "https://roistat.com/ru/features/lead-hunter",
+        "text": "Ловец лидов"
+      },
+      {
+        "href": "https://roistat.com/ru/features/chat",
+        "text": "Онлайн-чат"
+      },
+      {
+        "href": "https://roistat.com/ru/features/multiwidget",
+        "text": "Мультивиджет"
+      },
+      {
+        "href": "https://roistat.com/ru/features/sms-targeting",
+        "text": "СМС-таргетинг"
+      },
+      {
+        "href": "https://roistat.com/ru/features/callback",
+        "text": "Обратный звонок"
+      },
+      {
+        "href": "https://roistat.com/ru/features/smm-feed",
+        "text": "SMM‑лента"
+      },
+      {
+        "href": "https://roistat.com/ru/features/virtualnaya-ats",
+        "text": "Виртуальная АТС"
+      },
+      {
+        "href": "https://roistat.com/ru/features/speech-analytics",
+        "text": "Речевая аналитика"
+      },
+      {
+        "href": "https://roistat.com/ru/features/virtual-rop",
+        "text": "Виртуальный РОП"
+      },
+      {
+        "href": "https://roistat.com/ru/features/email",
+        "text": "Email-рассылки"
+      },
+      {
+        "href": "https://roistat.com/ru/features/automation",
+        "text": "Автоматизация маркетинга"
+      },
+      {
+        "href": "https://roistat.com/ru/features/clients-management",
+        "text": "Управление клиентами"
+      },
+      {
+        "href": "https://roistat.com/ru/connection",
+        "text": "Интеграция Roistat"
+      },
+      {
+        "href": "https://roistat.com/ru/features/feature-request",
+        "text": "Персональная доработка"
+      },
+      {
+        "href": "https://roistat.com/ml/enterprise-end-to-end-analytics/",
+        "text": "Аналитика для компаний"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/marketolog",
+        "text": "Маркетолог"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/businessman",
+        "text": "Предприниматель"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/marketing-director",
+        "text": "Директор по маркетингу"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/head-of-sales",
+        "text": "Руководитель отдела продаж"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/ecommerce",
+        "text": "E-Commerce"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/real-estate",
+        "text": "Недвижимость"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/medicine",
+        "text": "Медицина"
+      },
+      {
+        "href": "https://roistat.com/ru/integrations/bitrix24",
+        "text": "Интеграция с Битрикс24"
+      },
+      {
+        "href": "https://roistat.com/ru/integrations/amocrm",
+        "text": "Интеграция с amoCRM"
+      },
+      {
+        "href": "https://roistat.com/ru/integrations/1c-bitrix",
+        "text": "Интеграция с 1С Битрикс"
+      },
+      {
+        "href": "https://roistat.com/ru/integrations/wordpress-woocommerce",
+        "text": "Интеграция с WordPress"
+      },
+      {
+        "href": "https://roistat.com/ru/integrations/tilda",
+        "text": "Интеграция с Tilda"
+      },
+      {
+        "href": "https://roistat.com/ru/integrations/1c",
+        "text": "Интеграция с 1С"
+      },
+      {
+        "href": "https://roistat.com/ru/features/marketing-channels",
+        "text": "Загрузка расходов"
+      },
+      {
+        "href": "https://roistat.com/ru/integrations",
+        "text": "Все интеграции"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/skvoznaya-analitika-dlya-onlajn-shkol-i-obrazovatelnykh-czentrov",
+        "text": "Онлайн школы"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/dlya-finansovoj-sfery",
+        "text": "Финансовая сфера"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/analitika-sport",
+        "text": "Фитнес-клубы"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/dlya-yuristov",
+        "text": "Юридические услуги"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/skvoznaya-analitika-stroitelstva",
+        "text": "Недвижимость и строительство"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/dlya-it",
+        "text": "IT и SaaS"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/skvoznaya-analitika-dlya-avtodilera",
+        "text": "Автодилеры"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/clinic-analytics",
+        "text": "Для клиник"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/dlya-stroitelnogo-biznesa",
+        "text": "Эксплуатация и ремонт"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/analitika-krasoty",
+        "text": "Салоны красоты"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/dlya-sfery-turizma-i-horeca",
+        "text": "Туризм и HoReCa"
+      },
+      {
+        "href": "https://roistat.com/ru/solutions/skvoznaya-analitika-dlya-ritejl",
+        "text": "Ритейл"
+      },
+      {
+        "href": "https://roistat.com/ru/partners/referral",
+        "text": "Реферальная программа"
+      },
+      {
+        "href": "https://roistat.com/ru/partners/agency",
+        "text": "Рекламным агентствам"
+      },
+      {
+        "href": "https://roistat.com/ru/partners/materials",
+        "text": "Материалы для партнёров"
+      },
+      {
+        "href": "https://roistat.com/ru/partners/marketplace",
+        "text": "Каталог партнёров"
+      },
+      {
+        "href": "https://roistat.com/ru/integrations",
+        "text": "Каталог интеграций"
+      },
+      {
+        "href": "https://help-ru.roistat.com/",
+        "text": "Документация по системе"
+      },
+      {
+        "href": "https://help-ru.roistat.com/API/methods/about/",
+        "text": "Документация по API"
+      },
+      {
+        "href": "https://academy.roistat.com/",
+        "text": "Академия"
+      },
+      {
+        "href": "https://roistat.com/rublog/",
+        "text": "Блог"
+      },
+      {
+        "href": "https://roistat.com/rublog/cases/",
+        "text": "Кейсы"
+      },
+      {
+        "href": "https://roistat.com/rublog/glossary/",
+        "text": "Словарь маркетолога"
+      },
+      {
+        "href": "https://academy.roistat.com/utm-generator/",
+        "text": "Генератор UTM-меток"
+      },
+      {
+        "href": "https://roistat.com/rublog/obnovleniya-roistat/",
+        "text": "Обновления Roistat"
+      },
+      {
+        "href": "https://academy.roistat.com/events/",
+        "text": "Календарь мероприятий"
+      },
+      {
+        "href": "https://academy.roistat.com/guides/",
+        "text": "Гайды по маркетингу"
+      },
+      {
+        "href": "https://roistat.com/ru/price",
+        "text": "Цены"
+      },
+      {
+        "href": "https://roistat.com/ru/vacancy",
+        "text": "Вакансии"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/register?tags=105&demo=1",
+        "text": "Попробовать"
+      },
+      {
+        "href": "https://roistat.com/ru/",
+        "text": "Русский"
+      },
+      {
+        "href": "https://roistat.com/",
+        "text": "English"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/login",
+        "text": "Войти"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/login",
+        "text": "Вход"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/register?tags=105&demo=1",
+        "text": "Регистрация"
+      },
+      {
+        "href": "https://roistat.com/ru/",
+        "text": "Русский"
+      },
+      {
+        "href": "https://roistat.com/",
+        "text": "English"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/register?public_key=8902A1269B7DBE18E9ADC05D9B6D3E46",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/register?public_key=8902A1269B7DBE18E9ADC05D9B6D3E46",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/register?public_key=8902A1269B7DBE18E9ADC05D9B6D3E46",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/register?public_key=8902A1269B7DBE18E9ADC05D9B6D3E46",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/register?public_key=8902A1269B7DBE18E9ADC05D9B6D3E46",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/register?public_key=8902A1269B7DBE18E9ADC05D9B6D3E46",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/register?public_key=8902A1269B7DBE18E9ADC05D9B6D3E46",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/register?public_key=8902A1269B7DBE18E9ADC05D9B6D3E46",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/register?public_key=8902A1269B7DBE18E9ADC05D9B6D3E46",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/register?public_key=8902A1269B7DBE18E9ADC05D9B6D3E46",
+        "text": "Попробовать Roistat бесплатно"
+      },
+      {
+        "href": "https://roistat.com/ml/business-audit/",
+        "text": "Получить аудит маркетинга"
+      },
+      {
+        "href": "https://roistat.com/ru/features/analytics",
+        "text": "Сквозная аналитика Отслеживайте показатели по онлайн- и офлайн-источникам от просмотров рекламы до прибыли с помощью отчетов"
+      },
+      {
+        "href": "https://roistat.com/ru/features/calltracking",
+        "text": "Коллтрекинг Анализируйте источники звонков с онлайн- и офлайн- рекламы"
+      },
+      {
+        "href": "https://roistat.com/ru/features/virtualnaya-ats",
+        "text": "Виртуальная АТС Принимайте и совершайте звонки через интернет и контролируйте качество работы операторов"
+      },
+      {
+        "href": "https://roistat.com/ru/features/speech-analytics",
+        "text": "Речевая аналитика Автоматически выявляйте проблемные звонки по 20+ показателям и повышайте лояльность клиентов"
+      },
+      {
+        "href": "https://roistat.com/ru/features/bid-manager",
+        "text": "Управление ставками Используйте автоматическое изменение ставок для повышения количества заявок и снижения их цены"
+      },
+      {
+        "href": "https://roistat.com/ru/features/email",
+        "text": "Email-рассылки Создавайте рассылки в удобном конструкторе и отслеживайте прибыль по ним"
+      },
+      {
+        "href": "https://roistat.com/ru/features/chat",
+        "text": "Онлайн-чат Помогайте посетителям сайта оставить заявку в формате чата"
+      },
+      {
+        "href": "https://roistat.com/ru/features/lead-hunter",
+        "text": "Ловец лидов Получайте больше заявок с сайта с помощью всплывающей формы запроса контактов"
+      },
+      {
+        "href": "https://roistat.com/ru/features/ad-optimizer",
+        "text": "Оптимизатор рекламы new Оптимизируйте расходы на рекламу в Яндекс.Директ, автоматически адаптируя кампании под реальные продажи"
+      },
+      {
+        "href": "https://roistat.com/ru/features/mediaplan",
+        "text": "Медиаплан PRO new Контролируйте выполнение плана по расходам, заявкам и стоимости лида (CPL) каждого рекламного канала в автоматических план-факт отчётах"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/register?public_key=8902A1269B7DBE18E9ADC05D9B6D3E46",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://roistat.com/ru/integrations",
+        "text": "Посмотреть все интеграции"
+      },
+      {
+        "href": "https://roistat.com/ru/license",
+        "text": "оферты"
+      },
+      {
+        "href": "https://roistat.com/ru/privacy",
+        "text": "Политики"
+      },
+      {
+        "href": "https://roistat.com/rublog/cases/",
+        "text": "Смотреть все кейсы"
+      },
+      {
+        "href": "https://roistat.com/rublog/kejs-hatimaki-besplatnaja-dostavka-sushi-i-rollov-na-dom-jekonomim-27-reklamnogo-bjudzheta/",
+        "text": "Хатимаки Сеть ресторанов Исправили ошибки в данных, увидели отменённые заявки, которые не привели к продажам, и получили ROMI 437% Стоимость продажи -27% Подробнее"
+      },
+      {
+        "href": "https://roistat.com/rublog/kejs-tekstilnoj-fabriki-fabric-istorija-uspeha-v-nbsp-krizis/",
+        "text": "Fabric Текстильная фабрика За месяц работы с Roistat снизили стоимость рекламного лида более, чем в 5,5 раз Конверсия в заявку +413% Подробнее"
+      },
+      {
+        "href": "https://roistat.com/rublog/vnedrenie-skvoznoy-analitiki-megagroup/",
+        "text": "Мегагрупп.ру Веб-студия Оптимизировали рекламу и увеличили количество заявок в 2,7 раза, а продаж — в 5 раз. Количество продаж х5 Подробнее"
+      },
+      {
+        "href": "https://roistat.com/rublog/",
+        "text": "Смотреть все статьи"
+      },
+      {
+        "href": "https://roistat.com/rublog/?p=29376",
+        "text": "06 Июля 2026 Агентство финансовой аналитики: как управлять бизнесом на основе данных Коротко: агентство финансовой аналитики помогает понять, где бизнес теряет прибыль, какие направления действительно зарабатывают и как принимать решения на основе данных, а не интуиции. Однако одних финансовых отчётов недостаточно — важно связать их с маркетингом, продажами и коммерческой воронкой. Такой подход позволяет увидеть, как рекламные расходы превращаются в выручку, найти причины снижения прибыли и управлять развитием компании на основе реальной экономики бизнеса. Читать"
+      },
+      {
+        "href": "https://roistat.com/rublog/?p=29366",
+        "text": "06 Июля 2026 Аналитика обучения в образовании: как связать спрос, набор учеников и эффективность программ Коротко: аналитика в образовании работает только тогда, когда соединяет весь путь ученика — от спроса и первого касания до оплаты, обучения и повторных покупок. Разрозненные данные из рекламы, CRM, LMS и финансов не дают полной картины и приводят к ошибочным решениям. Чтобы управлять образовательным продуктом осознанно, важно видеть всю цепочку: какие программы действительно востребованы, какие каналы приводят платящих студентов, где теряются заявки и как обучение влияет на результат и выручку. Сквозная аналитика помогает связать маркетинг, продажи и обучение в единую систему и принимать решения на основе реальной экономики, а не отдельных метрик. Читать"
+      },
+      {
+        "href": "https://roistat.com/rublog/?p=29335",
+        "text": "30 Июня 2026 Рынок коммерческого транспорта: от данных — к решениям Коротко: рынок коммерческого транспорта в 2026 году — это не просто грузовики и фуры, а данные, которые решают, кто останется на плаву. Без сквозной аналитики автопарки теряют заявки, переплачивают за топливо и не видят, где именно утекают деньги. В статье — как связать рекламу, GPS и CRM в единую систему, чтобы данные работали на прибыль, а не пылились в отчётах. Читать"
+      },
+      {
+        "href": "https://roistat.com/rublog/",
+        "text": "Смотреть все статьи"
+      },
+      {
+        "href": "https://cloud.roistat.com/user/register?public_key=8902A1269B7DBE18E9ADC05D9B6D3E46",
+        "text": "Попробовать"
+      },
+      {
+        "href": "https://max.ru/roistat_com",
+        "text": "Max"
+      },
+      {
+        "href": "https://rutube.ru/channel/43713091/",
+        "text": "Rutube"
+      },
+      {
+        "href": "https://vk.com/roistat",
+        "text": "ВКонтакте"
+      },
+      {
+        "href": "https://www.youtube.com/c/roistatcom",
+        "text": "YouTube"
+      },
+      {
+        "href": "https://tenchat.ru/roistat",
+        "text": "TenChat"
+      },
+      {
+        "href": "https://t.me/roistat_com",
+        "text": "Telegram"
+      },
+      {
+        "href": "https://reestr.digital.gov.ru/reestr/366685/",
+        "text": "в реестре российского ПО"
+      },
+      {
+        "href": "https://vk.com/roistat",
+        "text": ""
+      },
+      {
+        "href": "https://www.youtube.com/c/roistatcom",
+        "text": ""
+      },
+      {
+        "href": "https://dzen.ru/id/5d566b1344742600acf0f11e",
+        "text": ""
+      },
+      {
+        "href": "https://rutube.ru/channel/43713091/",
+        "text": ""
+      },
+      {
+        "href": "https://max.ru/roistat_com",
+        "text": ""
+      },
+      {
+        "href": "https://tenchat.ru/roistat",
+        "text": ""
+      },
+      {
+        "href": "https://t.me/roistat_updates",
+        "text": "Roistat_updates"
+      },
+      {
+        "href": "https://t.me/roistat_com",
+        "text": "Roistat_com"
+      },
+      {
+        "href": "https://roistat.com/ru/features",
+        "text": "Возможности"
+      },
+      {
+        "href": "https://roistat.com/ru/features/analytics",
+        "text": "Сквозная аналитика"
+      },
+      {
+        "href": "https://roistat.com/ru/features/calltracking",
+        "text": "Коллтрекинг"
+      },
+      {
+        "href": "https://roistat.com/ru/features/virtualnaya-ats",
+        "text": "Виртуальная АТС"
+      },
+      {
+        "href": "https://roistat.com/ru/features/speech-analytics",
+        "text": "Речевая аналитика"
+      },
+      {
+        "href": "https://roistat.com/ru/features/product-analytics",
+        "text": "Товарная аналитика"
+      },
+      {
+        "href": "https://roistat.com/ru/features/lead-hunter",
+        "text": "Ловец лидов"
+      },
+      {
+        "href": "https://roistat.com/ru/features/chat",
+        "text": "Онлайн-чат"
+      },
+      {
+        "href": "https://roistat.com/ru/features/multi-channel-analytics",
+        "text": "Мультиканальная аналитика"
+      },
+      {
+        "href": "https://roistat.com/ru/features/bid-manager",
+        "text": "Управление ставками"
+      },
+      {
+        "href": "https://roistat.com/ru/features/ad-optimizer",
+        "text": "Оптимизатор рекламы"
+      },
+      {
+        "href": "https://roistat.com/ru/features/split-testing",
+        "text": "А/Б-тесты"
+      },
+      {
+        "href": "https://roistat.com/ru/features/emailtracking",
+        "text": "Email-трекинг"
+      },
+      {
+        "href": "https://roistat.com/ru/features/channel-audit",
+        "text": "Аудитор рекламных кампаний"
+      },
+      {
+        "href": "https://roistat.com/ru/features/seo-audit",
+        "text": "SEO-аудитор"
+      },
+      {
+        "href": "https://roistat.com/ru/features/smm-feed",
+        "text": "SMM-лента"
+      },
+      {
+        "href": "https://roistat.com/ru/price",
+        "text": "Цены"
+      },
+      {
+        "href": "https://roistat.com/ru/price#rate-comparison",
+        "text": "Тарифы сквозной аналитики"
+      },
+      {
+        "href": "https://roistat.com/ru/price#calculator",
+        "text": "Цена коллтрекинга"
+      },
+      {
+        "href": "https://roistat.com/ru/price#anchor-vats",
+        "text": "Цена виртуальной АТС"
+      },
+      {
+        "href": "https://academy.roistat.com/",
+        "text": "Академия Roistat"
+      },
+      {
+        "href": "https://roistat.com/rublog/",
+        "text": "Блог"
+      },
+      {
+        "href": "https://roistat.com/rublog/cases/",
+        "text": "Кейсы"
+      },
+      {
+        "href": "https://roistat.com/rublog/glossary/",
+        "text": "Словарь маркетолога"
+      },
+      {
+        "href": "https://academy.roistat.com/utm-generator/",
+        "text": "UTM-генератор"
+      },
+      {
+        "href": "https://roistat.com/ru/changelog",
+        "text": "История обновлений"
+      },
+      {
+        "href": "https://roistat.com/ru/vacancy",
+        "text": "Вакансии"
+      },
+      {
+        "href": "https://roistat.com/ru/contacts",
+        "text": "Контакты"
+      },
+      {
+        "href": "https://roistat.com/ru/legal-info",
+        "text": "Правовая информация"
+      },
+      {
+        "href": "https://roistat.com/ru/license",
+        "text": "Лицензионный договор"
+      },
+      {
+        "href": "https://roistat.com/ru/license/integration",
+        "text": "Договор интеграции"
+      },
+      {
+        "href": "https://roistat.com/ru/license/consultation",
+        "text": "Договор консультирования интеграции"
+      },
+      {
+        "href": "https://roistat.com/ru/privacy",
+        "text": "Политика обработки персональных данных"
+      },
+      {
+        "href": "https://roistat.com/ru/payment-info",
+        "text": "Информация об оплате"
+      },
+      {
+        "href": "https://roistat.com/ru/security",
+        "text": "Безопасность данных"
+      },
+      {
+        "href": "https://help-ru.roistat.com/",
+        "text": "Описание функциональности и инструкция по установке и эксплуатации"
+      },
+      {
+        "href": "https://roistat.com/ru/legal",
+        "text": "Все юридические документы"
+      },
+      {
+        "href": "https://roistat.com/ru/",
+        "text": "Русский"
+      },
+      {
+        "href": "https://roistat.com/",
+        "text": "English"
+      },
+      {
+        "href": "https://roistat.com/",
+        "text": "Киргизский"
+      },
+      {
+        "href": "https://roistat.com/ru/privacy",
+        "text": "Политики"
+      }
+    ],
+    "link_count": 180
+  },
+  {
+    "group": "1",
+    "name": "Yandex SpeechSense",
+    "domain": "aistudio.yandex.ru",
+    "csv_url": "https://aistudio.yandex.ru/ru/solutions/speechsense",
+    "home_url": "https://aistudio.yandex.ru/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://aistudio.yandex.ru/",
+    "redirected": false,
+    "bytes": 164823,
+    "visible_chars": 6648,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "User-agent: *\nAllow: /\nDisallow: /*?\nDisallow: /platform/\nDisallow: /welcome\nDisallow: /organizations/\nDisallow: /federations/\nDisallow: /gateway/\nDisallow: /api/\nDisallow: /_/\nDisallow: /stt/\nDisallow: /tts/\nDisallow: /ping\nDisallow: /__core/\n\nSitemap: https://aistudio.yandex.ru/sitemap.xml",
+    "links": [
+      {
+        "href": "https://aistudio.yandex.ru/",
+        "text": ""
+      },
+      {
+        "href": "https://aistudio.yandex.ru/docs/ru/ai-studio/pricing",
+        "text": "Тарифы"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/platform",
+        "text": "Войти"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/platform",
+        "text": "Начать работу"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/agent-atelier",
+        "text": "Agent AtelierСреда для создания ИИ‑агентов. Конструктор агентских сценариев — от простых ассистентов до end‑to‑end автоматизации бизнес‑процессов."
+      },
+      {
+        "href": "https://aistudio.yandex.ru/model-gallery",
+        "text": "Model GalleryПарк генеративных моделей для разных сценариев. Выбор подходящей модели и единые API — без развёртывания инфраструктуры и управления инференсом."
+      },
+      {
+        "href": "https://aistudio.yandex.ru/ai-search",
+        "text": "AI SearchКорпоративный поиск и ответы по данным. Готовый компонент для работы с внутренними источниками и интернетом: обеспечивает стабильное качество поиска и подтверждённые ответы без сложной инженерии."
+      },
+      {
+        "href": "https://aistudio.yandex.ru/ai-speech",
+        "text": "AI SpeechСинтез и распознавание речи, постобработка речи LLM, API для создания голосовых агентов и Brand Voice — всё, чтобы запускать разговорные сценарии в клиентских и внутренних продуктах."
+      },
+      {
+        "href": "https://aistudio.yandex.ru/boost-ai",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/model-gallery",
+        "text": "Подробнее о моделях"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/security",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/on-premises",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/platform",
+        "text": "Начать работу"
+      },
+      {
+        "href": "https://t.me/YFM_Community/10454/10458",
+        "text": "Присоединиться"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/agent-atelier",
+        "text": "Agent Atelier"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/model-gallery",
+        "text": "Model Gallery"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/ai-speech",
+        "text": "AI Speech"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/ai-search",
+        "text": "AI Search"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/solutions/speechsense",
+        "text": "SpeechSense"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/solutions/voice-agent",
+        "text": "Голосовой агент"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/solutions/speech-to-protocol-summary",
+        "text": "Протоколирование и суммаризация"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/security",
+        "text": "Безопасность"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/on-premises",
+        "text": "On-premises"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/boost-ai",
+        "text": "AI Studio Boost"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/docs/ru/",
+        "text": "Документация"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/developers",
+        "text": "API и SDK"
+      },
+      {
+        "href": "https://aistudio.yandex.ru/ai-academy",
+        "text": "Академия"
+      },
+      {
+        "href": "https://t.me/YFM_Community",
+        "text": "Телеграм-канал"
+      },
+      {
+        "href": "https://yandex.ru/legal/cloud_services_terms/ru/",
+        "text": "Условия использования"
+      },
+      {
+        "href": "https://yandex.ru/legal/confidential",
+        "text": "Политика конфиденциальности"
+      },
+      {
+        "href": "https://yandex.ru/all",
+        "text": "Проект Яндекса"
+      }
+    ],
+    "link_count": 31
+  },
+  {
+    "group": "1",
+    "name": "Родник",
+    "domain": "rodnik.bz",
+    "csv_url": "https://rodnik.bz",
+    "home_url": "https://rodnik.bz/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://rodnik.bz/",
+    "redirected": false,
+    "bytes": 25493,
+    "visible_chars": 3734,
+    "error": null,
+    "robots_status": 404,
+    "robots_text": null,
+    "links": [
+      {
+        "href": "https://rodnik.bz/privacy.html",
+        "text": "политикой конфиденциальности"
+      },
+      {
+        "href": "https://rodnik.bz/manifesto.html",
+        "text": "Манифест"
+      },
+      {
+        "href": "https://rodnik.bz/legal.html",
+        "text": "Правовая информация"
+      },
+      {
+        "href": "https://rodnik.bz/privacy.html",
+        "text": "Конфиденциальность"
+      }
+    ],
+    "link_count": 4
+  },
+  {
+    "group": "1",
+    "name": "Bewise.ai",
+    "domain": "bewise.ai",
+    "csv_url": "https://bewise.ai/pricing/",
+    "home_url": "https://bewise.ai/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://bewise.ai/",
+    "redirected": false,
+    "bytes": 145255,
+    "visible_chars": 12286,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "User-agent: *\nAllow: /\n\n# Яндекс-специфичные директивы — игнорирование незначащих GET-параметров.\n# Без Clean-param бот тратит бюджет обхода на копии (/?utm_source=... = /).\nUser-agent: Yandex\nAllow: /\nClean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&utm_referrer\nClean-param: yclid&ysclid&gclid&fbclid&_openstat\nClean-param: from&ref&referrer&etext&etsrc\n\nSitemap: https://bewise.ai/sitemap.xml\n\n",
+    "links": [
+      {
+        "href": "https://bewise.ai/",
+        "text": ""
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/",
+        "text": "Возможности"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/razbor-voronki/",
+        "text": "Разбор воронки за 10 минут Показывает, по каким сделкам горит и кому нужна помощь."
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/analiz-kommunikaciy/",
+        "text": "Анализ каждой коммуникации Оценивает качество разговора и вовлечённость клиента."
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/reyting-sotrudnikov/",
+        "text": "Рейтинг сотрудников Раскрывает сильные стороны каждого и зоны роста."
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/kogortnyy-analiz/",
+        "text": "Когортный анализ Сравнивает группы сделок и находит, где падает конверсия."
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/ai-pomoshchnik-crm/",
+        "text": "AI-помощник в CRM Напарник менеджера: пишет follow-up'ы, находит ответы и помогает с возражениями."
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/kachestvo-lidov/",
+        "text": "Качество лидов Отделяет слабые лиды от слабой отработки."
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/ai-assistent-po-prodazham/",
+        "text": "Спросите Bewise NEW Задайте любой вопрос о продажах — Bewise найдёт ответ в сделках, звонках и переписке."
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/mcp-dostup/",
+        "text": "ChatGPT и Claude с вашими данными Подключает ваш ChatGPT или Claude к сделкам, звонкам и оценкам Bewise."
+      },
+      {
+        "href": "https://bewise.ai/pricing/",
+        "text": "Тарифы"
+      },
+      {
+        "href": "https://bewise.ai/cases/",
+        "text": "Кейсы"
+      },
+      {
+        "href": "https://bewise.ai/blog",
+        "text": "Журнал"
+      },
+      {
+        "href": "https://app.bewise.ai",
+        "text": "Вход"
+      },
+      {
+        "href": "https://app.bewise.ai/register",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://app.bewise.ai/register",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://t.me/mAIrzhi",
+        "text": "Telegram-канал 1 100 подписчиков"
+      },
+      {
+        "href": "https://www.youtube.com/@bewiseai",
+        "text": "YouTube-канал 21 подписчик"
+      },
+      {
+        "href": "https://app.bewise.ai/register",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/razbor-voronki/",
+        "text": "Разбор воронки за 10 минут Показывает, по каким сделкам горит и кому нужна помощь. Подробнее →"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/analiz-kommunikaciy/",
+        "text": "Анализ каждой коммуникации Оценивает качество разговора и вовлечённость клиента. Подробнее →"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/reyting-sotrudnikov/",
+        "text": "Рейтинг сотрудников Раскрывает сильные стороны каждого и зоны роста. Подробнее →"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/kogortnyy-analiz/",
+        "text": "Когортный анализ Сравнивает группы сделок и находит, где падает конверсия. Подробнее →"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/ai-pomoshchnik-crm/",
+        "text": "AI-помощник в CRM Напарник менеджера: пишет follow-up'ы, находит ответы и помогает с возражениями. Подробнее →"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/kachestvo-lidov/",
+        "text": "Качество лидов Отделяет слабые лиды от слабой отработки. Подробнее →"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/ai-assistent-po-prodazham/",
+        "text": "Спросите Bewise NEW Задайте любой вопрос о продажах — Bewise найдёт ответ в сделках, звонках и переписке. Подробнее →"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/mcp-dostup/",
+        "text": "ChatGPT и Claude с вашими данными Подключает ваш ChatGPT или Claude к сделкам, звонкам и оценкам Bewise. Подробнее →"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/",
+        "text": "Все возможности →"
+      },
+      {
+        "href": "https://bewise.ai/cases/",
+        "text": "Смотреть все кейсы →"
+      },
+      {
+        "href": "https://bewise.ai/pricing/",
+        "text": "Все тарифы"
+      },
+      {
+        "href": "https://app.bewise.ai/register",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/",
+        "text": "Все возможности"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/razbor-voronki/",
+        "text": "Разбор воронки"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/analiz-kommunikaciy/",
+        "text": "Анализ коммуникаций"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/reyting-sotrudnikov/",
+        "text": "Рейтинг сотрудников"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/kogortnyy-analiz/",
+        "text": "Когортный анализ"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/ai-pomoshchnik-crm/",
+        "text": "AI-помощник в CRM"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/kachestvo-lidov/",
+        "text": "Качество лидов"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/ai-assistent-po-prodazham/",
+        "text": "AI-ассистент"
+      },
+      {
+        "href": "https://bewise.ai/vozmozhnosti/mcp-dostup/",
+        "text": "MCP-доступ"
+      },
+      {
+        "href": "https://bewise.ai/blog/",
+        "text": "Все статьи"
+      },
+      {
+        "href": "https://bewise.ai/cases/",
+        "text": "Кейсы"
+      },
+      {
+        "href": "https://bewise.ai/pricing/",
+        "text": "Тарифы"
+      },
+      {
+        "href": "https://bewise.ai/oferta",
+        "text": "Лицензионное соглашение"
+      },
+      {
+        "href": "https://bewise.ai/privacy",
+        "text": "Политика обработки персональных данных"
+      },
+      {
+        "href": "https://bewise.ai/personal-data-consent/",
+        "text": "Согласие на обработку персональных данных"
+      },
+      {
+        "href": "https://bewise.ai/marketing-consent/",
+        "text": "Согласие на рекламную рассылку"
+      },
+      {
+        "href": "https://t.me/mAIrzhi",
+        "text": ""
+      },
+      {
+        "href": "https://www.youtube.com/@bewiseai",
+        "text": ""
+      },
+      {
+        "href": "https://bewise.ai/personal-data-consent/",
+        "text": "Согласие"
+      },
+      {
+        "href": "https://bewise.ai/privacy",
+        "text": "Политика"
+      },
+      {
+        "href": "https://wa.me/74996477815",
+        "text": "WhatsApp"
+      },
+      {
+        "href": "https://t.me/bewise_salebot",
+        "text": "Telegram"
+      },
+      {
+        "href": "https://max.ru/id773613065239_bot",
+        "text": "MAX"
+      },
+      {
+        "href": "https://wa.me/74996477815",
+        "text": "WhatsApp"
+      },
+      {
+        "href": "https://t.me/bewise_salebot",
+        "text": "Telegram"
+      },
+      {
+        "href": "https://max.ru/id773613065239_bot",
+        "text": "MAX"
+      }
+    ],
+    "link_count": 57
+  },
+  {
+    "group": "1",
+    "name": "Ectem OK",
+    "domain": "okk.ectem.ru",
+    "csv_url": "https://okk.ectem.ru/",
+    "home_url": "https://okk.ectem.ru/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://okk.ectem.ru/",
+    "redirected": false,
+    "bytes": 1391609,
+    "visible_chars": 13826,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "User-Agent: *\nDisallow: /page61364539.html\nDisallow: /notfound404\nDisallow: /page89203586.html\nDisallow: /tariffs_sber\nDisallow: /tilda/form*\nDisallow: /tilda/rec*\nDisallow: /tilda/click*\nDisallow: /tilda/scroll*\nDisallow: /tilda/popup*\nDisallow: /tilda/cart*\nDisallow: /tilda/product*\nDisallow: /tilda/event*\nDisallow:\n\n\nSitemap: https://okk.ectem.ru/sitemap.xml\n",
+    "links": [
+      {
+        "href": "https://okk.ectem.ru/",
+        "text": ""
+      },
+      {
+        "href": "https://ok.ectem.ru/",
+        "text": "Войти"
+      },
+      {
+        "href": "https://ok.ectem.ru/register",
+        "text": "Зарегистрироваться"
+      },
+      {
+        "href": "https://wa.me/79219700162",
+        "text": "Задать вопрос (WhatsApp)"
+      },
+      {
+        "href": "https://wa.me/79219700162",
+        "text": ""
+      },
+      {
+        "href": "https://t.me/ectem",
+        "text": ""
+      },
+      {
+        "href": "https://www.youtube.com/@alex_ectem",
+        "text": ""
+      },
+      {
+        "href": "https://ok.ectem.ru/",
+        "text": "Войти"
+      },
+      {
+        "href": "https://ectem.ru/wp-content/uploads/2024/07/politika_konfidenczialnosti.pdf",
+        "text": "Политикой конфиденциальности"
+      },
+      {
+        "href": "https://ok.ectem.ru/register",
+        "text": "Попробовать бесплатно →"
+      },
+      {
+        "href": "https://ectem.ru/wp-content/uploads/2024/07/politika_konfidenczialnosti.pdf",
+        "text": "персональных данных"
+      },
+      {
+        "href": "https://ectem.ru/wp-content/uploads/2024/07/politika_konfidenczialnosti.pdf",
+        "text": "персональных данных"
+      },
+      {
+        "href": "https://ectem.ru/wp-content/uploads/2026/02/rukovodstvo-polzovatelya-.pdf",
+        "text": ""
+      },
+      {
+        "href": "https://okk.ectem.ru/#tarif",
+        "text": "Тарифы"
+      },
+      {
+        "href": "https://okk.ectem.ru/#cases",
+        "text": "Кейсы"
+      },
+      {
+        "href": "https://okk.ectem.ru/#otziv",
+        "text": "Отзывы"
+      },
+      {
+        "href": "https://okk.ectem.ru/#about",
+        "text": "О сервисе"
+      },
+      {
+        "href": "https://okk.ectem.ru/instruction",
+        "text": "Инструкции"
+      },
+      {
+        "href": "https://okk.ectem.ru/#community",
+        "text": "Сообщество"
+      },
+      {
+        "href": "https://ectem.ru/blog",
+        "text": "Блог"
+      },
+      {
+        "href": "https://ectem.ru/wp-content/uploads/2024/07/yuridicheskaya-infomacziya.pdf",
+        "text": "Юридическая информация"
+      },
+      {
+        "href": "https://ectem.prmbusiness.ru/register?refLinkId=1020",
+        "text": "Партнерский кабинет"
+      },
+      {
+        "href": "https://youtube.com/@alex_ectem?si=8xe1YYAhMHsbK46R",
+        "text": ""
+      },
+      {
+        "href": "https://t.me/ectem_ru",
+        "text": ""
+      },
+      {
+        "href": "https://t.me/Alena_Ectem",
+        "text": ""
+      },
+      {
+        "href": "https://ectem.ru/wp-content/uploads/2025/06/licenzionnoe_soglashenie.pdf",
+        "text": "Публичная оферта"
+      },
+      {
+        "href": "https://ectem.ru/wp-content/uploads/2025/06/politika_konfidenczialnost.pdf",
+        "text": "Политика конфиденциальности"
+      },
+      {
+        "href": "https://ectem.ru/wp-content/uploads/2026/01/usloviya_partnerskogo_vzaimodejstviya_ooo_ektem_ok_2.pdf",
+        "text": "Партнерское соглашение"
+      },
+      {
+        "href": "https://okk.ectem.ru/",
+        "text": ""
+      },
+      {
+        "href": "https://ectem.ru/wp-content/uploads/2025/06/politika_konfidenczialnost.pdf",
+        "text": "политкой конфиденциальности"
+      }
+    ],
+    "link_count": 30
+  },
+  {
+    "group": "2",
+    "name": "Call-Intellect",
+    "domain": "call-intellect.ru",
+    "csv_url": "https://call-intellect.ru",
+    "home_url": "https://call-intellect.ru/",
+    "status": null,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": null,
+    "redirected": false,
+    "bytes": 0,
+    "visible_chars": 0,
+    "error": "ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)",
+    "robots_status": null,
+    "robots_text": null,
+    "links": [],
+    "link_count": 0
+  },
+  {
+    "group": "2",
+    "name": "Phonix",
+    "domain": "phonix.pro",
+    "csv_url": "https://phonix.pro",
+    "home_url": "https://phonix.pro/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://phonix.pro/",
+    "redirected": false,
+    "bytes": 9910,
+    "visible_chars": 1987,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "User-agent: *\nAllow: /\nDisallow: /blog-api/\nDisallow: /lead-api\nDisallow: /internal/\n\nSitemap: https://phonix.pro/sitemap.xml\nSitemap: https://phonix.pro/blog/sitemap.xml\n",
+    "links": [],
+    "link_count": 0
+  },
+  {
+    "group": "2",
+    "name": "Zvonalitik",
+    "domain": "zvonalitik.ru",
+    "csv_url": "https://zvonalitik.ru",
+    "home_url": "https://zvonalitik.ru/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://zvonalitik.ru/",
+    "redirected": false,
+    "bytes": 78414,
+    "visible_chars": 8328,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "# Zvonalitik - robots.txt\n# https://zvonalitik.ru\n\nUser-agent: *\nAllow: /\n\n# Запрет индексации служебных директорий\nDisallow: /includes/\nDisallow: /articles/content/\nDisallow: /back/\nDisallow: /learn/_includes/\nDisallow: /learn/_config.php\nDisallow: /learn/sales/_config.php\nDisallow: /developer-docs/\nDisallow: /learn/progress/\nDisallow: /app/\nDisallow: /api/\n\nClean-param: etext&utm_source&utm_medium&utm_campaign&utm_content&utm_term&ref&from\n\n# Sitemap\nSitemap: https://zvonalitik.ru/sitemap.xml\n",
+    "links": [
+      {
+        "href": "https://zvonalitik.ru/",
+        "text": "Zvonalitik"
+      },
+      {
+        "href": "https://zvonalitik.ru/learn/",
+        "text": "Академия"
+      },
+      {
+        "href": "https://zvonalitik.ru/tools/",
+        "text": "Инструменты"
+      },
+      {
+        "href": "https://app.zvonalitik.ru",
+        "text": "Войти"
+      },
+      {
+        "href": "https://app.zvonalitik.ru",
+        "text": "Попробовать"
+      },
+      {
+        "href": "https://zvonalitik.ru/learn/",
+        "text": "Академия"
+      },
+      {
+        "href": "https://zvonalitik.ru/tools/",
+        "text": "Инструменты"
+      },
+      {
+        "href": "https://app.zvonalitik.ru",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://app.zvonalitik.ru",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://zvonalitik.ru/learn/daily/",
+        "text": "Ритуалы РОПа"
+      },
+      {
+        "href": "https://zvonalitik.ru/learn/feedback/",
+        "text": "Обратная связь"
+      },
+      {
+        "href": "https://zvonalitik.ru/learn/metrics/",
+        "text": "Метрики"
+      },
+      {
+        "href": "https://zvonalitik.ru/learn/quality/",
+        "text": "Качество звонков"
+      },
+      {
+        "href": "https://zvonalitik.ru/learn/development/",
+        "text": "Развитие команды"
+      },
+      {
+        "href": "https://zvonalitik.ru/learn/motivation/",
+        "text": "Мотивация"
+      },
+      {
+        "href": "https://zvonalitik.ru/learn/hiring/",
+        "text": "Найм и увольнение"
+      },
+      {
+        "href": "https://zvonalitik.ru/learn/processes/",
+        "text": "Процессы"
+      },
+      {
+        "href": "https://zvonalitik.ru/learn/crisis/",
+        "text": "Сложные ситуации"
+      },
+      {
+        "href": "https://zvonalitik.ru/learn/",
+        "text": "Начать обучение"
+      },
+      {
+        "href": "https://app.zvonalitik.ru",
+        "text": "Выбрать"
+      },
+      {
+        "href": "https://app.zvonalitik.ru",
+        "text": "Выбрать"
+      },
+      {
+        "href": "https://app.zvonalitik.ru",
+        "text": "Выбрать"
+      },
+      {
+        "href": "https://app.zvonalitik.ru",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://zvonalitik.ru/",
+        "text": "Zvonalitik"
+      },
+      {
+        "href": "https://t.me/zvonalitik_bot",
+        "text": ""
+      },
+      {
+        "href": "https://zvonalitik.ru/articles/",
+        "text": "Статьи"
+      },
+      {
+        "href": "https://zvonalitik.ru/privacy.html",
+        "text": "Политика конфиденциальности"
+      },
+      {
+        "href": "https://zvonalitik.ru/terms.html",
+        "text": "Условия использования"
+      }
+    ],
+    "link_count": 28
+  },
+  {
+    "group": "2",
+    "name": "Qolio",
+    "domain": "qolio.ru",
+    "csv_url": "https://qolio.ru",
+    "home_url": "https://qolio.ru/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://qolio.ru/",
+    "redirected": false,
+    "bytes": 342040,
+    "visible_chars": 11028,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "User-Agent: *\nDisallow: /page20646778.html\nDisallow: /page20646792.html\nDisallow: /page27615690.html\nDisallow: /est_okk\nDisallow: /tilda/form*\nDisallow: /tilda/rec*\nDisallow: /tilda/click*\nDisallow: /tilda/scroll*\nDisallow: /tilda/popup*\nDisallow: /tilda/cart*\nDisallow: /tilda/product*\nDisallow: /tilda/event*\nDisallow:\n\n\nSitemap: https://qolio.ru/sitemap.xml\nSitemap: https://qolio.ru/sitemap-feeds.xml\n",
+    "links": [
+      {
+        "href": "https://qolio.ru/",
+        "text": ""
+      },
+      {
+        "href": "https://qolio.ru/features",
+        "text": "Возможности"
+      },
+      {
+        "href": "https://qolio.ru/integrations",
+        "text": "Интеграции"
+      },
+      {
+        "href": "https://qolio.ru/annual_price",
+        "text": "Стоимость"
+      },
+      {
+        "href": "https://qolio.ru/blog",
+        "text": "Блог"
+      },
+      {
+        "href": "https://qolio.ru/",
+        "text": "Решения"
+      },
+      {
+        "href": "https://indicator-lab.ru/?utm_source=qolio&utm_medium=menu",
+        "text": "Контроль качества в отделе продаж"
+      },
+      {
+        "href": "https://app.qolio.ru/login",
+        "text": "Вход"
+      },
+      {
+        "href": "https://qolio.io/",
+        "text": ""
+      },
+      {
+        "href": "https://qolio.ru/features",
+        "text": "Возможности"
+      },
+      {
+        "href": "https://qolio.ru/annual_price",
+        "text": "Тарифы"
+      },
+      {
+        "href": "https://qolio.ru/blog",
+        "text": "Блог"
+      },
+      {
+        "href": "https://qolio.ru/privacy_policy",
+        "text": "на обработку своих персональных данных"
+      },
+      {
+        "href": "https://app.qolio.ru/register",
+        "text": "Протестировать"
+      },
+      {
+        "href": "https://app.qolio.ru/register",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://app.qolio.ru/register",
+        "text": "Попробовать бесплатно"
+      },
+      {
+        "href": "https://qolio.ru/features",
+        "text": "Подробнее о возможностях"
+      },
+      {
+        "href": "https://allright.com/",
+        "text": "All right"
+      },
+      {
+        "href": "https://kano.by/",
+        "text": "KANO"
+      },
+      {
+        "href": "https://www.1c-bitrix.by",
+        "text": "1С-Битрикс Беларусь"
+      },
+      {
+        "href": "https://mebelholl.by/",
+        "text": "МебельХолл"
+      },
+      {
+        "href": "https://grizzly.by/",
+        "text": "GRIZZLY DC"
+      },
+      {
+        "href": "https://www.ayax.ru/",
+        "text": "Аякс"
+      },
+      {
+        "href": "https://app.qolio.ru/register",
+        "text": ""
+      },
+      {
+        "href": "https://qolio.ru/privacy_policy",
+        "text": "на обработку своих персональных данных"
+      },
+      {
+        "href": "https://qolio.ru/privacy_policy",
+        "text": "на обработку своих персональных данных"
+      },
+      {
+        "href": "https://qolio.ru/privacy_policy",
+        "text": "на обработку своих персональных данных"
+      },
+      {
+        "href": "https://qolio.ru/privacy_policy",
+        "text": "на обработку своих персональных данных"
+      },
+      {
+        "href": "https://qolio.ru/privacy_policy",
+        "text": "на обработку своих персональных данных"
+      },
+      {
+        "href": "https://qolio.ru/privacy_policy",
+        "text": "на обработку своих персональных данных"
+      },
+      {
+        "href": "https://qolio.ru/privacy_policy",
+        "text": "на обработку своих персональных данных"
+      },
+      {
+        "href": "https://qolio.ru/privacy_policy",
+        "text": "на обработку своих персональных данных"
+      },
+      {
+        "href": "https://qolio.ru/privacy_policy",
+        "text": "на обработку своих персональных данных"
+      },
+      {
+        "href": "https://qolio.ru/kachestva-operatora-call-centra",
+        "text": "22.04.2022 Настоящий профессионал: какие качества нужны оператору колл-центра Рассказываем про профессиональные и личностные качества идеального оператора, каких сотрудников стоит подбирать в команду колл-центра, и что развивать в персонале"
+      },
+      {
+        "href": "https://qolio.ru/obratnaya-svyaz-sotrudniku",
+        "text": "31.03.2022 Обратная связь, которую слышат: как доносить свои мысли сотрудникам Рассказали, как правильно давать обратную связь, чтобы сотрудники профессионально развивались, работали с удовольствием, приносили пользу компании и её клиентам."
+      },
+      {
+        "href": "https://qolio.ru/otdel-kontrolya-kachestva",
+        "text": "16.03.2022 Отдел контроля качества: такой незаметный, но очень полезный Рассказываем про цели, задачи, функции ОКК и пользу, которую он может принести бизнесу."
+      },
+      {
+        "href": "https://qolio.ru/blog",
+        "text": "Перейти в блог"
+      },
+      {
+        "href": "https://qolio.ru/privacy_policy",
+        "text": "на обработку своих персональных данных"
+      },
+      {
+        "href": "https://qolio.ru/privacy_policy",
+        "text": "используем куки"
+      },
+      {
+        "href": "https://qolio.ru/",
+        "text": ""
+      },
+      {
+        "href": "https://vk.com/qolio",
+        "text": ""
+      },
+      {
+        "href": "https://qolio.ru/features",
+        "text": "Список коммуникаций"
+      },
+      {
+        "href": "https://qolio.ru/features",
+        "text": "Интерфейс оценки"
+      },
+      {
+        "href": "https://qolio.ru/features",
+        "text": "Аналитика"
+      },
+      {
+        "href": "https://qolio.ru/features",
+        "text": "Аналитика по сотрудникам"
+      },
+      {
+        "href": "https://qolio.ru/features",
+        "text": "Чек-листы и теги"
+      },
+      {
+        "href": "https://qolio.ru/features",
+        "text": "Калибровка"
+      },
+      {
+        "href": "https://qolio.ru/annual_price",
+        "text": "Тарифы"
+      },
+      {
+        "href": "https://qolio.ru/blog",
+        "text": "Блог"
+      },
+      {
+        "href": "https://qolio.gitbook.io/qolio-or-baza-znanii/",
+        "text": "База знаний"
+      },
+      {
+        "href": "https://qolio.ru/agreement",
+        "text": "Пользовательское соглашение"
+      },
+      {
+        "href": "https://qolio.ru/privacy_policy",
+        "text": "Политика конфиденциальности"
+      }
+    ],
+    "link_count": 52
+  },
+  {
+    "group": "2",
+    "name": "Speech Analytics",
+    "domain": "speechanalytics.ru",
+    "csv_url": "https://speechanalytics.ru",
+    "home_url": "https://speechanalytics.ru/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://speechanalytics.ru/",
+    "redirected": false,
+    "bytes": 82853,
+    "visible_chars": 11698,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "User-agent: Yandex\r\nAllow: /$\r\nDisallow: /norm\r\nAllow: /robots.txt\r\nAllow: /sitemap.xml\r\nAllow: /favicon.ico\r\nAllow: /img/\r\nHost: https://speechanalytics.ru",
+    "links": [
+      {
+        "href": "https://buildin.ai/share/f65dfed8-bcd9-4f85-a496-e2c0c0193c3b",
+        "text": "База знаний"
+      },
+      {
+        "href": "https://speechanalytics.ru/partners",
+        "text": "Партнеры"
+      },
+      {
+        "href": "https://cloud.speechanalytics.ru/registration",
+        "text": "Регистрация"
+      },
+      {
+        "href": "https://cloud.speechanalytics.ru/",
+        "text": "Вход"
+      },
+      {
+        "href": "https://buildin.ai/share/f65dfed8-bcd9-4f85-a496-e2c0c0193c3b",
+        "text": "База знаний"
+      },
+      {
+        "href": "https://speechanalytics.ru/partners",
+        "text": "Партнеры"
+      },
+      {
+        "href": "https://cloud.speechanalytics.ru/",
+        "text": "Вход"
+      },
+      {
+        "href": "https://cloud.speechanalytics.ru/registration",
+        "text": "Регистрация"
+      },
+      {
+        "href": "https://cloud.speechanalytics.ru/registration",
+        "text": "Зарегистрироваться"
+      },
+      {
+        "href": "http://www.youtube.com/watch?v=eXjbu-aDR2U",
+        "text": ""
+      },
+      {
+        "href": "https://speechanalytics.ru/webinar_26_09",
+        "text": "Подробнее"
+      },
+      {
+        "href": "https://speechanalytics.ru/partners",
+        "text": "Выбрать партнера"
+      },
+      {
+        "href": "https://buildin.ai/share/f65dfed8-bcd9-4f85-a496-e2c0c0193c3b",
+        "text": "База знаний"
+      },
+      {
+        "href": "https://speechanalytics.ru/legal/offer",
+        "text": "Оферта"
+      },
+      {
+        "href": "https://speechanalytics.ru/legal/integration",
+        "text": "Оферта по интеграции"
+      },
+      {
+        "href": "https://speechanalytics.ru/legal/policy",
+        "text": "Политика обработки персональных данных"
+      },
+      {
+        "href": "https://speechanalytics.ru/legal/confidential",
+        "text": "Согласие на обработку персональных данных"
+      },
+      {
+        "href": "https://navigator.sk.ru/orn/1123023",
+        "text": "Участник Инновационного центра \"Сколково\""
+      },
+      {
+        "href": "https://vk.com/speechanalytics",
+        "text": ""
+      },
+      {
+        "href": "https://www.youtube.com/channel/UCvi-IXzsZCd7SPghtEVdZMA",
+        "text": ""
+      },
+      {
+        "href": "https://speechanalytics.ru/legal/policy",
+        "text": "политики обработки персональных данных"
+      }
+    ],
+    "link_count": 21
+  },
+  {
+    "group": "2",
+    "name": "Dialext",
+    "domain": "dialext.com",
+    "csv_url": "https://dialext.com",
+    "home_url": "https://dialext.com/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://dialext.com/",
+    "redirected": false,
+    "bytes": 86054,
+    "visible_chars": 6130,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "User-agent: *\nAllow: /\n\nSitemap: https://dialext.com/sitemap.xml\n",
+    "links": [
+      {
+        "href": "https://dialext.com/blog/",
+        "text": "Блог"
+      },
+      {
+        "href": "https://dialext.com/agreement-personal-data/",
+        "text": "условиями обработки персональных данных"
+      },
+      {
+        "href": "https://dialext.com/blog/",
+        "text": "Блог"
+      },
+      {
+        "href": "https://t.me/dialext",
+        "text": "Telegram: @dialext"
+      },
+      {
+        "href": "https://dialext.com/terms/",
+        "text": "Пользовательское соглашение"
+      },
+      {
+        "href": "https://dialext.com/policy-personal-data/",
+        "text": "Политика о персональных данных"
+      },
+      {
+        "href": "https://dialext.com/agreement-personal-data/",
+        "text": "Согласие на обработку данных"
+      }
+    ],
+    "link_count": 7
+  },
+  {
+    "group": "2",
+    "name": "GetCalls",
+    "domain": "getcalls.ru",
+    "csv_url": "https://getcalls.ru",
+    "home_url": "https://getcalls.ru/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://getcalls.ru/",
+    "redirected": false,
+    "bytes": 180824,
+    "visible_chars": 15780,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": null,
+    "links": [
+      {
+        "href": "https://t.me/andrewsemenuk",
+        "text": "@andrewsemenuk"
+      },
+      {
+        "href": "https://t.me/salesdictator",
+        "text": "Канал @salesdictator"
+      },
+      {
+        "href": "https://getcalls.ru/terms",
+        "text": "Договор оферты"
+      },
+      {
+        "href": "https://getcalls.ru/privacy",
+        "text": "Политика конфиденциальности"
+      }
+    ],
+    "link_count": 4
+  },
+  {
+    "group": "2",
+    "name": "Oneboost",
+    "domain": "oneboost.io",
+    "csv_url": "https://oneboost.io",
+    "home_url": "https://oneboost.io/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://oneboost.io/ru/",
+    "redirected": true,
+    "bytes": 2378547,
+    "visible_chars": 12013,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "User-Agent: *\nDisallow: /page90529406.html\nDisallow: /page90962086.html\nDisallow: /tilda/form*\nDisallow: /tilda/rec*\nDisallow: /tilda/click*\nDisallow: /tilda/scroll*\nDisallow: /tilda/popup*\nDisallow: /tilda/cart*\nDisallow: /tilda/product*\nDisallow: /tilda/event*\nDisallow:\n\n\nSitemap: https://oneboost.io/sitemap.xml\n",
+    "links": [
+      {
+        "href": "https://oneboost.io/",
+        "text": ""
+      },
+      {
+        "href": "https://oneboost.io/#communication",
+        "text": "Чаты и звонки"
+      },
+      {
+        "href": "https://oneboost.io/#communication",
+        "text": "Оффлайн-коммуникации"
+      },
+      {
+        "href": "https://oneboost.io/",
+        "text": ""
+      },
+      {
+        "href": "https://oneboost.io/#communication",
+        "text": "Чаты и звонки"
+      },
+      {
+        "href": "https://oneboost.io/#communication",
+        "text": "Оффлайн-коммуникации"
+      },
+      {
+        "href": "https://oneboost.io/case_foxford",
+        "text": "Читать кейс"
+      },
+      {
+        "href": "https://oneboost.io/case_kan_auto",
+        "text": "Читать кейс"
+      },
+      {
+        "href": "https://oneboost.io/case_ultimate_education",
+        "text": "Читать кейс"
+      },
+      {
+        "href": "https://oneboost.io/ru/\\\"\\/privacy\\/\\\"",
+        "text": "\\u041f\\u043e\\u043b\\u0438\\u0442\\u0438\\u043a\\u043e\\u0439 \\u043a\\u043e\\u043d\\u0444\\u0438\\u0434\\u0435\\u043d\\u0446\\u0438\\u0430\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u0438<\\/a>\",\"li_req\":\"y\",\"li_nm\":\"Checkbox\"}]"
+      },
+      {
+        "href": "https://oneboost.io/#communication",
+        "text": "Чаты и звонки"
+      },
+      {
+        "href": "https://oneboost.io/#communication",
+        "text": "Оффлайн-коммуникации"
+      },
+      {
+        "href": "https://oneboost.io/privacy/",
+        "text": "Политика конфиденциальности"
+      },
+      {
+        "href": "https://oneboost.io/ru/\\\"\\/privacy\\\"",
+        "text": "\\u041f\\u043e\\u043b\\u0438\\u0442\\u0438\\u043a\\u043e\\u0439 \\u043a\\u043e\\u043d\\u0444\\u0438\\u0434\\u0435\\u043d\\u0446\\u0438\\u0430\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u0438<\\/a>\",\"li_req\":\"y\",\"li_nm\":\"Checkbox\"}]"
+      },
+      {
+        "href": "https://oneboost.io/privacy/",
+        "text": "Политикой конфиденциальности"
+      },
+      {
+        "href": "https://tilda.cc/",
+        "text": "Made on Tilda"
+      }
+    ],
+    "link_count": 16
+  },
+  {
+    "group": "2",
+    "name": "IQSTAT",
+    "domain": "iqstat.io",
+    "csv_url": "https://iqstat.io",
+    "home_url": "https://iqstat.io/",
+    "status": 200,
+    "bot_ua_status": null,
+    "ua_fallback_needed": false,
+    "final_url": "https://iqstat.io/",
+    "redirected": false,
+    "bytes": 257070,
+    "visible_chars": 328,
+    "error": null,
+    "robots_status": 200,
+    "robots_text": "User-Agent: *\nAllow: /\nAllow: /ru/\nAllow: /en/\nAllow: /iqstat-site/\nDisallow: /api/\nDisallow: /ru/api/\nDisallow: /en/api/\nDisallow: /admin/\nDisallow: /ru/admin/\nDisallow: /en/admin/\nDisallow: /dashboard/\nDisallow: /ru/dashboard/\nDisallow: /en/dashboard/\nDisallow: /settings/\nDisallow: /ru/settings/\nDisallow: /en/settings/\nDisallow: /profile/\nDisallow: /ru/profile/\nDisallow: /en/profile/\nDisallow: /clients/\nDisallow: /ru/clients/\nDisallow: /en/clients/\nDisallow: /events/\nDisallow: /ru/events/\nDisallow: /en/events/\nDisallow: /transcription/\nDisallow: /ru/transcription/\nDisallow: /en/transcription/\nDisallow: /knowledge-base/\nDisallow: /ru/knowledge-base/\nDisallow: /en/knowledge-base/\nDisallow: /reports/\nDisallow: /ru/reports/\nDisallow: /en/reports/\nDisallow: /embed/\nDisallow: /ru/embed/\nDisallow: /en/embed/\nDisallow: /ru/auth/telegram-callback\nDisallow: /en/auth/telegram-callback\n\nHost: https://iqstat.io\nSitemap: https://iqstat.io/sitemap.xml\nSitemap: https://iqstat.io/ru/blog/wp-sitemap.xml\n",
+    "links": [],
+    "link_count": 0
+  }
+]

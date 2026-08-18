@@ -1,0 +1,389 @@
+{
+  "rechka.ai": {
+    "home": {
+      "url": "https://rechka.ai/",
+      "final_url": "https://rechka.ai/",
+      "status": 200,
+      "visible_chars": 18174,
+      "verdict": "ok"
+    },
+    "blog": {
+      "url": "https://rechka.ai/blog",
+      "final_url": "https://rechka.ai/blog/",
+      "status": 200,
+      "visible_chars": 17496,
+      "verdict": "ok"
+    },
+    "cases": {
+      "url": "https://rechka.ai/cases",
+      "final_url": "https://rechka.ai/cases",
+      "status": 200,
+      "visible_chars": 15606,
+      "verdict": "ok"
+    }
+  },
+  "salesai.ru": {
+    "home": {
+      "url": "https://salesai.ru/",
+      "final_url": "https://salesai.ru/",
+      "status": 200,
+      "visible_chars": 15576,
+      "verdict": "ok"
+    },
+    "pricing": {
+      "url": "https://salesai.ru/pricing/",
+      "final_url": "https://salesai.ru/pricing/",
+      "status": 200,
+      "visible_chars": 14705,
+      "verdict": "ok"
+    },
+    "blog": {
+      "url": "https://salesai.ru/articles/",
+      "final_url": "https://salesai.ru/articles/",
+      "status": 200,
+      "visible_chars": 3952,
+      "verdict": "ok"
+    },
+    "cases": {
+      "url": "https://salesai.ru/cases/",
+      "final_url": "https://salesai.ru/cases/",
+      "status": 200,
+      "visible_chars": 7193,
+      "verdict": "ok"
+    },
+    "extra": {
+      "url": "https://salesai.ru/llms.txt",
+      "final_url": "https://salesai.ru/llms.txt",
+      "status": 200,
+      "visible_chars": 50850,
+      "verdict": "ok"
+    }
+  },
+  "imot.io": {
+    "home": {
+      "url": "https://imot.io/",
+      "final_url": "https://imot.io/",
+      "status": 200,
+      "visible_chars": 24718,
+      "verdict": "ok"
+    },
+    "pricing": {
+      "url": "https://imot.io/tarif",
+      "final_url": "https://imot.io/tarif",
+      "status": 200,
+      "visible_chars": 11961,
+      "verdict": "ok"
+    },
+    "blog": {
+      "url": "https://imot.io/media",
+      "final_url": "https://imot.io/media",
+      "status": 200,
+      "visible_chars": 2656,
+      "verdict": "ok"
+    },
+    "cases": {
+      "url": "https://imot.io/cases",
+      "final_url": "https://imot.io/cases",
+      "status": 200,
+      "visible_chars": 5817,
+      "verdict": "ok"
+    }
+  },
+  "recall-ai.ru": {
+    "home": {
+      "url": "https://recall-ai.ru/",
+      "final_url": "https://recall-ai.ru/",
+      "status": 200,
+      "visible_chars": 9955,
+      "verdict": "ok"
+    },
+    "pricing": {
+      "url": "https://recall-ai.ru/tariffs",
+      "final_url": "https://recall-ai.ru/tariffs",
+      "status": 200,
+      "visible_chars": 2906,
+      "verdict": "ok"
+    },
+    "blog": {
+      "url": "https://recall-ai.ru/articles",
+      "final_url": "https://recall-ai.ru/articles",
+      "status": 200,
+      "visible_chars": 5525,
+      "verdict": "ok"
+    }
+  },
+  "mango-office.ru": {
+    "home": {
+      "url": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/speech-analytics/",
+      "final_url": "https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/speech-analytics/",
+      "status": 200,
+      "visible_chars": 15662,
+      "verdict": "ok"
+    },
+    "pricing": {
+      "url": "https://www.mango-office.ru/products/virtualnaya_ats/price/",
+      "final_url": "https://www.mango-office.ru/products/virtualnaya_ats/price/",
+      "status": 200,
+      "visible_chars": 16156,
+      "verdict": "ok"
+    },
+    "integrations": {
+      "url": "https://www.mango-office.ru/products/integraciya/marketplace/",
+      "final_url": "https://www.mango-office.ru/products/integraciya/marketplace/",
+      "status": 200,
+      "visible_chars": 11687,
+      "verdict": "ok"
+    },
+    "blog": {
+      "url": "https://www.mango-office.ru/journal/",
+      "final_url": "https://www.mango-office.ru/journal/",
+      "status": 200,
+      "visible_chars": 10946,
+      "verdict": "ok"
+    }
+  },
+  "roistat.com": {
+    "home": {
+      "url": "https://roistat.com/ru/",
+      "final_url": "https://roistat.com/ru/",
+      "status": 200,
+      "visible_chars": 14188,
+      "verdict": "ok"
+    },
+    "pricing": {
+      "url": "https://roistat.com/ru/price",
+      "final_url": "https://roistat.com/ru/price",
+      "status": 200,
+      "visible_chars": 39681,
+      "verdict": "ok"
+    },
+    "integrations": {
+      "url": "https://roistat.com/ru/features/integrations",
+      "final_url": "https://roistat.com/ru/integrations",
+      "status": 200,
+      "visible_chars": 7754,
+      "verdict": "ok"
+    },
+    "blog": {
+      "url": "https://roistat.com/rublog/",
+      "final_url": "https://roistat.com/rublog/",
+      "status": 200,
+      "visible_chars": 3323,
+      "verdict": "ok"
+    }
+  },
+  "aistudio.yandex.ru": {
+    "home": {
+      "url": "https://aistudio.yandex.ru/ru/solutions/speechsense",
+      "final_url": "https://aistudio.yandex.ru/tmgrdfrend/showcaptcha?cc=1&form-fb-hint=1.150&mt=350A2E3E19200C4BAA2A0CC4A1665B02A3DCC1A29764296EDE40DCDB65605656603B7A375C8B659F023076138D6BA556081977DE031F6A19B140DAFC2942559CDE4711AD7EC1C806A1B7FF235DCB4314558E5898E60714D81749427ABE26843BA7BC43DCCD14D10A580651A9D47E2969074DD4472B5110C6385C625EB208102F404EE6E42FEDF945C03AA80DD585FBE65E96973CBEA9C02D9C00ABEDABC2601A288BE686EA9EBA13F6DB89C180C4290CFD48FD4CB6AEC7207988D9A2F092744E55C83554A6E941F398D91A5AAF585255C066E40F8D75DA9C6AE686A2AF0A08C0867A5E19D79806560B12166D9F621F86CB53&retpath=aHR0cHM6Ly9haXN0dWRpby55YW5kZXgucnUvcnUvc29sdXRpb25zL3NwZWVjaHNlbnNl_d00ad5ece9f544cebee77b73fa5bfd94&t=7%252F1787039459%252F4b43fac590763edf9c0652bdae87183c&u=9245723593536049254&s=4c66dad0f12385fee4065f5a1c38a8a7",
+      "status": 200,
+      "visible_chars": 276,
+      "verdict": "капча"
+    }
+  },
+  "rodnik.bz": {
+    "home": {
+      "url": "https://rodnik.bz/",
+      "final_url": "https://rodnik.bz/",
+      "status": 200,
+      "visible_chars": 3734,
+      "verdict": "ok"
+    },
+    "extra": {
+      "url": "https://rodnik.bz/manifesto.html",
+      "final_url": "https://rodnik.bz/manifesto.html",
+      "status": 200,
+      "visible_chars": 753,
+      "verdict": "ok"
+    }
+  },
+  "bewise.ai": {
+    "home": {
+      "url": "https://bewise.ai/",
+      "final_url": "https://bewise.ai/",
+      "status": 200,
+      "visible_chars": 12286,
+      "verdict": "ok"
+    },
+    "pricing": {
+      "url": "https://bewise.ai/pricing/",
+      "final_url": "https://bewise.ai/pricing/",
+      "status": 200,
+      "visible_chars": 11599,
+      "verdict": "ok"
+    },
+    "blog": {
+      "url": "https://bewise.ai/blog/",
+      "final_url": "https://bewise.ai/blog/",
+      "status": 200,
+      "visible_chars": 6048,
+      "verdict": "ok"
+    },
+    "cases": {
+      "url": "https://bewise.ai/cases/",
+      "final_url": "https://bewise.ai/cases/",
+      "status": 200,
+      "visible_chars": 6538,
+      "verdict": "ok"
+    }
+  },
+  "okk.ectem.ru": {
+    "home": {
+      "url": "https://okk.ectem.ru/",
+      "final_url": "https://okk.ectem.ru/",
+      "status": 200,
+      "visible_chars": 13826,
+      "verdict": "ok"
+    },
+    "pricing": {
+      "url": "https://okk.ectem.ru/sbercrmtariffs",
+      "final_url": "https://okk.ectem.ru/sbercrmtariffs",
+      "status": 200,
+      "visible_chars": 1266,
+      "verdict": "ok"
+    }
+  },
+  "call-intellect.ru": {},
+  "phonix.pro": {
+    "home": {
+      "url": "https://phonix.pro/",
+      "final_url": "https://phonix.pro/",
+      "status": 200,
+      "visible_chars": 1987,
+      "verdict": "ok"
+    },
+    "blog": {
+      "url": "https://phonix.pro/blog",
+      "final_url": "https://phonix.pro/blog",
+      "status": 200,
+      "visible_chars": 12831,
+      "verdict": "ok"
+    }
+  },
+  "zvonalitik.ru": {
+    "home": {
+      "url": "https://zvonalitik.ru/",
+      "final_url": "https://zvonalitik.ru/",
+      "status": 200,
+      "visible_chars": 8328,
+      "verdict": "ok"
+    },
+    "blog": {
+      "url": "https://zvonalitik.ru/articles/",
+      "final_url": "https://zvonalitik.ru/articles/",
+      "status": 200,
+      "visible_chars": 14883,
+      "verdict": "ok"
+    }
+  },
+  "qolio.ru": {
+    "home": {
+      "url": "https://qolio.ru/",
+      "final_url": "https://qolio.ru/",
+      "status": 200,
+      "visible_chars": 11028,
+      "verdict": "ok"
+    },
+    "pricing": {
+      "url": "https://qolio.ru/annual_price",
+      "final_url": "https://qolio.ru/annual_price",
+      "status": 200,
+      "visible_chars": 4303,
+      "verdict": "ok"
+    },
+    "integrations": {
+      "url": "https://qolio.ru/integrations",
+      "final_url": "https://qolio.ru/integrations",
+      "status": 200,
+      "visible_chars": 1534,
+      "verdict": "ok"
+    },
+    "blog": {
+      "url": "https://qolio.ru/blog",
+      "final_url": "https://qolio.ru/blog",
+      "status": 200,
+      "visible_chars": 10861,
+      "verdict": "ok"
+    }
+  },
+  "speechanalytics.ru": {
+    "home": {
+      "url": "https://speechanalytics.ru/",
+      "final_url": "https://speechanalytics.ru/",
+      "status": 200,
+      "visible_chars": 11698,
+      "verdict": "ok"
+    },
+    "extra": {
+      "url": "https://speechanalytics.ru/partners",
+      "final_url": "https://speechanalytics.ru/partners",
+      "status": 200,
+      "visible_chars": 5220,
+      "verdict": "ok"
+    }
+  },
+  "dialext.com": {
+    "home": {
+      "url": "https://dialext.com/",
+      "final_url": "https://dialext.com/",
+      "status": 200,
+      "visible_chars": 6130,
+      "verdict": "ok"
+    },
+    "blog": {
+      "url": "https://dialext.com/blog/",
+      "final_url": "https://dialext.com/blog/",
+      "status": 200,
+      "visible_chars": 2236,
+      "verdict": "ok"
+    },
+    "integrations": {
+      "url": "https://dialext.com/amocrm/",
+      "final_url": "https://dialext.com/amocrm/",
+      "status": 200,
+      "visible_chars": 1953,
+      "verdict": "ok"
+    }
+  },
+  "getcalls.ru": {
+    "home": {
+      "url": "https://getcalls.ru/",
+      "final_url": "https://getcalls.ru/",
+      "status": 200,
+      "visible_chars": 15780,
+      "verdict": "ok"
+    }
+  },
+  "oneboost.io": {
+    "home": {
+      "url": "https://oneboost.io/ru/",
+      "final_url": "https://oneboost.io/ru/",
+      "status": 200,
+      "visible_chars": 12013,
+      "verdict": "ok"
+    },
+    "cases": {
+      "url": "https://oneboost.io/case_foxford",
+      "final_url": "https://oneboost.io/case_foxford",
+      "status": 200,
+      "visible_chars": 6206,
+      "verdict": "ok"
+    }
+  },
+  "iqstat.io": {
+    "home": {
+      "url": "https://iqstat.io/ru",
+      "final_url": "https://iqstat.io/ru",
+      "status": 200,
+      "visible_chars": 328,
+      "verdict": "ok"
+    },
+    "blog": {
+      "url": "https://iqstat.io/ru/blog/",
+      "final_url": "https://iqstat.io/ru/blog/",
+      "status": 200,
+      "visible_chars": 3140,
+      "verdict": "ok"
+    }
+  }
+}

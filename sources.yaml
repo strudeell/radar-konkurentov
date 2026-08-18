@@ -1,0 +1,534 @@
+meta:
+  generated: '2026-08-18'
+  phase: 0 — разведка источников
+  rule: Все URL проверены живым запросом. Пустое место означает, что страницы у конкурента нет, а не что
+    её не искали.
+  user_agent: 'RadarBot/0.1 (+https://okk-ai.ru; competitive monitoring; contact: example@gmail.com)'
+  user_agent_note: контакт — публичный ящик с okk-ai.ru, поэтому админ чужого сайта может сверить его
+    с сайтом. Собирается из config.yaml, менять там
+  politeness:
+    delay_sec: 2
+    timeout_sec: 20
+    retries: 2
+    respect_robots: true
+  channels_policy:
+    telegram: 'берём: публичная веб-версия t.me/s/<канал> работает'
+    vk: 'берём: официальный API wall.get, нужен токен приложения'
+    youtube: 'НЕ берём: youtube.com не резолвится по DNS с рабочей машины (getaddrinfo failed). Плюс смысла
+      мало — видео мы всё равно не смотрим, а факт публикации дублируется в блоге и Telegram'
+    dzen: 'НЕ берём автоматически: RSS не отдаётся, страницы канала рисует JS (на любой адрес ~2,9 КБ
+      каркаса). 18.08.2026 проверены сплошь все 19 поиском внутри Дзена: каналы есть у четырёх (Roistat,
+      Call-Intellect, Ectem, Mango Office), но все мёртвые — самый живой молчит 7 месяцев. Ради этого
+      поднимать браузерную автоматизацию невыгодно, смотреть руками'
+    vc_habr: каналов не найдено ни у кого из 19
+  totals:
+    competitors: 19
+    pages: 49
+    channels: 11
+    no_auto_collect: 2
+competitors:
+- name: Yandex SpeechSense
+  domain: aistudio.yandex.ru
+  group: 1
+  status: blocked
+  pages: []
+  channels: []
+  gaps:
+  - цен на сайте нет
+  - отдельной страницы интеграций нет
+  - блога/новостей нет
+  note: SmartCaptcha на всех страницах, включая страницу решения. Продукт в Private Preview, публично
+    меняется редко — дешевле проверять руками раз в месяц, чем городить обход.
+  check: manual
+- name: Bewise.ai
+  domain: bewise.ai
+  group: 1
+  status: ok
+  pages:
+  - kind: home
+    url: https://bewise.ai/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 12286
+  - kind: pricing
+    url: https://bewise.ai/pricing/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 11599
+    extract_numbers: true
+  - kind: blog
+    url: https://bewise.ai/blog/
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 6048
+  - kind: cases
+    url: https://bewise.ai/cases/
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 6538
+  channels:
+  - net: telegram
+    id: mAIrzhi
+    url: https://t.me/s/mAIrzhi
+    fetch: http
+    last_post_seen: '2024-12-12'
+  gaps:
+  - отдельной страницы интеграций нет
+- name: Imot.io
+  domain: imot.io
+  group: 1
+  status: ok
+  pages:
+  - kind: home
+    url: https://imot.io/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 24718
+  - kind: pricing
+    url: https://imot.io/tarif
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 11961
+    extract_numbers: true
+  - kind: blog
+    url: https://imot.io/media
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 2656
+  - kind: cases
+    url: https://imot.io/cases
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 5817
+  channels: []
+  gaps:
+  - отдельной страницы интеграций нет
+- name: Mango Office
+  domain: mango-office.ru
+  group: 1
+  status: ok
+  pages:
+  - kind: home
+    url: https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/speech-analytics/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 15662
+  - kind: pricing
+    url: https://www.mango-office.ru/products/virtualnaya_ats/price/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 16156
+    extract_numbers: true
+  - kind: integrations
+    url: https://www.mango-office.ru/products/integraciya/marketplace/
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 11687
+  - kind: blog
+    url: https://www.mango-office.ru/journal/
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 10946
+  channels:
+  - net: vk
+    id: mangotelecom
+    url: https://vk.com/mangotelecom
+    fetch: api
+    note: wall.get, нужен токен
+  gaps: []
+  note: Отслеживаем не корень сайта телефонии, а страницу продукта речевой аналитики и её тарифы — иначе
+    прилетит вся маркетинговая активность оператора.
+- name: Ectem OK
+  domain: okk.ectem.ru
+  group: 1
+  status: ok
+  pages:
+  - kind: home
+    url: https://okk.ectem.ru/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 13826
+  - kind: pricing
+    url: https://okk.ectem.ru/sbercrmtariffs
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 1266
+    extract_numbers: true
+  channels:
+  - net: telegram
+    id: ectem_ru
+    url: https://t.me/s/ectem_ru
+    fetch: http
+    last_post_seen: '2026-08-17'
+  gaps:
+  - отдельной страницы интеграций нет
+  - блога/новостей нет
+  note: 'Одностраничник: тарифы на главной, отдельной страницы нет. robots.txt запрещает /tariffs_sber
+    — не трогаем.'
+- name: Re:call
+  domain: recall-ai.ru
+  group: 1
+  status: ok
+  pages:
+  - kind: home
+    url: https://recall-ai.ru/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 9955
+  - kind: pricing
+    url: https://recall-ai.ru/tariffs
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 2906
+    extract_numbers: true
+  - kind: blog
+    url: https://recall-ai.ru/articles
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 5525
+  channels: []
+  gaps:
+  - отдельной страницы интеграций нет
+- name: Rechka.ai
+  domain: rechka.ai
+  group: 1
+  status: ok
+  pages:
+  - kind: home
+    url: https://rechka.ai/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 18174
+    extract_numbers: true
+  - kind: blog
+    url: https://rechka.ai/blog/
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 17496
+  - kind: cases
+    url: https://rechka.ai/cases
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 15606
+  channels:
+  - net: telegram
+    id: rechkaainews
+    url: https://t.me/s/rechkaainews
+    fetch: http
+    last_post_seen: '2026-05-28'
+  gaps:
+  - цен на сайте нет
+  - отдельной страницы интеграций нет
+- name: Родник
+  domain: rodnik.bz
+  group: 1
+  status: ok
+  pages:
+  - kind: home
+    url: https://rodnik.bz/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 3734
+    extract_numbers: true
+  - kind: extra
+    url: https://rodnik.bz/manifesto.html
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 753
+  channels: []
+  gaps:
+  - цен на сайте нет
+  - отдельной страницы интеграций нет
+  - блога/новостей нет
+  note: Одностраничник, robots.txt отсутствует. Цены не публикуются.
+- name: Roistat
+  domain: roistat.com
+  group: 1
+  status: ok
+  pages:
+  - kind: home
+    url: https://roistat.com/ru/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 14188
+  - kind: pricing
+    url: https://roistat.com/ru/price
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 39681
+    extract_numbers: true
+  - kind: integrations
+    url: https://roistat.com/ru/integrations
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 7754
+  - kind: blog
+    url: https://roistat.com/rublog/
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 3323
+  channels:
+  - net: vk
+    id: roistat
+    url: https://vk.com/roistat
+    fetch: api
+    note: wall.get, нужен токен
+  - net: telegram
+    id: roistat_com
+    url: https://t.me/s/roistat_com
+    fetch: http
+    last_post_seen: '2026-08-17'
+  - net: telegram
+    id: roistat_updates
+    url: https://t.me/s/roistat_updates
+    fetch: http
+    last_post_seen: '2026-08-14'
+  gaps: []
+  note: robots.txt закрывает /ru/blog/ и /rublog/* только для Yandex — это борьба с дублями в индексе,
+    не запрет обхода. Для нас открыто.
+- name: SalesAI.ru
+  domain: salesai.ru
+  group: 1
+  status: ok
+  pages:
+  - kind: home
+    url: https://salesai.ru/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 15576
+  - kind: pricing
+    url: https://salesai.ru/pricing/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 14705
+    extract_numbers: true
+  - kind: blog
+    url: https://salesai.ru/articles/
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 3952
+  - kind: cases
+    url: https://salesai.ru/cases/
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 7193
+  - kind: extra
+    url: https://salesai.ru/llms.txt
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 50850
+  channels: []
+  gaps:
+  - отдельной страницы интеграций нет
+  note: 'Отдают /llms.txt — машиночитаемую выжимку оффера на 50 тыс. символов. Для отслеживания цен это
+    лучше HTML: структурировано и меняется только по делу.'
+- name: Call-Intellect
+  domain: call-intellect.ru
+  group: 2
+  status: dead
+  pages: []
+  channels: []
+  gaps:
+  - цен на сайте нет
+  - отдельной страницы интеграций нет
+  - блога/новостей нет
+  note: 'Сайт не отвечает. TLS-рукопожатие обрывается сервером: DNS резолвится (45.67.59.118), TCP на
+    443 и 80 открывается, ответа нет. Одинаково для httpx, curl и браузера. 18.08.2026 перепроверено с
+    мобильного интернета (российский IP) — результат тот же. Игрок считается мёртвым, из сбора исключён.
+    Запись оставлена, чтобы не искать его заново.'
+  check: none
+- name: Dialext
+  domain: dialext.com
+  group: 2
+  status: ok
+  pages:
+  - kind: home
+    url: https://dialext.com/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 6130
+    extract_numbers: true
+  - kind: blog
+    url: https://dialext.com/blog/
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 2236
+  - kind: integrations
+    url: https://dialext.com/amocrm/
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 1953
+  channels:
+  - net: telegram
+    id: dialext
+    url: https://t.me/s/dialext
+    fetch: http
+    last_post_seen: '2020-05-26'
+  gaps:
+  - цен на сайте нет
+- name: GetCalls
+  domain: getcalls.ru
+  group: 2
+  status: ok
+  pages:
+  - kind: home
+    url: https://getcalls.ru/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 15780
+    extract_numbers: true
+  channels:
+  - net: telegram
+    id: salesdictator
+    url: https://t.me/s/salesdictator
+    fetch: http
+    last_post_seen: '2026-07-13'
+  gaps:
+  - цен на сайте нет
+  - отдельной страницы интеграций нет
+  - блога/новостей нет
+  note: Одностраничник на Tilda без sitemap и robots.txt. Тарифы — на главной.
+- name: IQSTAT
+  domain: iqstat.io
+  group: 2
+  status: ok
+  pages:
+  - kind: home
+    url: https://iqstat.io/ru
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 328
+    extract_numbers: true
+  - kind: blog
+    url: https://iqstat.io/ru/blog/
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 3140
+  channels: []
+  gaps:
+  - цен на сайте нет
+  - отдельной страницы интеграций нет
+  note: Главная отдаёт 328 символов видимого текста — контент подгружается JS. Блог берётся нормально.
+    Порог шумодава для главной не ставить, пока не проверено браузером.
+- name: Oneboost
+  domain: oneboost.io
+  group: 2
+  status: ok
+  pages:
+  - kind: home
+    url: https://oneboost.io/ru/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 12013
+    extract_numbers: true
+  - kind: cases
+    url: https://oneboost.io/case_foxford
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 6206
+  channels: []
+  gaps:
+  - цен на сайте нет
+  - отдельной страницы интеграций нет
+  - блога/новостей нет
+- name: Phonix
+  domain: phonix.pro
+  group: 2
+  status: ok
+  pages:
+  - kind: home
+    url: https://phonix.pro/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 1987
+    extract_numbers: true
+  - kind: blog
+    url: https://phonix.pro/blog
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 12831
+  channels: []
+  gaps:
+  - цен на сайте нет
+  - отдельной страницы интеграций нет
+  note: 'SPA: любой несуществующий путь отдаёт 200 и заглушку. Проверять не код ответа, а объём видимого
+    текста.'
+- name: Qolio
+  domain: qolio.ru
+  group: 2
+  status: ok
+  pages:
+  - kind: home
+    url: https://qolio.ru/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 11028
+  - kind: pricing
+    url: https://qolio.ru/annual_price
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 4303
+    extract_numbers: true
+  - kind: integrations
+    url: https://qolio.ru/integrations
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 1534
+  - kind: blog
+    url: https://qolio.ru/blog
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 10861
+  channels:
+  - net: vk
+    id: qolio
+    url: https://vk.com/qolio
+    fetch: api
+    note: wall.get, нужен токен
+  gaps: []
+- name: Speech Analytics
+  domain: speechanalytics.ru
+  group: 2
+  status: ok
+  pages:
+  - kind: home
+    url: https://speechanalytics.ru/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 11698
+    extract_numbers: true
+  - kind: extra
+    url: https://speechanalytics.ru/partners
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 5220
+  channels:
+  - net: vk
+    id: speechanalytics
+    url: https://vk.com/speechanalytics
+    fetch: api
+    note: wall.get, нужен токен
+  gaps:
+  - цен на сайте нет
+  - отдельной страницы интеграций нет
+  - блога/новостей нет
+- name: Zvonalitik
+  domain: zvonalitik.ru
+  group: 2
+  status: ok
+  pages:
+  - kind: home
+    url: https://zvonalitik.ru/
+    fetch: http
+    priority: critical
+    baseline_visible_chars: 8328
+    extract_numbers: true
+  - kind: blog
+    url: https://zvonalitik.ru/articles/
+    fetch: http
+    priority: normal
+    baseline_visible_chars: 14883
+  channels: []
+  gaps:
+  - цен на сайте нет
+  - отдельной страницы интеграций нет

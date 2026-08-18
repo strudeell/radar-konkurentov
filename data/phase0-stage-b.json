@@ -1,0 +1,701 @@
+[
+  {
+    "domain": "rechka.ai",
+    "name": "Rechka.ai",
+    "group": "1",
+    "home": {
+      "url": "https://rechka.ai/",
+      "status": 200,
+      "visible_chars": 18174,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": null,
+      "integrations": null,
+      "blog": {
+        "url": "https://rechka.ai/cases",
+        "final_url": "https://rechka.ai/cases",
+        "status": 200,
+        "visible_chars": 15606,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {
+      "telegram": [
+        "https://t.me/rechkaai",
+        "http://t.me/rechkaai",
+        "http://t.me/rechkaainews"
+      ]
+    },
+    "robots_status": 200
+  },
+  {
+    "domain": "salesai.ru",
+    "name": "SalesAI.ru",
+    "group": "1",
+    "home": {
+      "url": "https://salesai.ru/",
+      "status": 200,
+      "visible_chars": 15576,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": {
+        "url": "https://salesai.ru/pricing/",
+        "final_url": "https://salesai.ru/pricing/",
+        "status": 200,
+        "visible_chars": 14705,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "integrations": null,
+      "blog": {
+        "url": "https://salesai.ru/articles/7-faktov-iz-razbora-zvonkov-b2b/",
+        "final_url": "https://salesai.ru/articles/7-faktov-iz-razbora-zvonkov-b2b/",
+        "status": 200,
+        "visible_chars": 16043,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {},
+    "robots_status": 200
+  },
+  {
+    "domain": "imot.io",
+    "name": "Imot.io",
+    "group": "1",
+    "home": {
+      "url": "https://imot.io/",
+      "status": 200,
+      "visible_chars": 24718,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": {
+        "url": "https://imot.io/medic",
+        "final_url": "https://imot.io/medic",
+        "status": 200,
+        "visible_chars": 33309,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "integrations": {
+        "url": "https://imot.io/partners",
+        "final_url": "https://imot.io/partners",
+        "status": 200,
+        "visible_chars": 11451,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "blog": {
+        "url": "https://imot.io/media",
+        "final_url": "https://imot.io/media",
+        "status": 200,
+        "visible_chars": 2656,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {
+      "rutube": [
+        "https://rutube.ru/channel/39907739/videos/"
+      ],
+      "youtube": [
+        "https://youtube.com/@imot_io"
+      ],
+      "telegram": [
+        "https://t.me/akkuratno_ds"
+      ]
+    },
+    "robots_status": 200
+  },
+  {
+    "domain": "recall-ai.ru",
+    "name": "Re:call",
+    "group": "1",
+    "home": {
+      "url": "https://recall-ai.ru/",
+      "status": 200,
+      "visible_chars": 9955,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": {
+        "url": "https://recall-ai.ru/tariffs",
+        "final_url": "https://recall-ai.ru/tariffs",
+        "status": 200,
+        "visible_chars": 2906,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "integrations": {
+        "url": "https://recall-ai.ru/partners",
+        "final_url": "https://recall-ai.ru/partners",
+        "status": 200,
+        "visible_chars": 2591,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "blog": {
+        "url": "https://recall-ai.ru/articles",
+        "final_url": "https://recall-ai.ru/articles",
+        "status": 200,
+        "visible_chars": 5525,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {
+      "telegram": [
+        "https://t.me/+79255317800"
+      ]
+    },
+    "robots_status": 200
+  },
+  {
+    "domain": "mango-office.ru",
+    "name": "Mango Office",
+    "group": "1",
+    "home": {
+      "url": "https://www.mango-office.ru/",
+      "status": 200,
+      "visible_chars": 21285,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": {
+        "url": "https://www.mango-office.ru/tariffs/for_free/",
+        "final_url": "https://www.mango-office.ru/tariffs/for_free/",
+        "status": 200,
+        "visible_chars": 19589,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "integrations": {
+        "url": "https://www.mango-office.ru/support/calltracking_vs_analytics/integratsiya/envybox/",
+        "final_url": "https://www.mango-office.ru/support/calltracking_vs_analytics/integratsiya/envybox/",
+        "status": 200,
+        "visible_chars": 16165,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "blog": {
+        "url": "https://www.mango-office.ru/journal/tidings/mango-office-obedinil-iianaliz-zvonkov-i-perepisok/",
+        "final_url": "https://www.mango-office.ru/journal/tidings/mango-office-obedinil-iianaliz-zvonkov-i-perepisok/",
+        "status": 200,
+        "visible_chars": 9581,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {
+      "vk": [
+        "https://vk.com/mangotelecom"
+      ],
+      "youtube": [
+        "https://www.youtube.com/mangotelecom"
+      ]
+    },
+    "robots_status": 200
+  },
+  {
+    "domain": "roistat.com",
+    "name": "Roistat",
+    "group": "1",
+    "home": {
+      "url": "https://roistat.com/ru/",
+      "status": 200,
+      "visible_chars": 14188,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": {
+        "url": "https://roistat.com/ru/price",
+        "final_url": "https://roistat.com/ru/price",
+        "status": 200,
+        "visible_chars": 39681,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "integrations": {
+        "url": "https://roistat.com/ru/connection",
+        "final_url": "https://roistat.com/ru/connection",
+        "status": 200,
+        "visible_chars": 5361,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "blog": {
+        "url": "https://roistat.com/ru/features/mediaplan",
+        "final_url": "https://roistat.com/ru/features/mediaplan",
+        "status": 200,
+        "visible_chars": 10778,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {
+      "rutube": [
+        "https://rutube.ru/channel/43713091/"
+      ],
+      "vk": [
+        "https://vk.com/roistat"
+      ],
+      "youtube": [
+        "https://www.youtube.com/c/roistatcom"
+      ],
+      "telegram": [
+        "https://t.me/roistat_com",
+        "https://t.me/roistat_updates"
+      ],
+      "dzen": [
+        "https://dzen.ru/id/5d566b1344742600acf0f11e"
+      ]
+    },
+    "robots_status": 200
+  },
+  {
+    "domain": "aistudio.yandex.ru",
+    "name": "Yandex SpeechSense",
+    "group": "1",
+    "home": {
+      "url": "https://aistudio.yandex.ru/",
+      "status": 200,
+      "visible_chars": 6648,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": {
+        "url": "https://aistudio.yandex.ru/docs/ru/ai-studio/pricing",
+        "final_url": "https://aistudio.yandex.ru/tmgrdfrend/showcaptcha?cc=1&form-fb-hint=1.150&mt=6CB0E95337D5EE114E13BA4016B258503C11CF1E5C86FE3D7943D76EEA86A7953802BC647B02E07ED8B77CCAFA8219F07EDBFB117BB6F3988D2B8B7103163C376A7DD6DFE4AB6C095A9CEE43C8FB2CA3C9A55941B7513EB506C738889FC4AADED2C89DD9151F6CA7A14B0159D642C071552EAC075E10DF18205548E20BF6D173E69CCF85EFC2B99E82B0B7436993761EC00931051B07E119E06C4B659DAFF9017659BA957FAEA1C41C3986E96F9E48EAAE8722E5C8F94370DFECD7FA8795A5A4753150EED29EDD26D8AB39947A81F3BF3A579F23A371FDB0B23E2EEF4F8FB44348FF85BA0741F16658D054C66A18535BE38E&retpath=aHR0cHM6Ly9haXN0dWRpby55YW5kZXgucnUvZG9jcy9ydS9haS1zdHVkaW8vcHJpY2luZw%2C%2C_33e0e195714c7c6cef2f11d9c376d96a&t=7%252F1787038695%252F8ebaaa3fe6dca119c634146cc7d3a7c6&u=9245672323572043849&s=988dada0cba77d45892e9d290f262a8e",
+        "status": 200,
+        "visible_chars": 276,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "integrations": {
+        "url": "https://aistudio.yandex.ru/integrations",
+        "final_url": "https://aistudio.yandex.ru/tmgrdfrend/showcaptcha?cc=1&form-fb-hint=1.150&mt=504FFE79475D187FF493B9EC1CB8AB80FE44DB92E49FB5FADBA49EF79720C1E53CC7DC127ED7F6B840B8E24C4D2F44CDE50787BCB73694C605F885ACB6E9EF61362E8803A0E44D2E144D5AB3FEF580B5FD040A6D58898A258B450D5FF076C8F92B987E97C9067190C4937CB3C3DEC004EB56F53E8F277F178155D76553EBECCBA75F3180ED5080F5889E7396FC55CE347378C162AE714AA37177C41BE61BB5C67FBCA35F322FEC7DB30E916595723DF54AEB6663D5A42FD090D356F44E225AD267292C3CAF9BAB04752AA9020666DA08F46134F88E23A0BBE820DE95C8D2283E0C362059F3B56945CFDD0F190F4A7D38C9BF&retpath=aHR0cHM6Ly9haXN0dWRpby55YW5kZXgucnUvaW50ZWdyYXRpb25z_7931772cf06b1ae02c51ab094db34238&t=7%252F1787038697%252Fb8b2434dfa8671f2ca899999cdea8f4a&u=9245672456044809781&s=2a79bc60a993546cb7532a3b56871d30",
+        "status": 200,
+        "visible_chars": 276,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "blog": {
+        "url": "https://aistudio.yandex.ru/blog",
+        "final_url": "https://aistudio.yandex.ru/tmgrdfrend/showcaptcha?cc=1&form-fb-hint=1.150&mt=F5EF52BEE37918F375F706A00CBD313223BA65EA64877F29F6188005014EC38C4C7914FF6E9804221F551FCFE7607BEDCC16245AEA8EA3C2EFF62DC70EC4C468F6C317DD66A309A6D434905EC106E86267F7DB2835D65359E3518CDB820EE32A0DA68CA80F8EEA1546269D4368EE51DB87D6E73FE8F775187F561047B73D34B2A396847DCE969D8753FFEA7B2F5EB57D394E0F86C88ED745C606EDF174FA0E65EA24603D955D2CAEF2464F0BDC13DECBD4255260C878D5EED107BB81AB28AAE7B1E1BEBBC729FA873D43146F95827B96222BE98BF8DC8ABFB98267AD4ABE190A27067613F5BBDEE9D5C6FAE563E018DE8406&retpath=aHR0cHM6Ly9haXN0dWRpby55YW5kZXgucnUvYmxvZw%2C%2C_9556b6b1cd36ef102a4aa103c0d8dab7&t=7%252F1787038699%252F85e017857fcbf06fe92e1fbaacd35cf7&u=9245672591403254364&s=c26da2a9cd7cd03ab788dc4905b68a40",
+        "status": 200,
+        "visible_chars": 276,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {
+      "telegram": [
+        "https://t.me/YFM_Community/10454/10458",
+        "https://t.me/YFM_Community"
+      ]
+    },
+    "robots_status": 200
+  },
+  {
+    "domain": "rodnik.bz",
+    "name": "Родник",
+    "group": "1",
+    "home": {
+      "url": "https://rodnik.bz/",
+      "status": 200,
+      "visible_chars": 3734,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": null,
+      "integrations": null,
+      "blog": null
+    },
+    "socials": {},
+    "robots_status": 404
+  },
+  {
+    "domain": "bewise.ai",
+    "name": "Bewise.ai",
+    "group": "1",
+    "home": {
+      "url": "https://bewise.ai/",
+      "status": 200,
+      "visible_chars": 12286,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": {
+        "url": "https://bewise.ai/pricing/",
+        "final_url": "https://bewise.ai/pricing/",
+        "status": 200,
+        "visible_chars": 11599,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "integrations": null,
+      "blog": {
+        "url": "https://bewise.ai/cases/",
+        "final_url": "https://bewise.ai/cases/",
+        "status": 200,
+        "visible_chars": 6538,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {
+      "telegram": [
+        "https://t.me/mAIrzhi",
+        "https://t.me/bewise_salebot"
+      ],
+      "youtube": [
+        "https://www.youtube.com/@bewiseai"
+      ]
+    },
+    "robots_status": 200
+  },
+  {
+    "domain": "okk.ectem.ru",
+    "name": "Ectem OK",
+    "group": "1",
+    "home": {
+      "url": "https://okk.ectem.ru/",
+      "status": 200,
+      "visible_chars": 13826,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": {
+        "url": "https://okk.ectem.ru/",
+        "final_url": "https://okk.ectem.ru/",
+        "status": 200,
+        "visible_chars": 13826,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "integrations": null,
+      "blog": {
+        "url": "https://okk.ectem.ru/",
+        "final_url": "https://okk.ectem.ru/",
+        "status": 200,
+        "visible_chars": 13826,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {
+      "telegram": [
+        "https://t.me/ectem",
+        "https://t.me/ectem_ru",
+        "https://t.me/Alena_Ectem"
+      ],
+      "youtube": [
+        "https://www.youtube.com/@alex_ectem",
+        "https://youtube.com/@alex_ectem?si=8xe1YYAhMHsbK46R"
+      ]
+    },
+    "robots_status": 200
+  },
+  {
+    "domain": "call-intellect.ru",
+    "name": "Call-Intellect",
+    "group": "2",
+    "home": {
+      "url": "https://call-intellect.ru/",
+      "status": null,
+      "visible_chars": 0,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": null,
+      "integrations": null,
+      "blog": null
+    },
+    "socials": {},
+    "robots_status": null,
+    "unreachable_error": "ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
+  },
+  {
+    "domain": "phonix.pro",
+    "name": "Phonix",
+    "group": "2",
+    "home": {
+      "url": "https://phonix.pro/",
+      "status": 200,
+      "visible_chars": 1987,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": {
+        "url": "https://phonix.pro/pricing",
+        "final_url": "https://phonix.pro/pricing",
+        "status": 200,
+        "visible_chars": 1987,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "integrations": {
+        "url": "https://phonix.pro/integrations",
+        "final_url": "https://phonix.pro/integrations",
+        "status": 200,
+        "visible_chars": 1987,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "blog": {
+        "url": "https://phonix.pro/blog",
+        "final_url": "https://phonix.pro/blog",
+        "status": 200,
+        "visible_chars": 12831,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {},
+    "robots_status": 200
+  },
+  {
+    "domain": "zvonalitik.ru",
+    "name": "Zvonalitik",
+    "group": "2",
+    "home": {
+      "url": "https://zvonalitik.ru/",
+      "status": 200,
+      "visible_chars": 8328,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": null,
+      "integrations": null,
+      "blog": {
+        "url": "https://zvonalitik.ru/articles/",
+        "final_url": "https://zvonalitik.ru/articles/",
+        "status": 200,
+        "visible_chars": 14883,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {
+      "telegram": [
+        "https://t.me/zvonalitik_bot"
+      ]
+    },
+    "robots_status": 200
+  },
+  {
+    "domain": "qolio.ru",
+    "name": "Qolio",
+    "group": "2",
+    "home": {
+      "url": "https://qolio.ru/",
+      "status": 200,
+      "visible_chars": 11028,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": {
+        "url": "https://qolio.ru/annual_price",
+        "final_url": "https://qolio.ru/annual_price",
+        "status": 200,
+        "visible_chars": 4303,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "integrations": {
+        "url": "https://qolio.ru/integrations",
+        "final_url": "https://qolio.ru/integrations",
+        "status": 200,
+        "visible_chars": 1534,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "blog": {
+        "url": "https://qolio.ru/blog",
+        "final_url": "https://qolio.ru/blog",
+        "status": 200,
+        "visible_chars": 10861,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {
+      "vk": [
+        "https://vk.com/qolio"
+      ]
+    },
+    "robots_status": 200
+  },
+  {
+    "domain": "speechanalytics.ru",
+    "name": "Speech Analytics",
+    "group": "2",
+    "home": {
+      "url": "https://speechanalytics.ru/",
+      "status": 200,
+      "visible_chars": 11698,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": null,
+      "integrations": {
+        "url": "https://speechanalytics.ru/partners",
+        "final_url": "https://speechanalytics.ru/partners",
+        "status": 200,
+        "visible_chars": 5220,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      },
+      "blog": null
+    },
+    "socials": {
+      "youtube": [
+        "http://www.youtube.com/watch?v=eXjbu-aDR2U",
+        "https://www.youtube.com/channel/UCvi-IXzsZCd7SPghtEVdZMA"
+      ],
+      "vk": [
+        "https://vk.com/speechanalytics"
+      ]
+    },
+    "robots_status": 200
+  },
+  {
+    "domain": "dialext.com",
+    "name": "Dialext",
+    "group": "2",
+    "home": {
+      "url": "https://dialext.com/",
+      "status": 200,
+      "visible_chars": 6130,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": null,
+      "integrations": null,
+      "blog": {
+        "url": "https://dialext.com/blog/",
+        "final_url": "https://dialext.com/blog/",
+        "status": 200,
+        "visible_chars": 2236,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {
+      "telegram": [
+        "https://t.me/dialext"
+      ]
+    },
+    "robots_status": 200
+  },
+  {
+    "domain": "getcalls.ru",
+    "name": "GetCalls",
+    "group": "2",
+    "home": {
+      "url": "https://getcalls.ru/",
+      "status": 200,
+      "visible_chars": 15780,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": null,
+      "integrations": null,
+      "blog": null
+    },
+    "socials": {
+      "telegram": [
+        "https://t.me/andrewsemenuk",
+        "https://t.me/salesdictator"
+      ]
+    },
+    "robots_status": 200
+  },
+  {
+    "domain": "oneboost.io",
+    "name": "Oneboost",
+    "group": "2",
+    "home": {
+      "url": "https://oneboost.io/ru/",
+      "status": 200,
+      "visible_chars": 12013,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": null,
+      "integrations": null,
+      "blog": {
+        "url": "https://oneboost.io/case_foxford",
+        "final_url": "https://oneboost.io/case_foxford",
+        "status": 200,
+        "visible_chars": 6206,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {},
+    "robots_status": 200
+  },
+  {
+    "domain": "iqstat.io",
+    "name": "IQSTAT",
+    "group": "2",
+    "home": {
+      "url": "https://iqstat.io/",
+      "status": 200,
+      "visible_chars": 328,
+      "ua_fallback_needed": false
+    },
+    "pages": {
+      "pricing": null,
+      "integrations": null,
+      "blog": {
+        "url": "https://iqstat.io/blog",
+        "final_url": "https://iqstat.io/ru/blog",
+        "status": 200,
+        "visible_chars": 3140,
+        "ua_fallback_needed": false,
+        "robots_allowed": true,
+        "source": "link"
+      }
+    },
+    "socials": {},
+    "robots_status": 200
+  }
+]
