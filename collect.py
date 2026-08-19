@@ -219,8 +219,13 @@ def collect_http(target: dict, cfg: dict, robots: Robots | None) -> dict:
         return out
 
     is_html = "html" in (res["content_type"] or "").lower() or "<" in res["text"][:200]
+    # mask=False: в снимок ложится то, что написано на странице. Метки шумодава
+    # («<дата>» вместо «1 сентября 2026 года») нужны сравнению, а не читателю, и
+    # ставит их detect в момент сравнения. Пока метки ставились здесь, срочное
+    # сообщение о смене тарифов уходило владельцу без даты, с которой цены
+    # меняются, — она была стёрта ещё при сохранении снимка.
     out["text"] = normalize.to_snapshot(res["text"], host, is_html=is_html,
-                                        kind=target["page"])
+                                        kind=target["page"], mask=False)
     return out
 
 

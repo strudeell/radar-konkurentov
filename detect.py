@@ -165,7 +165,9 @@ def examine(domain: str, page: str, old_file: Path, new_file: Path,
     """Разобрать одну пару снимков."""
     old_text = old_file.read_text(encoding="utf-8")
     new_text = new_file.read_text(encoding="utf-8")
-    delta = diffing.compare(old_text, new_text)
+    # Домен и вид страницы нужны сравнению: по ним подбираются правила шумодава
+    # из noise.yaml. Снимок хранится как есть, метки ставятся здесь.
+    delta = diffing.compare(old_text, new_text, host=domain, kind=page)
 
     gap = (date.fromisoformat(new_file.stem) - date.fromisoformat(old_file.stem)).days
     item = {
@@ -182,8 +184,11 @@ def examine(domain: str, page: str, old_file: Path, new_file: Path,
 
     numbers = None
     if meta.get("числа"):
-        numbers = prices.compare(diffing.split_lines(old_text),
-                                 diffing.split_lines(new_text))
+        # Разбору цен даём строки с метками. Без них «2026 года» в дате читается
+        # как число с единицей измерения «год», то есть как цена, и радар
+        # сообщает о подорожании там, где сменилась дата публикации.
+        numbers = prices.compare(diffing.masked_lines(old_text, domain, page),
+                                 diffing.masked_lines(new_text, domain, page))
         item["числа"] = prices.summary(numbers)
 
     threshold = int(cfg["min_changed_chars"])

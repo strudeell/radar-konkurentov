@@ -42,6 +42,8 @@ from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
 
+import normalize
+
 ROOT = Path(__file__).resolve().parent.parent
 
 # Метки, которые ставит шумодав Фазы 2 вместо самоменяющихся кусков.
@@ -177,47 +179,96 @@ def _align(before: list[str], after: list[str], context: str) -> list[Pair]:
     return pairs
 
 
-def _subtract(lines: list[str], taken: Counter) -> list[str]:
-    """Убрать из списка ровно столько повторов каждой строки, сколько переехало."""
+def _subtract(pairs: list[tuple[str, str]], taken: Counter) -> list[str]:
+    """Убрать из списка строки, которые уже засчитаны переездом.
+
+    Строки ходят парами «обезличенная, настоящая»: считается по первой,
+    возвращается вторая.
+    """
     left = Counter(taken)
     out = []
-    for line in lines:
-        if left.get(line):
-            left[line] -= 1
+    for hidden, real in pairs:
+        if left.get(hidden):
+            left[hidden] -= 1
             continue
-        out.append(line)
+        out.append(real)
     return out
 
 
-def compare(old_text: str, new_text: str) -> Delta:
-    """Разница между вчерашним и сегодняшним снимком одной страницы."""
-    old = split_lines(old_text)
-    new = split_lines(new_text)
-    delta = Delta(lines_before=len(old), lines_after=len(new))
+def mask(line: str, host: str = "", kind: str = "") -> str:
+    """Строка, в которой самоменяющиеся куски заменены метками.
+
+    Раньше это делал сборщик Фазы 2, и снимок ложился на диск уже с метками.
+    Так было проще, но оказалось неверно: метка попадает не только в сравнение,
+    но и в сообщение человеку. Живой пример, из-за которого всё и переписано, —
+    новость Mango Office «С 1 сентября 2026 года MANGO OFFICE обновляет
+    тарификацию ИИ-функций». В снимке от неё оставалось «С <дата> MANGO OFFICE
+    обновляет тарификацию», и владелец получал сообщение без главного: без даты,
+    начиная с которой у конкурента другие цены.
+
+    Поэтому метки ставятся здесь, в сравнении, и живут ровно столько, сколько
+    нужно, чтобы вчерашняя дата не выглядела изменением. В снимке и в сообщении
+    остаётся то, что написано на странице.
+    """
+    return normalize.strip_noise(line, host, kind)
+
+
+def masked_lines(text: str, host: str = "", kind: str = "") -> list[str]:
+    """Строки снимка с метками — для того, что сравнивает, а не показывает.
+
+    Нужно разбору цен: без меток «2026 года» в дате читается как число с
+    единицей измерения «год», то есть как цена.
+    """
+    return [mask(line, host, kind) for line in split_lines(text)]
+
+
+def compare(old_text: str, new_text: str, host: str = "", kind: str = "") -> Delta:
+    """Разница между вчерашним и сегодняшним снимком одной страницы.
+
+    Сравнение идёт по строкам с метками, а в дельту кладутся строки как есть.
+    Это две разные задачи: чтобы вчерашнее «18 авг» не выглядело изменением,
+    сравнивать надо обезличенное; чтобы человек прочитал «с 1 сентября 2026
+    года», показывать надо настоящее.
+    """
+    old_raw = split_lines(old_text)
+    new_raw = split_lines(new_text)
+    old = [mask(line, host, kind) for line in old_raw]
+    new = [mask(line, host, kind) for line in new_raw]
+    delta = Delta(lines_before=len(old_raw), lines_after=len(new_raw))
 
     matcher = difflib.SequenceMatcher(None, old, new, autojunk=False)
-    added: list[str] = []
-    removed: list[str] = []
+    # Каждая строка носит с собой обе версии: обезличенную — чтобы сравнивать,
+    # настоящую — чтобы показать.
+    added: list[tuple[str, str]] = []
+    removed: list[tuple[str, str]] = []
     for tag, i1, i2, j1, j2 in matcher.get_opcodes():
         if tag == "equal":
             continue
-        removed.extend(old[i1:i2])
-        added.extend(new[j1:j2])
+        removed.extend(zip(old[i1:i2], old_raw[i1:i2]))
+        added.extend(zip(new[j1:j2], new_raw[j1:j2]))
         if tag == "replace":
-            delta.pairs.extend(_align(old[i1:i2], new[j1:j2],
-                                      _context_before(old, i1)))
+            delta.pairs.extend(_align(old_raw[i1:i2], new_raw[j1:j2],
+                                      _context_before(old_raw, i1)))
 
     # Шаг первый: убрать строки, которые ничего не значат сами по себе.
-    delta.ignored = [line for line in added + removed if is_noise(line)]
-    added = [line for line in added if not is_noise(line)]
-    removed = [line for line in removed if not is_noise(line)]
+    delta.ignored = [real for hidden, real in added + removed if is_noise(hidden)]
+    added = [pair for pair in added if not is_noise(pair[0])]
+    removed = [pair for pair in removed if not is_noise(pair[0])]
 
     # Шаг второй: вычесть переезды. Строка, ушедшая в одном месте и дословно
     # появившаяся в другом, — это перестановка блоков, а не новый текст.
-    moved = Counter(added) & Counter(removed)
-    delta.moved = sorted(moved.elements())
-    delta.added = _subtract(added, moved)
-    delta.removed = _subtract(removed, moved)
+    # «Дословно» считается по обезличенной версии: карточка новости, съехавшая
+    # на день вниз, — это переезд, даже если дата рядом с ней сменилась.
+    moved = Counter(hidden for hidden, _ in added) & Counter(hidden for hidden, _ in removed)
+    quota = Counter(moved)
+    delta.moved = []
+    for hidden, real in added:
+        if quota.get(hidden):
+            quota[hidden] -= 1
+            delta.moved.append(real)
+    delta.moved.sort()
+    delta.added = _subtract(added, Counter(moved))
+    delta.removed = _subtract(removed, Counter(moved))
 
     # Пары «было → стало» переживают вычитание, только если уцелели обе половины.
     survived = set(delta.added)

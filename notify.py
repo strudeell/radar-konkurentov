@@ -59,7 +59,10 @@ import yaml  # noqa: E402
 
 import classify  # noqa: E402
 import diffing  # noqa: E402
+import followup  # noqa: E402
+import probe  # noqa: E402
 import telegram  # noqa: E402
+from robots import Robots  # noqa: E402
 
 SNAPSHOTS = ROOT / "snapshots"
 DIFFS = ROOT / "diffs"
@@ -73,6 +76,9 @@ DEFAULTS = {
     "items_in_digest": 5,    # сколько пунктов на одного конкурента в сводке
     "lines_in_digest_item": 3,  # сколько строк «появилось»/«исчезло» под пунктом
     "minor_in_digest": 10,   # сколько мелких появлений показывать отдельным списком
+    "follow_links": True,    # дочитывать ли новость по ссылке перед отправкой
+    "follow_lines": 6,       # сколько строк новости брать
+    "follow_max": 2,         # сколько новостей дочитывать за один прогон
     "send_critical": True,   # слать ли критичное сразу; false — копить до сводки
 }
 
@@ -238,6 +244,39 @@ def link(item: dict, text: str = "открыть страницу") -> str:
     return f'<a href="{telegram.escape(url)}">{text}</a>'
 
 
+def read_sources(items: list[dict], cfg: dict) -> None:
+    """Дочитать новости, о которых собираемся написать прямо сейчас.
+
+    Радар видит ленту новостей, а не сами новости: в ленте стоит заголовок и
+    строка описания, а на что именно меняются цены, написано внутри. Владелец
+    всё равно откроет ссылку и прочитает — значит, это надо сделать за него.
+
+    Ходим только за срочным и не больше, чем сказано в config.yaml: обычное
+    ждёт понедельника, и лишние запросы к чужому сайту ради него не нужны.
+    Правила robots.txt соблюдаем те же, что и сборщик.
+    """
+    if not cfg.get("follow_links"):
+        return
+    robots = Robots(lambda u: probe.fetch(u, timeout=20, retries=1), probe.UA_BOT)
+    read = 0
+    for item in items:
+        if read >= int(cfg["follow_max"]) or not item.get("адрес"):
+            continue
+        headlines = item["разница"].get("добавлено", [])[:4]
+        if not headlines:
+            continue
+        try:
+            found = followup.read(item["адрес"], headlines,
+                                  int(cfg["follow_lines"]), robots)
+        except Exception as error:            # сеть, разметка, кодировка
+            # Дочитывание — приятное дополнение, а не условие отправки. Что бы
+            # тут ни сломалось, срочное сообщение должно уйти.
+            found = {"не прочитано": f"{type(error).__name__}: {error}"}
+        if found:
+            item["новость"] = found
+            read += 1
+
+
 def alert_text(day: str, items: list[dict], cfg: dict) -> str:
     """Срочное сообщение: что случилось прямо сейчас и где это посмотреть."""
     head = (f"⚡ <b>Радар: критичное</b> · {ru_date(day)}\n"
@@ -257,6 +296,27 @@ def alert_text(day: str, items: list[dict], cfg: dict) -> str:
             lines.append(f"<i>правка мелкая — "
                          f"{item['разница']['затронуто символов']} символов, "
                          f"но по смыслу срочная</i>")
+
+        news = item.get("новость") or {}
+        if news.get("строки"):
+            since = news.get("с какого числа")
+            lines.append("<b>Из новости"
+                         + (f", {telegram.escape(since.lower())}" if since else "")
+                         + ":</b>")
+            # Первая строка новости обычно дословно повторяет описание из
+            # ленты, которое уже процитировано выше как улика. Показывать её
+            # второй раз — тратить экран телефона на то же самое.
+            said = {" ".join(q.strip("«»").split()).lower() for q in verdict.lines}
+            for line in news["строки"]:
+                if " ".join(line.split()).lower() in said:
+                    continue
+                lines.append(f"  {telegram.escape(line[:220])}")
+            lines.append(f'<a href="{telegram.escape(news["адрес"])}">'
+                         "читать новость</a>")
+        elif news.get("не прочитано"):
+            lines.append(f"<i>новость по ссылке дочитать не вышло: "
+                         f"{telegram.escape(news['не прочитано'])}</i>")
+
         where = link(item)
         if where:
             lines.append(where)
@@ -450,6 +510,7 @@ def run_day(day: str, cfg: dict, rules: dict, bot, args) -> int:
     if fresh and not cfg["send_critical"]:
         why = "send_critical выключен в config.yaml: критичное уйдёт в сводке"
     elif fresh:
+        read_sources(fresh, cfg)
         text = alert_text(day, fresh, cfg)
         print(f"\nСрочное сообщение ({len(text)} символов):")
         show(text)
@@ -512,6 +573,8 @@ def _row(item: dict, sent: bool) -> dict:
         "улики": verdict.lines,
         "дельта": f"diffs/{item['домен']}/{item['страница']}/{item['дата']}.json",
     }
+    if item.get("новость"):
+        out["новость"] = item["новость"]
     if verdict.critical:
         out["отправлено"] = sent
     return out
