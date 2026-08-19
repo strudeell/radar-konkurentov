@@ -56,14 +56,20 @@ RAW.mkdir(parents=True, exist_ok=True)
 
 _last_hit: dict[str, float] = {}
 
+# Пауза больше двух секунд для отдельных сайтов. Сюда сборщик кладёт значение,
+# если сайт сам попросил его в robots.txt (директива Crawl-delay). В Фазе 0 такой
+# просьбы не выставил ни один из 19 доменов, но правило может появиться завтра.
+HOST_DELAY: dict[str, float] = {}
+
 
 def _polite_wait(url: str) -> None:
     host = urlparse(url).netloc
+    delay = max(DELAY_SAME_HOST, HOST_DELAY.get(host, 0.0))
     prev = _last_hit.get(host)
     if prev is not None:
         gap = time.monotonic() - prev
-        if gap < DELAY_SAME_HOST:
-            time.sleep(DELAY_SAME_HOST - gap)
+        if gap < delay:
+            time.sleep(delay - gap)
     _last_hit[host] = time.monotonic()
 
 
