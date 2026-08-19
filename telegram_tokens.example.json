@@ -1,0 +1,6 @@
+{
+  "_комментарий": "Образец. Скопируйте в telegram_tokens.json и впишите свои значения. Сам telegram_tokens.json закрыт .gitignore и в репозиторий не попадает.",
+  "bot_token": "8123456789:AAF-сюда-токен-от-BotFather",
+  "chat_id": "-1002233445566",
+  "_как_получить": "Порядок расписан в TELEGRAM-BOT.md: бот заводится у @BotFather, номер чата узнаётся у @userinfobot или через getUpdates"
+}
