@@ -50,6 +50,7 @@ competitors:
     fetch: http
     priority: critical
     baseline_visible_chars: 12286
+    extract_numbers: true
   - kind: pricing
     url: https://bewise.ai/pricing/
     fetch: http
@@ -113,6 +114,7 @@ competitors:
     fetch: http
     priority: critical
     baseline_visible_chars: 15662
+    extract_numbers: true
   - kind: pricing
     url: https://www.mango-office.ru/products/virtualnaya_ats/price/
     fetch: http
@@ -124,6 +126,7 @@ competitors:
     fetch: http
     priority: normal
     baseline_visible_chars: 11687
+    extract_numbers: true
   - kind: blog
     url: https://www.mango-office.ru/journal/
     fetch: http
@@ -148,6 +151,7 @@ competitors:
     fetch: http
     priority: critical
     baseline_visible_chars: 13826
+    extract_numbers: true
   - kind: pricing
     url: https://okk.ectem.ru/sbercrmtariffs
     fetch: http
@@ -175,6 +179,7 @@ competitors:
     fetch: http
     priority: critical
     baseline_visible_chars: 9955
+    extract_numbers: true
   - kind: pricing
     url: https://recall-ai.ru/tariffs
     fetch: http
@@ -296,6 +301,7 @@ competitors:
     fetch: http
     priority: critical
     baseline_visible_chars: 15576
+    extract_numbers: true
   - kind: pricing
     url: https://salesai.ru/pricing/
     fetch: http
@@ -317,6 +323,7 @@ competitors:
     fetch: http
     priority: normal
     baseline_visible_chars: 50850
+    extract_numbers: true
   channels: []
   gaps:
   - отдельной страницы интеграций нет

@@ -54,6 +54,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 
 import yaml  # noqa: E402
 
+import console  # noqa: E402
 import diffing  # noqa: E402
 import prices  # noqa: E402
 
@@ -319,6 +320,7 @@ def save(item: dict, dry_run: bool) -> None:
 
 
 def main() -> int:
+    console.setup()
     ap = argparse.ArgumentParser(description="Детектор изменений радара")
     ap.add_argument("--date", help="разбирать этот день (по умолчанию сегодня)")
     ap.add_argument("--all", action="store_true",
@@ -394,7 +396,10 @@ def main() -> int:
     if args.dry_run:
         print("\nЭто был холостой разбор: ничего не записано.")
 
-    # Ненулевой код возврата — сигнал для расписания Фазы 5: есть что показать.
+    # Ноль здесь означает «разбор состоялся», а не «изменений нет»: найденное
+    # лежит в diffs/, и решает, беспокоить ли человека, notify.py. Ненулевой код
+    # у разбора бывает только один — когда он сам не отработал, и расписание
+    # (daily.py) понимает его именно так.
     return 0
 
 

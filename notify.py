@@ -58,10 +58,12 @@ sys.path.insert(0, str(ROOT / "tools"))
 import yaml  # noqa: E402
 
 import classify  # noqa: E402
+import console  # noqa: E402
 import diffing  # noqa: E402
 import followup  # noqa: E402
 import probe  # noqa: E402
 import telegram  # noqa: E402
+import wording  # noqa: E402
 from robots import Robots  # noqa: E402
 
 SNAPSHOTS = ROOT / "snapshots"
@@ -310,7 +312,7 @@ def alert_text(day: str, items: list[dict], cfg: dict) -> str:
             for line in news["строки"]:
                 if " ".join(line.split()).lower() in said:
                     continue
-                lines.append(f"  {telegram.escape(line[:220])}")
+                lines.append(f"  {telegram.escape(wording.shorten(line, 220))}")
             lines.append(f'<a href="{telegram.escape(news["адрес"])}">'
                          "читать новость</a>")
         elif news.get("не прочитано"):
@@ -370,9 +372,9 @@ def digest_text(start: date, end: date, by_competitor: dict, quiet: list[str],
             # Одной строчкой «изменение на 377 символов» новую возможность
             # конкурента не разглядишь, а по ней иногда и стоит поторопиться.
             for line in row["появилось"][:depth]:
-                lines.append(f"   + {telegram.escape(line[:200])}")
+                lines.append(f"   + {telegram.escape(wording.shorten(line, 200))}")
             for line in row["исчезло"][:depth]:
-                lines.append(f"   − {telegram.escape(line[:200])}")
+                lines.append(f"   − {telegram.escape(wording.shorten(line, 200))}")
             hidden = (len(row["появилось"]) - depth) + (len(row["исчезло"]) - depth)
             if hidden > 0:
                 lines.append(f"   <i>…и ещё {hidden} строк в дельте</i>")
@@ -392,7 +394,8 @@ def digest_text(start: date, end: date, by_competitor: dict, quiet: list[str],
         rows = "\n".join(
             f"• {telegram.escape(item['конкурент'])} · "
             f"{telegram.escape(page_name(item['страница']))}: "
-            f"{telegram.escape(item['строка'][:160])}" for item in shown)
+            f"{telegram.escape(wording.shorten(item['строка'], 160))}"
+            for item in shown)
         more = (f"\n<i>…и ещё {len(minor) - len(shown)}</i>"
                 if len(minor) > len(shown) else "")
         blocks.append("<b>По мелочи — появилось и исчезло</b> "
@@ -475,7 +478,7 @@ def show(text: str) -> None:
     plain = re.sub(r"</?[bi]>", "", text)
     plain = re.sub(r'<a href="([^"]+)">([^<]+)</a>', r"\2: \1", plain)
     for line in html.unescape(plain).splitlines():
-        print("   ", line[:200])
+        print("   ", wording.shorten(line, 200))
 
 
 # ─────────────────────────── ежедневный проход ────────────────────────────────
@@ -496,10 +499,10 @@ def run_day(day: str, cfg: dict, rules: dict, bot, args) -> int:
         print(f"  {mark:<14} {item['конкурент']} · {page_name(item['страница'])}: "
               f"{'; '.join(item['приговор'].reasons)}")
         for line in item["приговор"].lines[:int(cfg["lines_in_alert"])]:
-            print(f"                 {line[:150]}")
+            print(f"                 {wording.shorten(line, 150)}")
     for item in usual:
         print(f"  {'в сводку':<14} {item['конкурент']} · {page_name(item['страница'])}: "
-              f"{summarize_change(item)[:110]}")
+              f"{wording.shorten(summarize_change(item), 110)}")
 
     for item in critical + usual + minor:
         for note in item["приговор"].notes:
@@ -758,6 +761,7 @@ def _health(fails: dict, last_ok: dict, by_hand: dict) -> dict:
 # ─────────────────────────── запуск ───────────────────────────────────────────
 
 def main() -> int:
+    console.setup()
     ap = argparse.ArgumentParser(description="Классификация и уведомления радара")
     ap.add_argument("--date", help="разбирать этот день (по умолчанию сегодня)")
     ap.add_argument("--digest", action="store_true",

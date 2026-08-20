@@ -54,6 +54,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import yaml  # noqa: E402
 
 import channels  # noqa: E402
+import console  # noqa: E402
 import normalize  # noqa: E402
 import probe  # noqa: E402
 from robots import Robots  # noqa: E402
@@ -334,6 +335,7 @@ def merge_into_day(report_path: Path, fresh: list[dict]) -> list[dict]:
 
 
 def main() -> int:
+    console.setup()
     ap = argparse.ArgumentParser(description="Сборщик снимков радара")
     ap.add_argument("--only", action="append", default=[],
                     help="собрать только этот домен (ключ можно повторять)")
@@ -525,7 +527,10 @@ def main() -> int:
     else:
         print(f"\nОтчёт прогона: runs/{today}.json")
 
-    # Ненулевой код возврата — сигнал для расписания в Фазе 5.
+    # Единица означает «хотя бы один источник не снялся», а не «сбор провалился»:
+    # один упавший сайт конкурента — это будни. Расписание (daily.py) поэтому по
+    # этому коду цепочку не останавливает и тревогу не поднимает — здоровье сбора
+    # считается по доле снятых источников в tools/health.py.
     return 1 if counts.get(S_ERROR) else 0
 
 

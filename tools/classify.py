@@ -49,6 +49,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import yaml  # noqa: E402
 
 import prices  # noqa: E402
+import wording  # noqa: E402
 
 CRITICAL = "критично"
 NORMAL = "обычно"
@@ -64,6 +65,12 @@ CHANNEL_PAGE = "канал"
 # Сколько символов строки-улики показываем в сообщении. Длиннее — сообщение
 # перестаёт читаться с телефона, а полная строка всегда есть в файле дельты.
 QUOTE = 160
+
+# Сколько символов окружения показывать рядом с числом. Окружение — это
+# соседние строки страницы, склеенные через « · », и обрезается оно по
+# этому же разделителю: лучше показать две строки целиком, чем три, где
+# третья оборвана посреди слова.
+WHERE = 80
 
 DEFAULTS = {
     "first_screen": {"lines": 6, "min_chars": 25, "pages": ["home"],
@@ -140,7 +147,7 @@ def _one_number(entry: dict) -> str:
 
 def _where(entry: dict) -> str:
     context = (entry.get("рядом") or "").strip()
-    return f"  · {context[:80]}" if context else ""
+    return f"  · {wording.shorten(context, WHERE)}" if context else ""
 
 
 def _same_numbers(fresh: list[dict], gone: list[dict]) -> tuple[list[dict], list[dict]]:
@@ -289,7 +296,7 @@ def _check_first_screen(item: dict, rules: dict, verdict: Verdict,
     hits += [line for line in delta.get("удалено", []) if line in top_old]
     if hits:
         verdict.add("первый экран", setup["say"],
-                    [f"«{line[:QUOTE]}»" for line in hits[:3]])
+                    [f"«{wording.shorten(line, QUOTE)}»" for line in hits[:3]])
 
 
 def _hits(rule: dict, lines: list[str]) -> dict[str, str]:
@@ -337,15 +344,18 @@ def _check_keywords(item: dict, rules: dict, verdict: Verdict) -> None:
 
         if show_fresh and show_gone:
             verdict.add(rule["name"], f"{rule['name']}: формулировка изменилась",
-                        [f"стало: «{line[:QUOTE]}»" for line in list(fresh.values())[:1]]
-                        + [f"было: «{line[:QUOTE]}»" for line in list(gone.values())[:1]])
+                        [f"стало: «{wording.shorten(line, QUOTE)}»"
+                         for line in list(fresh.values())[:1]]
+                        + [f"было: «{wording.shorten(line, QUOTE)}»"
+                           for line in list(gone.values())[:1]])
             continue
         for side, found in (("появилось", fresh), ("исчезло", gone)):
             if side not in allowed or not found:
                 continue
             say = (rule.get("say") or {}).get(side) or rule["name"]
             verdict.add(rule["name"], say,
-                        [f"«{line[:QUOTE]}»" for line in list(found.values())[:2]])
+                        [f"«{wording.shorten(line, QUOTE)}»"
+                         for line in list(found.values())[:2]])
 
 
 def judge(item: dict, rules: dict, old_lines: list[str] | None = None,

@@ -35,8 +35,10 @@ sys.path.insert(0, str(ROOT / "tools"))
 import yaml  # noqa: E402
 
 import classify  # noqa: E402
+import console  # noqa: E402
 import detect  # noqa: E402
 import diffing  # noqa: E402
+import wording  # noqa: E402
 
 SNAPSHOTS = ROOT / "snapshots"
 
@@ -48,6 +50,18 @@ CASES = [
         "name": "конкурент поднял цену тарифа",
         "domain": "salesai.ru", "page": "pricing",
         "do": [("замена", "49 000", "54 000", 0)],
+        "expect": classify.CRITICAL, "rule": "цена изменилась",
+    },
+    {
+        # Поломка, найденная первым прогоном по расписанию 20.08.2026. Mango
+        # Office поднял цену на странице интеграций с 1 000 до 1 400 ₽/мес, а
+        # радар отправил это в недельную сводку строкой «Mango Office · Войти»:
+        # разбор чисел был включён только на страницах тарифов, и цену на
+        # соседней коммерческой странице никто не искал. Случай проверяет, что
+        # так больше не будет — на любой странице, где живут цены.
+        "name": "конкурент поднял цену не на странице тарифов",
+        "domain": "mango-office.ru", "page": "integrations",
+        "do": [("замена", "1 400", "1 900", 0)],
         "expect": classify.CRITICAL, "rule": "цена изменилась",
     },
     {
@@ -192,7 +206,57 @@ def run_case(case: dict, cfg: dict, rules: dict, index: dict, folder: Path) -> d
     return {"case": case, "item": item, "verdict": verdict, "ok": ok}
 
 
+# ─────────── Обрезка длинных строк ───────────
+#
+# Поломка, найденная владельцем 20.08.2026 в живом сообщении: строка с ценой
+# оборвалась посреди слова — «Умный перевод звонка на от». Резали по букве, а
+# не по границе слова, и в сообщении это читается не как «строку укоротили», а
+# как «сообщение пришло битым».
+#
+# Проверка идёт по настоящим строкам настоящих снимков и по всем длинам,
+# которыми радар режет текст на самом деле: окружение числа, цитата правила,
+# экран, мелочь в сводке, строки сводки, строка новости.
+LIMITS = (80, 110, 150, 160, 200, 220)
+
+# Та самая строка, на которой это вылезло. Оставлена дословно: регрессионные
+# случаи ценны именно тем, что повторяют настоящую поломку, а не похожую.
+BROKEN = ("История вызовов и запись звонков в карточке клиента · Умный перевод "
+          "звонка на ответственного · Коллтрекинг")
+
+
+def check_cuts(verbose: bool = False) -> int:
+    """Проверить, что ни одна укороченная строка не рвётся посреди слова."""
+    lines = [BROKEN]
+    for snapshot in sorted(SNAPSHOTS.glob("*/*/*.txt"))[:40]:
+        for line in snapshot.read_text(encoding="utf-8").splitlines():
+            if len(line.strip()) > 90:
+                lines.append(line.strip())
+    lines = lines[:400]
+
+    checked, failed = 0, 0
+    for line in lines:
+        for limit in LIMITS:
+            checked += 1
+            result = wording.shorten(line, limit)
+            if wording.cut_at_word(line, limit) and len(result) <= limit:
+                continue
+            failed += 1
+            print(f"  ОБРЫВ       предел {limit}: {result}")
+
+    mark = "как ожидали" if not failed else "НЕ СОВПАЛО"
+    print(f"  {mark:<11} обрезка длинных строк: проверено {checked} обрезок "
+          f"на {len(lines)} строках")
+    print(f"               • строка из поломки 20.08 при пределе 80: "
+          f"{wording.shorten(BROKEN, 80)}")
+    if verbose:
+        for limit in LIMITS:
+            print(f"               • предел {limit}: {wording.shorten(BROKEN, limit)}")
+    print()
+    return failed
+
+
 def main() -> int:
+    console.setup()
     ap = argparse.ArgumentParser(description="Проверка правил срочности радара")
     ap.add_argument("--verbose", action="store_true",
                     help="показать все улики и строки дельты")
@@ -244,6 +308,8 @@ def main() -> int:
             fits = "" if item["в дайджест"] else " (правка мелкая, но по смыслу срочная)"
             print(f"               → уйдёт сразу{fits}")
         print()
+
+    failed += check_cuts(args.verbose)
 
     print(f"Случаев: {len(results)}, разошлось с ожиданием: {failed}.")
     return 1 if failed else 0
