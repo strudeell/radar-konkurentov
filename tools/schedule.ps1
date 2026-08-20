@@ -15,7 +15,7 @@
     Планировщик умеет то, ради чего всё затевалось: запуск в заданное время,
     догоняющий запуск после включения машины и повтор при сбое.
 
-    Настройки задача берёт не отсюда, а из config.yaml — раздел schedule.
+    Настройки задача берёт не отсюда, а из config/config.yaml — раздел schedule.
     Скрипт спрашивает их у самого радара командой `daily.py --plan`, чтобы
     время и пути были в одном месте, а не в двух.
 
@@ -26,7 +26,7 @@
         powershell -ExecutionPolicy Bypass -File tools\schedule.ps1 -Action run
         powershell -ExecutionPolicy Bypass -File tools\schedule.ps1 -Action remove
 
-    Ключ -At задаёт местное время вместо взятого из config.yaml:
+    Ключ -At задаёт местное время вместо взятого из config/config.yaml:
 
         ... -Action install -At 11:37
 #>
@@ -96,7 +96,7 @@ function Show-Status {
     Write-Host ""
     Write-Host "Коды возврата прогона: 0 — прошёл; 1 — шаг упал или сбор не идёт"
     Write-Host "второй день подряд; 2 — тревогу не удалось отправить."
-    Write-Host "Что было внутри — в logs\<дата>.log, здоровье сбора — командой:"
+    Write-Host "Что было внутри — в work\logs\<дата>.log, здоровье сбора — командой:"
     Write-Host "  python daily.py --health"
 }
 
@@ -129,14 +129,14 @@ function Install-Task {
     # Иначе Windows потребует сохранить пароль учётной записи — ещё один
     # секрет на диске ради того, чтобы радар собирал страницы, пока никого нет.
     # Цена решения честная: если в компьютер не входили сутки, прогон подождёт
-    # до входа. Об этом сказано в RASPISANIE.md.
+    # до входа. Об этом сказано в docs/RASPISANIE.md.
     $principal = New-ScheduledTaskPrincipal `
         -UserId ([Security.Principal.WindowsIdentity]::GetCurrent().Name) `
         -LogonType Interactive -RunLevel Limited
 
     Register-ScheduledTask -TaskName $plan.task -Action $action -Trigger $trigger `
         -Settings $settings -Principal $principal -Force `
-        -Description "Радар конкурентов: ежедневный сбор, разбор, уведомления и недельная сводка по понедельникам. Настройки — config.yaml, раздел schedule." | Out-Null
+        -Description "Радар конкурентов: ежедневный сбор, разбор, уведомления и недельная сводка по понедельникам. Настройки — config/config.yaml, раздел schedule." | Out-Null
 
     Write-Host "Задача поставлена: $($plan.task), ежедневно в $time."
     Show-Status
@@ -159,7 +159,7 @@ function Start-Now {
         exit 1
     }
     Start-ScheduledTask -TaskName $plan.task
-    Write-Host "Прогон запущен планировщиком. Он идёт молча, вывод — в logs\<дата>.log."
+    Write-Host "Прогон запущен планировщиком. Он идёт молча, вывод — в work\logs\<дата>.log."
 }
 
 switch ($Action) {

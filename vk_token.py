@@ -39,7 +39,7 @@ TOKEN_ENDPOINT = "https://id.vk.com/oauth2/auth"
 AUTHORIZE_ENDPOINT = "https://id.vk.com/authorize"
 STORE = Path(__file__).with_name("vk_tokens.json")
 
-# Сообщества из sources.yaml — на них проверяем, что токен рабочий.
+# Сообщества из config/sources.yaml — на них проверяем, что токен рабочий.
 TEST_DOMAINS = ["mangotelecom", "roistat", "qolio", "speechanalytics"]
 
 

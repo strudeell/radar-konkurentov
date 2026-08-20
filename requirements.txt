@@ -5,10 +5,15 @@
 #   python -m venv .venv
 #   .venv\Scripts\Activate.ps1      # Windows PowerShell
 #   pip install -r requirements.txt
+#
+# Здесь закреплены только прямые зависимости — то, что радар просит сам. Их
+# спутники (httpcore, anyio, h11, idna, soupsieve, typing_extensions) сюда не
+# вписаны, и pip возьмёт свежие. Если нужно повторить окружение в точности,
+# ставьте из requirements.lock.txt — там полный слепок с версиями спутников.
 
 httpx==0.28.1            # HTTP-клиент обхода: таймауты, редиректы, HTTP/2
 beautifulsoup4==4.12.3   # разбор HTML встроенным html.parser
-PyYAML==6.0.1            # sources.yaml и config.yaml
+PyYAML==6.0.1            # config/sources.yaml и config/config.yaml
 certifi==2024.2.2        # корни сертификатов: в хранилище Windows нет корня vk.com
 
 # Чего здесь сознательно нет — решено по итогам Фазы 0 (18.08.2026):

@@ -1,4 +1,4 @@
-"""Фаза 0, шаг D: сборка sources.yaml — результат фазы.
+"""Фаза 0, шаг D: сборка config/sources.yaml — результат фазы.
 
 Источники данных:
   phase0-final-pages.json — выверенный список страниц, каждая проверена запросом;
@@ -165,7 +165,7 @@ def main():
             "user_agent": probe.UA_BOT,
             "user_agent_note": "контакт — публичный ящик с okk-ai.ru, поэтому админ "
                                "чужого сайта может сверить его с сайтом. Собирается "
-                               "из config.yaml, менять там",
+                               "из config/config.yaml, менять там",
             "politeness": {"delay_sec": 2, "timeout_sec": 20, "retries": 2,
                            "respect_robots": True},
             "channels_policy": {
@@ -193,7 +193,7 @@ def main():
         "competitors": competitors,
     }
 
-    out = ROOT / "sources.yaml"
+    out = ROOT / "config" / "sources.yaml"
     out.write_text(yaml.safe_dump(doc, allow_unicode=True, sort_keys=False, width=100),
                    encoding="utf-8")
     t = doc["meta"]["totals"]

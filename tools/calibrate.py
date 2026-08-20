@@ -60,9 +60,9 @@ import wording  # noqa: E402
 
 import notify  # noqa: E402  — тот же разбор, которым работает боевой радар
 
-CALIB = ROOT / "calibration"
+CALIB = ROOT / "work" / "calibration"
 SHEET = CALIB / "razmetka.yaml"
-RUNS = ROOT / "runs"
+RUNS = ROOT / "work" / "runs"
 
 SIGNAL = "сигнал"
 NOISE = "шум"
@@ -287,7 +287,7 @@ def sweep(findings: list[dict], marks: dict, cfg: dict) -> list[dict]:
     """Что дошло бы до человека при каждом из порогов.
 
     Критичное в таблице участвует, но от порога не зависит: цена и слова из
-    rules.yaml проходят мимо порога по решению Фазы 3, и калибровка этого не
+    config/rules.yaml проходят мимо порога по решению Фазы 3, и калибровка этого не
     отменяет. Порог решает судьбу только обычных находок.
     """
     numbers_pass = bool(cfg.get("numbers_ignore_threshold", True))
@@ -465,7 +465,7 @@ def report(days: list[str], findings: list[dict], extra: dict, marks: dict,
             out += [f"  Доля сигнала среди размеченного: {share:.0f}%."]
         if counted[UNMARKED]:
             out += [f"  Пока не размечено {counted[UNMARKED]} находок — "
-                    f"числа ниже настолько же неполны. Файл: calibration/{SHEET.name}"]
+                    f"числа ниже настолько же неполны. Файл: work/calibration/{SHEET.name}"]
 
     out += head("Порог: что дошло бы до человека")
     out += ["   порог   дошло   сигнал   шум   не смотрели   потеряно сигналов"]
@@ -477,13 +477,13 @@ def report(days: list[str], findings: list[dict], extra: dict, marks: dict,
                 + mark]
     out += ["",
             "  Критичное в таблице участвует, но от порога не зависит: цена и слова",
-            "  из rules.yaml проходят мимо порога по решению Фазы 3."]
+            "  из config/rules.yaml проходят мимо порога по решению Фазы 3."]
 
     out += head("Кандидаты в шумодав")
     found = candidates(findings)
     if not found:
         out += ["  Повторяющихся строк нет: за эти дни ни одна строка не приходила",
-                "  дважды. Дописывать в noise.yaml нечего — и это тоже ответ."]
+                "  дважды. Дописывать в config/noise.yaml нечего — и это тоже ответ."]
     for row in found:
         flag = "мигает" if row["мигает"] else "повторяется"
         out += [f"  {flag:<12} дней {row['дней']}, источников {row['источников']}, "
@@ -501,7 +501,7 @@ def report(days: list[str], findings: list[dict], extra: dict, marks: dict,
                     f"               {row['пример']}"]
         out += ["",
                 "  В сводке это выглядит как два разных изменения у одного конкурента.",
-                "  Решение фазы: либо убрать один из двух каналов из sources.yaml,",
+                "  Решение фазы: либо убрать один из двух каналов из config/sources.yaml,",
                 "  либо склеивать такие пары при сборке сводки."]
 
     out += head("Источники")
@@ -518,7 +518,7 @@ def report(days: list[str], findings: list[dict], extra: dict, marks: dict,
 
     junk = [row for row in loud if row[NOISE] >= 3 and row[SIGNAL] == 0]
     if junk:
-        out += ["", "  Только шум за весь период (кандидаты на выброс из sources.yaml):"]
+        out += ["", "  Только шум за весь период (кандидаты на выброс из config/sources.yaml):"]
         for row in junk:
             out += [f"    {pretty(row['имя'])}: {row[NOISE]} находок, все шум"]
 
@@ -610,7 +610,7 @@ def recommend(findings: list[dict], marks: dict, cfg: dict, counted: Counter,
                "  предварительная картина: одна находка сдвигает её на сотни символов.",
                ""] + ["  " + line.strip() for line in out] + [
                "",
-               "  Что делать: продлить обкатку — calibration.until в config.yaml —",
+               "  Что делать: продлить обкатку — calibration.until в config/config.yaml —",
                "  и вернуться к таблице, когда данных станет больше."]
 
     out += ["", "  Решение принимает человек. Программа считает, а не постановляет:",
@@ -637,10 +637,10 @@ def main() -> int:
         sys.exit("Дней в периоде должно быть хотя бы один.")
 
     cfg = {**{"min_changed_chars": 120, "numbers_ignore_threshold": True},
-           **((yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
+           **((yaml.safe_load((ROOT / "config" / "config.yaml").read_text(encoding="utf-8"))
                or {}).get("detect") or {})}
     cal = notify.load_calibration()
-    rules = classify.load_rules(ROOT / "rules.yaml")
+    rules = classify.load_rules(ROOT / "config" / "rules.yaml")
 
     days = period(args.days, args.to)
     findings, extra = gather(days, rules)
@@ -648,7 +648,7 @@ def main() -> int:
 
     if args.razmetka:
         added, total = write_sheet(findings, marks, args.dry_run)
-        where = f"calibration/{SHEET.name}"
+        where = f"work/calibration/{SHEET.name}"
         if args.dry_run:
             print(f"Холостой запуск: лист разметки не записан. Было бы {total} "
                   f"находок, из них новых {added}.")
@@ -672,7 +672,7 @@ def main() -> int:
             f"Собрано {datetime.now(timezone.utc).isoformat(timespec='minutes')} UTC "
             "программой tools/calibrate.py.\n\n```\n"
             + "\n".join(lines) + "\n```\n", encoding="utf-8")
-        print(f"\nОтчёт: calibration/{path.name}")
+        print(f"\nОтчёт: work/calibration/{path.name}")
     return 0
 
 

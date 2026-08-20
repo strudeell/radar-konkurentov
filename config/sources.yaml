@@ -5,7 +5,7 @@ meta:
     её не искали.
   user_agent: 'RadarBot/0.1 (+https://okk-ai.ru; competitive monitoring; contact: example@gmail.com)'
   user_agent_note: контакт — публичный ящик с okk-ai.ru, поэтому админ чужого сайта может сверить его
-    с сайтом. Собирается из config.yaml, менять там
+    с сайтом. Собирается из config/config.yaml, менять там
   politeness:
     delay_sec: 2
     timeout_sec: 20

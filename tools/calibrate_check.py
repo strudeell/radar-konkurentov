@@ -139,7 +139,7 @@ def case_critical_ignores_threshold() -> None:
     table = calibrate.sweep([item], marks_for([(item, "сигнал")]), CFG)
     check("критичное доходит и при пороге 800",
           1, row(table, 800)["дошло"],
-          "слова рынка из rules.yaml проходят мимо порога")
+          "слова рынка из config/rules.yaml проходят мимо порога")
 
 
 def case_unmarked_counted_apart() -> None:
@@ -292,7 +292,7 @@ def case_sheet_keeps_verdicts(tmp: Path) -> None:
     real_calib, real_sheet = calibrate.CALIB, calibrate.SHEET
     calibrate.CALIB, calibrate.SHEET = tmp, tmp / "razmetka.yaml"
     try:
-        rules = classify.load_rules(ROOT / "rules.yaml")
+        rules = classify.load_rules(ROOT / "config" / "rules.yaml")
         findings, _ = calibrate.gather(calibrate.period(14, None), rules)
         if not findings:
             print("\n  пропущено   лист разметки: находок пока нет")
@@ -337,7 +337,7 @@ def main() -> int:
     case_thin_week_blocks_advice()
     case_few_marks_block_advice()
 
-    tmp = ROOT / "calibration" / "_proverka"
+    tmp = ROOT / "work" / "calibration" / "_proverka"
     tmp.mkdir(parents=True, exist_ok=True)
     try:
         case_sheet_keeps_verdicts(tmp)

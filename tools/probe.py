@@ -15,8 +15,8 @@ import httpx
 from bs4 import BeautifulSoup
 
 def _load_config() -> dict:
-    """Настройки человека — из config.yaml. Файл может отсутствовать."""
-    cfg = Path(__file__).resolve().parent.parent / "config.yaml"
+    """Настройки человека — из config/config.yaml. Файл может отсутствовать."""
+    cfg = Path(__file__).resolve().parent.parent / "config" / "config.yaml"
     if not cfg.exists():
         return {}
     import yaml
@@ -27,7 +27,7 @@ _CFG = _load_config()
 CONTACT = _CFG.get("contact_email", "TODO@okk-ai.ru")
 
 # Контакт в User-Agent — условие вежливого обхода: владелец сайта должен иметь
-# возможность написать нам, а не сразу банить. Заполняется в config.yaml.
+# возможность написать нам, а не сразу банить. Заполняется в config/config.yaml.
 UA_BOT = (
     f"{_CFG.get('bot_name', 'RadarBot')}/{_CFG.get('bot_version', '0.1')} "
     f"(+{_CFG.get('bot_url', 'https://okk-ai.ru')}; competitive monitoring; "
@@ -37,7 +37,7 @@ UA_BOT = (
 if CONTACT.startswith("TODO"):
     import warnings
     warnings.warn(
-        "В config.yaml не заполнен contact_email — в User-Agent уходит заглушка. "
+        "В config/config.yaml не заполнен contact_email — в User-Agent уходит заглушка. "
         "Для разведки это терпимо, для регулярного сбора нет.",
         stacklevel=2,
     )

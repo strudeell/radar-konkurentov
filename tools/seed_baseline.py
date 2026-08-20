@@ -9,7 +9,7 @@
 
 Что делает. Берёт из data/_raw файлы вида final__<страница>__<домен>.html,
 прогоняет через ту же нормализацию, что и ежедневный сбор, и кладёт результат
-в snapshots/<домен>/<страница>/<дата сохранения файла>.txt.
+в work/snapshots/<домен>/<страница>/<дата сохранения файла>.txt.
 
 Честность даты. Дата снимка берётся не с потолка и не сегодняшняя, а та, когда
 файл был реально скачан. Иначе в истории появился бы снимок, датированный днём,
@@ -37,7 +37,7 @@ import normalize  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "data" / "_raw"
-SNAPSHOTS = ROOT / "snapshots"
+SNAPSHOTS = ROOT / "work" / "snapshots"
 
 
 def main() -> int:
@@ -45,7 +45,7 @@ def main() -> int:
     ap.add_argument("--write", action="store_true", help="записать файлы")
     args = ap.parse_args()
 
-    sources = yaml.safe_load((ROOT / "sources.yaml").read_text(encoding="utf-8"))
+    sources = yaml.safe_load((ROOT / "config" / "sources.yaml").read_text(encoding="utf-8"))
     made = skipped = 0
 
     for comp in sources["competitors"]:

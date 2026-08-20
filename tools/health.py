@@ -211,7 +211,7 @@ def alarm_text(fails: list, last_ok, again: bool = False) -> str:
     lines.append("Пока сбор не идёт, пустая сводка не значит «у конкурентов "
                  "тихо» — она значит «никто не смотрел».")
     lines.append("")
-    lines.append("Что смотреть: журнал последнего прогона в папке logs/, "
+    lines.append("Что смотреть: журнал последнего прогона в папке work/logs/, "
                  "запуск руками — <code>python daily.py</code>.")
     return "\n".join(lines)
 

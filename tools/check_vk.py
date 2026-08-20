@@ -1,4 +1,4 @@
-"""Проверка токена ВКонтакте на всех сообществах из sources.yaml.
+"""Проверка токена ВКонтакте на всех сообществах из config/sources.yaml.
 
 Запуск (токен берётся из переменной окружения, в файлы его не кладём):
 
@@ -48,11 +48,11 @@ def main():
               'PowerShell:  $env:VK_TOKEN = "ваш_ключ"')
         return 1
 
-    doc = yaml.safe_load((ROOT / "sources.yaml").read_text(encoding="utf-8"))
+    doc = yaml.safe_load((ROOT / "config" / "sources.yaml").read_text(encoding="utf-8"))
     groups = [(c["name"], ch["id"]) for c in doc["competitors"]
               for ch in c["channels"] if ch["net"] == "vk"]
     if not groups:
-        print("В sources.yaml нет сообществ ВК.")
+        print("В config/sources.yaml нет сообществ ВК.")
         return 1
 
     print(f"Проверяю {len(groups)} сообществ.\n")

@@ -24,7 +24,7 @@
 остальное идёт до конца. Уведомления, не отправленные из-за того, что споткнулся
 разбор одного дня, — худший исход из возможных.
 
-**Весь вывод пишется в logs/<дата>.log.** Планировщик показывает только код
+**Весь вывод пишется в work/logs/<дата>.log.** Планировщик показывает только код
 возврата: «последний запуск: 0x1». По одному этому числу нельзя понять, сеть
 легла или у конкурента поменялся сайт. Журнал прогона — единственное место, где
 это видно, поэтому он пишется всегда, даже когда прогон запущен руками.
@@ -41,7 +41,7 @@
     python daily.py --health         только показать здоровье сбора и выйти
     python daily.py --plan           настройки расписания в JSON (для установщика)
 
-Поставить прогон на расписание — tools/schedule.ps1, порядок в RASPISANIE.md.
+Поставить прогон на расписание — tools/schedule.ps1, порядок в docs/RASPISANIE.md.
 """
 
 import argparse
@@ -62,15 +62,19 @@ import console  # noqa: E402
 import health  # noqa: E402
 import telegram  # noqa: E402
 
-RUNS = ROOT / "runs"
-LOGS = ROOT / "logs"
-NOTIFY = ROOT / "notify"
+# Настройки человека — в config/, всё, что радар пишет сам, — в work/.
+CONFIG = ROOT / "config"
+WORK = ROOT / "work"
+
+RUNS = WORK / "runs"
+LOGS = WORK / "logs"
+NOTIFY = WORK / "notify"
 LOCK = RUNS / "daily.lock"
 
-# Значения по умолчанию. Всё это можно менять в config.yaml, раздел schedule.
+# Значения по умолчанию. Всё это можно менять в config/config.yaml, раздел schedule.
 DEFAULTS = {
     # Время ежедневного сбора по UTC. Не на ровном часе и не в половину —
-    # объяснение в config.yaml и в RASPISANIE.md.
+    # объяснение в config/config.yaml и в docs/RASPISANIE.md.
     "time_utc": "06:37",
     # Сколько ждать один шаг, прежде чем считать его зависшим. Полный обход
     # шестидесяти источников занимает три минуты; сорок — это запас на случай,
@@ -91,9 +95,9 @@ DEFAULTS = {
 
 
 def load_config() -> dict:
-    path = ROOT / "config.yaml"
+    path = CONFIG / "config.yaml"
     if not path.exists():
-        sys.exit("Не найден config.yaml рядом с daily.py.")
+        sys.exit("Не найден config/config.yaml рядом с daily.py.")
     config = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     cfg = {**DEFAULTS, **(config.get("schedule") or {})}
     # Длина недели у сводки — настройка Фазы 4. Здесь она нужна ровно для
@@ -106,7 +110,7 @@ def load_config() -> dict:
 # ─────────────────────────── журнал прогона ───────────────────────────────────
 
 class Log:
-    """Вывод сразу в двух местах: на экран и в logs/<дата>.log.
+    """Вывод сразу в двух местах: на экран и в work/logs/<дата>.log.
 
     Под расписанием экрана нет вовсе — pythonw.exe запускается без окна, и
     sys.stdout там равен None. Печать в никуда роняет программу на первом же
@@ -357,7 +361,7 @@ def launcher() -> str:
     Разница одна и вся про человека: python.exe раз в сутки открывает чёрное
     окно консоли поверх работы и закрывает его через три минуты. Первое, что
     делает владелец с такой задачей, — отключает её. pythonw.exe работает молча,
-    а весь вывод и так лежит в logs/.
+    а весь вывод и так лежит в work/logs/.
     """
     exe = Path(sys.executable)
     quiet = exe.with_name("pythonw.exe")
@@ -426,7 +430,7 @@ def main() -> int:
 
     timeout = float(cfg["step_timeout_min"]) * 60
     if not take_lock(timeout):
-        log("Прогон уже идёт (замок runs/daily.lock свежий). Второй не запускаю: "
+        log("Прогон уже идёт (замок work/runs/daily.lock свежий). Второй не запускаю: "
             "два обхода сразу — это вдвое чаще стучаться в чужие сайты.")
         log.close()
         return 1
@@ -481,7 +485,7 @@ def main() -> int:
         f"с ненулевым кодом: {sum(1 for s in steps if s['код'] != 0)}.")
     if gone:
         log(f"Вычищено журналов старше {cfg['keep_log_days']} дней: {gone}.")
-    log(f"Журнал прогона: logs/{today.isoformat()}.log")
+    log(f"Журнал прогона: work/logs/{today.isoformat()}.log")
 
     if not args.dry_run:
         journal = health.read_journal(RUNS)

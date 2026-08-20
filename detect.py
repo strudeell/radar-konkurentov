@@ -8,8 +8,8 @@
 
 Результат ложится в два места:
 
-    diffs/<домен>/<страница>/<ГГГГ-ММ-ДД>.json   разница по одному источнику
-    diffs/<ГГГГ-ММ-ДД>.json                       сводка дня
+    work/diffs/<домен>/<страница>/<ГГГГ-ММ-ДД>.json   разница по одному источнику
+    work/diffs/<ГГГГ-ММ-ДД>.json                       сводка дня
 
 Диффы не чистятся никогда. Полные снимки старше 90 дней сборщик удаляет — они
 тяжёлые и спустя квартал бесполезны, — а диффы весят килобайты, и в них вся
@@ -31,7 +31,7 @@
 **«Не проверяли» и «проверили, ничего не изменилось» — разные вещи.** Источник,
 который сегодня не собрался, попадает в сводку отдельным списком, а не молча
 приравнивается к неизменившемуся. Сводка берёт это из отчёта сборщика
-runs/<дата>.json.
+work/runs/<дата>.json.
 
 Запуск:
 
@@ -58,11 +58,15 @@ import console  # noqa: E402
 import diffing  # noqa: E402
 import prices  # noqa: E402
 
-SNAPSHOTS = ROOT / "snapshots"
-DIFFS = ROOT / "diffs"
-RUNS = ROOT / "runs"
+# Настройки человека — в config/, всё, что радар пишет сам, — в work/.
+CONFIG = ROOT / "config"
+WORK = ROOT / "work"
 
-# Значения по умолчанию. Человек меняет их в config.yaml, раздел detect.
+SNAPSHOTS = WORK / "snapshots"
+DIFFS = WORK / "diffs"
+RUNS = WORK / "runs"
+
+# Значения по умолчанию. Человек меняет их в config/config.yaml, раздел detect.
 DEFAULTS = {
     # Порог из технического плана. Меньше — не повод беспокоить человека.
     # Калибруется на живых данных в Фазе 6, а не выдумывается заранее.
@@ -92,9 +96,9 @@ COLLECT_SKIPPED = "пропущено"
 
 
 def load_yaml(name: str) -> dict:
-    path = ROOT / name
+    path = CONFIG / name
     if not path.exists():
-        sys.exit(f"Не найден {name} рядом с detect.py.")
+        sys.exit(f"Не найден {name} в папке config рядом с detect.py.")
     return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
 
 
@@ -167,7 +171,7 @@ def examine(domain: str, page: str, old_file: Path, new_file: Path,
     old_text = old_file.read_text(encoding="utf-8")
     new_text = new_file.read_text(encoding="utf-8")
     # Домен и вид страницы нужны сравнению: по ним подбираются правила шумодава
-    # из noise.yaml. Снимок хранится как есть, метки ставятся здесь.
+    # из config/noise.yaml. Снимок хранится как есть, метки ставятся здесь.
     delta = diffing.compare(old_text, new_text, host=domain, kind=page)
 
     gap = (date.fromisoformat(new_file.stem) - date.fromisoformat(old_file.stem)).days
@@ -306,7 +310,7 @@ def _short(item: dict) -> dict:
         "сравнили со снимком": item["сравнили со снимком"],
         "почему": item["почему"],
         "кратко": item["кратко"],
-        "дельта": f"diffs/{item['домен']}/{item['страница']}/{item['дата']}.json",
+        "дельта": f"work/diffs/{item['домен']}/{item['страница']}/{item['дата']}.json",
     }
 
 
@@ -389,7 +393,7 @@ def main() -> int:
             for line in summary["не проверено"]:
                 print("  •", line)
         if not args.dry_run:
-            print(f"\nСводка дня: diffs/{today}.json")
+            print(f"\nСводка дня: work/diffs/{today}.json")
     else:
         print(f"\nРазобрано пар: {len(items)}.")
 
@@ -397,7 +401,7 @@ def main() -> int:
         print("\nЭто был холостой разбор: ничего не записано.")
 
     # Ноль здесь означает «разбор состоялся», а не «изменений нет»: найденное
-    # лежит в diffs/, и решает, беспокоить ли человека, notify.py. Ненулевой код
+    # лежит в work/diffs/, и решает, беспокоить ли человека, notify.py. Ненулевой код
     # у разбора бывает только один — когда он сам не отработал, и расписание
     # (daily.py) понимает его именно так.
     return 0

@@ -1,0 +1,27 @@
+# Полный слепок рабочего окружения: не только четыре библиотеки, которые радар
+# просит сам, но и всё, что они притянули за собой. Снят с .venv на Python
+# 3.12.4 под Windows 20.08.2026 командой pip freeze.
+#
+# Зачем отдельный файл. В requirements.txt закреплены только прямые
+# зависимости — httpx, beautifulsoup4, PyYAML, certifi. Их спутники (httpcore,
+# anyio, h11, idna, soupsieve, typing_extensions) там не названы, и pip возьмёт
+# самые свежие. Обычно это безобидно, но именно так проекты и ломаются через
+# год: код тот же, библиотека под ним другая.
+#
+# Что чем ставить:
+#   pip install -r requirements.txt        — обычная установка, с пояснениями
+#   pip install -r requirements.lock.txt   — ровно то, на чём радар работает
+#
+# Файл обновляется одной командой после любой смены версий:
+#   .venv\Scripts\python.exe -m pip freeze > requirements.lock.txt
+
+anyio==4.14.2
+beautifulsoup4==4.12.3
+certifi==2024.2.2
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.19
+PyYAML==6.0.1
+soupsieve==2.9.2
+typing_extensions==4.16.0

@@ -17,7 +17,7 @@
 Что здесь важно знать.
 
 **Одно и то же изменение не присылается дважды.** Программа помнит, о чём уже
-писала, в notify/journal.json. Запуск повторно — обычное дело: расписание может
+писала, в work/notify/journal.json. Запуск повторно — обычное дело: расписание может
 сработать дважды, человек может запустить руками. Второй раз человек ничего не
 получит, и это правильно: радар, который дублирует алерты, читать перестают так
 же быстро, как радар, который шумит.
@@ -66,9 +66,13 @@ import telegram  # noqa: E402
 import wording  # noqa: E402
 from robots import Robots  # noqa: E402
 
-SNAPSHOTS = ROOT / "snapshots"
-DIFFS = ROOT / "diffs"
-NOTIFY = ROOT / "notify"
+# Настройки человека — в config/, всё, что радар пишет сам, — в work/.
+CONFIG = ROOT / "config"
+WORK = ROOT / "work"
+
+SNAPSHOTS = WORK / "snapshots"
+DIFFS = WORK / "diffs"
+NOTIFY = WORK / "notify"
 JOURNAL = NOTIFY / "journal.json"
 
 # Слово детектора для находки, в которой ничего не произошло: текст тот же,
@@ -76,7 +80,7 @@ JOURNAL = NOTIFY / "journal.json"
 # detect.py, — это его слово, и расходиться им нельзя.
 SHUFFLE = "только перестановка"
 
-# Значения по умолчанию. Человек меняет их в config.yaml, раздел notify.
+# Значения по умолчанию. Человек меняет их в config/config.yaml, раздел notify.
 DEFAULTS = {
     "digest_days": 7,        # сколько дней попадает в недельную сводку
     "lines_in_alert": 6,     # сколько строк-улик показывать в срочном сообщении
@@ -104,7 +108,7 @@ MONTHS = ["января", "февраля", "марта", "апреля", "ма�
           "августа", "сентября", "октября", "ноября", "декабря"]
 
 
-# Неделя обкатки (Фаза 6). Человек меняет это в config.yaml, раздел calibration.
+# Неделя обкатки (Фаза 6). Человек меняет это в config/config.yaml, раздел calibration.
 CALIBRATION = {
     "mode": False,   # идёт ли обкатка: сообщения помечаются и уходят в личный чат
     "until": None,   # когда неделя заканчивается, ГГГГ-ММ-ДД
@@ -119,16 +123,16 @@ OBKATKA_HEAD = ("🧪 ОБКАТКА · это калибровка, а не б�
 
 
 def load_config() -> dict:
-    path = ROOT / "config.yaml"
+    path = CONFIG / "config.yaml"
     if not path.exists():
-        sys.exit("Не найден config.yaml рядом с notify.py.")
+        sys.exit("Не найден config/config.yaml рядом с notify.py.")
     config = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     return {**DEFAULTS, **(config.get("notify") or {})}
 
 
 def load_calibration() -> dict:
     """Настройки недели обкатки. Их читает не только notify.py — ещё calibrate.py."""
-    path = ROOT / "config.yaml"
+    path = CONFIG / "config.yaml"
     if not path.exists():
         return dict(CALIBRATION)
     config = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
@@ -157,7 +161,7 @@ def obkatka_note(cal: dict, today: str) -> str | None:
     if until and today > until:
         return ("🧪 обкатка: срок вышел " + ru_date(until) + ". Пора решать: порог, "
                 "шумодав, источники — и переключать радар в боевой режим "
-                "(calibration.mode: false). Что решать — в OBKATKA.md.")
+                "(calibration.mode: false). Что решать — в docs/OBKATKA.md.")
     tail = f", до {ru_date(until)}" if until else ""
     return (f"🧪 обкатка{tail}: сообщения помечены и не считаются боевой рассылкой. "
             "Разметить находки — python tools/calibrate.py --razmetka")
@@ -334,7 +338,7 @@ def read_sources(items: list[dict], cfg: dict) -> None:
     строка описания, а на что именно меняются цены, написано внутри. Владелец
     всё равно откроет ссылку и прочитает — значит, это надо сделать за него.
 
-    Ходим только за срочным и не больше, чем сказано в config.yaml: обычное
+    Ходим только за срочным и не больше, чем сказано в config/config.yaml: обычное
     ждёт понедельника, и лишние запросы к чужому сайту ради него не нужны.
     Правила robots.txt соблюдаем те же, что и сборщик.
     """
@@ -463,7 +467,7 @@ def digest_text(start: date, end: date, by_competitor: dict, quiet: list[str],
             lines.append("<i>…и ещё "
                          + plural(len(rows) - limit, "изменение", "изменения",
                                   "изменений")
-                         + ", смотреть в diffs/</i>")
+                         + ", смотреть в work/diffs/</i>")
         blocks.append("\n".join(lines))
 
     # Мелочь: то, что не дотянуло до порога и срочным не оказалось. В алерт
@@ -593,7 +597,7 @@ def run_day(day: str, cfg: dict, rules: dict, bot, args) -> int:
     sent, why, ids = False, "критичного нет — молчим", []
     text = ""
     if fresh and not cfg["send_critical"]:
-        why = "send_critical выключен в config.yaml: критичное уйдёт в сводке"
+        why = "send_critical выключен в config/config.yaml: критичное уйдёт в сводке"
     elif fresh:
         read_sources(fresh, cfg)
         text = obkatka(alert_text(day, fresh, cfg), load_calibration())
@@ -639,7 +643,7 @@ def run_day(day: str, cfg: dict, rules: dict, bot, args) -> int:
         NOTIFY.mkdir(parents=True, exist_ok=True)
         (NOTIFY / f"{day}.json").write_text(
             json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(f"Отчёт: notify/{day}.json")
+        print(f"Отчёт: work/notify/{day}.json")
     else:
         print("Это был холостой запуск: ничего не отправлено и не записано.")
 
@@ -656,7 +660,7 @@ def _row(item: dict, sent: bool) -> dict:
         "адрес": item["адрес"],
         **verdict.to_dict(),
         "улики": verdict.lines,
-        "дельта": f"diffs/{item['домен']}/{item['страница']}/{item['дата']}.json",
+        "дельта": f"work/diffs/{item['домен']}/{item['страница']}/{item['дата']}.json",
     }
     if item.get("новость"):
         out["новость"] = item["новость"]
@@ -796,7 +800,7 @@ def run_digest(day: str, cfg: dict, rules: dict, bot, args) -> int:
         NOTIFY.mkdir(parents=True, exist_ok=True)
         (NOTIFY / f"digest-{end.isoformat()}.json").write_text(
             json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(f"Отчёт: notify/digest-{end.isoformat()}.json")
+        print(f"Отчёт: work/notify/digest-{end.isoformat()}.json")
     else:
         print("Это был холостой запуск: ничего не отправлено и не записано.")
 
@@ -862,7 +866,7 @@ def main() -> int:
 
     cfg = load_config()
     cal = load_calibration()
-    rules = classify.load_rules(ROOT / "rules.yaml")
+    rules = classify.load_rules(CONFIG / "rules.yaml")
     day = args.date or date.today().isoformat()
 
     # Чат обкатки. Смысл в том, чтобы неделю калибровки сообщения шли туда, где
@@ -880,7 +884,7 @@ def main() -> int:
 
     if args.check:
         if bot is None:
-            print("Бот не настроен. Как его завести — в TELEGRAM-BOT.md.")
+            print("Бот не настроен. Как его завести — в docs/TELEGRAM-BOT.md.")
             return 2
         try:
             who = bot.me()
@@ -893,7 +897,7 @@ def main() -> int:
 
     if bot is None:
         print("Бот не настроен — сообщения будут показаны на экране "
-              "(как в неделю обкатки Фазы 6). Завести бота — TELEGRAM-BOT.md.\n")
+              "(как в неделю обкатки Фазы 6). Завести бота — docs/TELEGRAM-BOT.md.\n")
 
     note = obkatka_note(cal, day)
     if note:

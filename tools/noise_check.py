@@ -104,7 +104,7 @@ def main() -> int:
     if noisy:
         worst = max(chars for chars, *_ in noisy)
         print(f"Больше всего шума на одной странице: {worst} символов")
-        print("Порог в config.yaml (detect.min_changed_chars) должен стоять выше "
+        print("Порог в config/config.yaml (detect.min_changed_chars) должен стоять выше "
               "этого числа,\nиначе фон будет попадать в дайджест как изменение.")
     return 0
 

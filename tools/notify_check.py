@@ -40,7 +40,7 @@ import detect  # noqa: E402
 import diffing  # noqa: E402
 import wording  # noqa: E402
 
-SNAPSHOTS = ROOT / "snapshots"
+SNAPSHOTS = ROOT / "work" / "snapshots"
 
 OLD_DAY, NEW_DAY = "2026-08-18", "2026-08-19"
 
@@ -262,11 +262,11 @@ def main() -> int:
                     help="показать все улики и строки дельты")
     args = ap.parse_args()
 
-    config = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8")) or {}
+    config = yaml.safe_load((ROOT / "config" / "config.yaml").read_text(encoding="utf-8")) or {}
     cfg = {**detect.DEFAULTS, **(config.get("detect") or {})}
-    sources = yaml.safe_load((ROOT / "sources.yaml").read_text(encoding="utf-8")) or {}
+    sources = yaml.safe_load((ROOT / "config" / "sources.yaml").read_text(encoding="utf-8")) or {}
     index = detect.source_index(sources)
-    rules = classify.load_rules(ROOT / "rules.yaml")
+    rules = classify.load_rules(ROOT / "config" / "rules.yaml")
 
     print("Проверка на настоящих снимках: в каждый внесена одна правка.\n"
           f"Порог детектора {cfg['min_changed_chars']} символов, "

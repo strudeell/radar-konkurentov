@@ -63,11 +63,11 @@ _ignore_cache: list | None = None
 
 
 def ignore_rules() -> list:
-    """Правила «эту строку в изменениях не считать» из noise.yaml, раздел diff."""
+    """Правила «эту строку в изменениях не считать» из config/noise.yaml, раздел diff."""
     global _ignore_cache
     if _ignore_cache is not None:
         return _ignore_cache
-    path = ROOT / "noise.yaml"
+    path = ROOT / "config" / "noise.yaml"
     rules = []
     if path.exists():
         import yaml
