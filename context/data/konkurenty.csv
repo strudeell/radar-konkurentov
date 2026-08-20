@@ -1,0 +1,20 @@
+group,name,domain,site_url,segment,focus,pricing_model,entry_price,price_per_min_over,minutes_included,prices_public,trial,result_guarantee,channels,on_premise,verified_at
+1,Rechka.ai,rechka.ai,https://rechka.ai,SMB,Продажи / ОКК,Пакеты минут,60000 RUB (не подтверждено сайтом),4-6 RUB,10000+,no (форма расчёта),Бесплатный аудит 30 мин,"нет (реклама «результат гарантирован»)",Звонки,no,2026-06-13
+1,SalesAI.ru,salesai.ru,https://salesai.ru,Средний (от 500 млн выручки),Продажи / ОКК,Подписка,49000 RUB/мес,7 RUB,7000,yes,7 дней или 40 мин/день,yes (нет роста — бесплатно),Звонки + видеовстречи,no,2026-06-13
+1,Imot.io,imot.io,https://imot.io,Средний + Enterprise,Продажи + маркетинг + продукт,Индивидуально,не раскрыт,,,no,Демо / пилот,no,"Звонки, чаты, CRM, почта, видео",yes,2026-06-13
+1,Re:call,recall-ai.ru,https://recall-ai.ru,SMB,Продажи / ОКК,Подписка,15000 RUB/мес,6 RUB,2500,yes,100 звонков бесплатно,no,Звонки,no,2026-06-13
+1,Mango Office,mango-office.ru,https://www.mango-office.ru/products/virtualnaya_ats/vozmozhnosti/speech-analytics/,Любой клиент Mango,Телефония + ОКК,Подписка,1100 RUB/мес абонплата,"от 1,25 RUB, далее 1 RUB",10000,yes,Демо 7 дней,no,"Звонки, чаты, мессенджеры, соцсети",no,2026-06-13
+1,Roistat,roistat.com,https://roistat.com,Маркетологи / аналитики,Сквозная аналитика + ОКК,Подписка,13790 RUB/мес,,,partial (/price),14 дней,no,Звонки,no,2026-06-13
+1,Yandex SpeechSense,aistudio.yandex.ru,https://aistudio.yandex.ru/ru/solutions/speechsense,Enterprise / контакт-центры,Контакт-центр + офлайн,По запросу (Private Preview),,,,no,По запросу,no,Звонки + чаты + офлайн,yes,2026-06-13
+1,Родник,rodnik.bz,https://rodnik.bz,Средний B2B (EdTech / FinTech / SaaS),Продажи + память по клиенту,не раскрыта,не раскрыт,~5 RUB,,no,Демо на данных клиента,no,"Звонки, видео, письма, переписка",не заявлен,2026-07-16
+1,Bewise.ai,bewise.ai,https://bewise.ai/pricing/,SMB — крупный,Продажи + маркетинг + методология,Подписка + токены,0 RUB (Free) / от 19000 RUB/мес,токены ~175-350 RUB/сделка,,yes,Free навсегда,no,"Звонки, видео, email, чаты",yes (частное облако),2026-07-16
+1,Ectem OK,okk.ectem.ru,https://okk.ectem.ru/,SMB / средний: ОП и контакт-центры,Контроль качества ИИ и ручной + аутсорс-ОКК,Подписка (минуты + лимит менеджеров),21900 RUB/мес (2000 мин / до 5 менеджеров),"3,5-4 RUB",2000 / 8000 / 35000 / 100000+,yes,7 дней без карты (60 мин),no,"Звонки, видео, переписки, карточки сделок в CRM",не заявлен,2026-07-27
+2,Call-Intellect,call-intellect.ru,https://call-intellect.ru,SMB / средний,Речевая аналитика + контроль качества ОП,Пакеты минут (за фактические минуты),нет данных,,,нет данных,,,Звонки,,
+2,Phonix,phonix.pro,https://phonix.pro,Ниша: застройщики / недвижимость,Речевая аналитика для ОП застройщика,нет данных,нет данных,,,нет данных,,,Звонки,,
+2,Zvonalitik,zvonalitik.ru,https://zvonalitik.ru,Микро / SMB,ИИ-анализ качества звонков,Пакеты минут,990 RUB/мес (200 мин),3-5 RUB,200 / 500 / 1200,yes,,,Звонки,,
+2,Qolio,qolio.ru,https://qolio.ru,Контакт-центры + ОП,Quality Management: оценка звонков и чатов,Подписка,нет данных,,,нет данных,,,Звонки + чаты,,
+2,Speech Analytics,speechanalytics.ru,https://speechanalytics.ru,Контакт-центры,"Речевая аналитика, готовые словари",нет данных,нет данных,,,нет данных,,,Звонки,,
+2,Dialext,dialext.com,https://dialext.com,Средний / контакт-центры,Речевая аналитика + автоконтроль звонков,Подписка,30000 RUB/мес («Старт»),,до 2000 / 5000 / 10000 записей в мес.,yes,,,Звонки,,
+2,GetCalls,getcalls.ru,https://getcalls.ru,SMB / средний,ИИ-аналитика звонков для отдела продаж,Пакеты минут,нет данных,~4 RUB (пакет 80000 RUB / 23000 мин),500-30000,partial,,,Звонки,,
+2,Oneboost,oneboost.io,https://oneboost.io,Средний,"Анализ коммуникаций, 34 параметра в CRM",Индивидуально (за минуты или за разговор),нет данных,,,no,,,Звонки,,
+2,IQSTAT,iqstat.io,https://iqstat.io,SMB (бета),Речевая аналитика «для руководителя»,нет данных,нет данных,,1000 мин бесплатно (бета),нет данных,,,Звонки,,
