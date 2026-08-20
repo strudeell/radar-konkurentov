@@ -71,6 +71,11 @@ DIFFS = ROOT / "diffs"
 NOTIFY = ROOT / "notify"
 JOURNAL = NOTIFY / "journal.json"
 
+# Слово детектора для находки, в которой ничего не произошло: текст тот же,
+# изменился порядок строк или ушли метки шумодава. Пишется так же, как в
+# detect.py, — это его слово, и расходиться им нельзя.
+SHUFFLE = "только перестановка"
+
 # Значения по умолчанию. Человек меняет их в config.yaml, раздел notify.
 DEFAULTS = {
     "digest_days": 7,        # сколько дней попадает в недельную сводку
@@ -99,12 +104,63 @@ MONTHS = ["января", "февраля", "марта", "апреля", "ма�
           "августа", "сентября", "октября", "ноября", "декабря"]
 
 
+# Неделя обкатки (Фаза 6). Человек меняет это в config.yaml, раздел calibration.
+CALIBRATION = {
+    "mode": False,   # идёт ли обкатка: сообщения помечаются и уходят в личный чат
+    "until": None,   # когда неделя заканчивается, ГГГГ-ММ-ДД
+    "chat": None,    # чат обкатки; пусто — тот же, что в telegram_tokens.json
+}
+
+# Шапка сообщения на время обкатки. Одна строка сверху, дальше — ровно то
+# сообщение, которое человек получил бы в боевом режиме: обкатка нужна, чтобы
+# оценить настоящий текст, а не его облегчённый вид.
+OBKATKA_HEAD = ("🧪 ОБКАТКА · это калибровка, а не боевая рассылка.\n"
+                "Оцените: сигнал или шум. Разметка — python tools/calibrate.py")
+
+
 def load_config() -> dict:
     path = ROOT / "config.yaml"
     if not path.exists():
         sys.exit("Не найден config.yaml рядом с notify.py.")
     config = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     return {**DEFAULTS, **(config.get("notify") or {})}
+
+
+def load_calibration() -> dict:
+    """Настройки недели обкатки. Их читает не только notify.py — ещё calibrate.py."""
+    path = ROOT / "config.yaml"
+    if not path.exists():
+        return dict(CALIBRATION)
+    config = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    return {**CALIBRATION, **(config.get("calibration") or {})}
+
+
+def obkatka(text: str, cal: dict) -> str:
+    """Пометить сообщение шапкой обкатки. В боевом режиме текст не трогается."""
+    if not cal.get("mode") or not text:
+        return text
+    return OBKATKA_HEAD + "\n\n" + text
+
+
+def obkatka_note(cal: dict, today: str) -> str | None:
+    """Строка про обкатку, которую видно в журнале прогона. Или ничего.
+
+    Зачем она. Обкатка — режим на неделю, и опаснее всего в нём не шум, а то,
+    что про него забудут: радар останется помеченным «это не боевая рассылка»
+    навсегда, и человек перестанет верить своим же сообщениям. Поэтому срок
+    стоит в настройках, а не в голове, и после срока радар говорит об этом
+    каждый день, пока человек не примет решение.
+    """
+    if not cal.get("mode"):
+        return None
+    until = str(cal.get("until") or "")
+    if until and today > until:
+        return ("🧪 обкатка: срок вышел " + ru_date(until) + ". Пора решать: порог, "
+                "шумодав, источники — и переключать радар в боевой режим "
+                "(calibration.mode: false). Что решать — в OBKATKA.md.")
+    tail = f", до {ru_date(until)}" if until else ""
+    return (f"🧪 обкатка{tail}: сообщения помечены и не считаются боевой рассылкой. "
+            "Разметить находки — python tools/calibrate.py --razmetka")
 
 
 def page_name(page: str) -> str:
@@ -186,16 +242,41 @@ def snapshot_lines(domain: str, page: str, day: str) -> list[str] | None:
     return diffing.split_lines(path.read_text(encoding="utf-8"))
 
 
-def sort_out(items: list[dict], rules: dict) -> tuple[list[dict], list[dict], list[dict]]:
-    """Разложить находки дня на три стопки: срочное, в сводку и мелочь.
+def numbers_moved(item: dict) -> bool:
+    """Тронулись ли числа на странице — цена, число тарифов, размер скидки.
+
+    Отдельная проверка нужна ровно в одном месте: решая, что находка пустая.
+    Пустой её делает нетронутый текст, а число может смениться в строке, которую
+    отсеял шумодав, — и тогда находка не пустая, какой бы пустой ни выглядела.
+    """
+    numbers = item.get("числа") or {}
+    return bool(numbers.get("изменилось") or numbers.get("появилось")
+                or numbers.get("исчезло"))
+
+
+def sort_out(items: list[dict], rules: dict) -> tuple[list[dict], list[dict],
+                                                      list[dict], list[dict]]:
+    """Разложить находки дня на четыре стопки: срочное, в сводку, мелочь, пустое.
 
     Срочное — то, что признали критичным правила, независимо от объёма.
     В сводку — всё остальное, что детектор пропустил через порог.
     Мелочь — что порог не прошло и критичным не оказалось; она не идёт никуда,
     но её видно в отчёте дня, чтобы на калибровке Фазы 6 было что смотреть.
+    Перестановка — не находка вовсе: текст тот же, изменился только порядок
+    строк или ушли метки шумодава.
+
+    Четвёртая стопка появилась в Фазе 6 и по её же правилу — на живых данных.
+    В первом прогоне по расписанию 20.08.2026 таких строк оказалось тридцать
+    семь из сорока одной, и в отчёте дня они лежали в мелочи: «мелочи 37»
+    читалось как тридцать семь мелких правок у конкурентов, которых не было.
+    Держать пустое в мелочи нельзя именно на калибровке: порог выбирается по
+    числам из отчётов, а число, в котором сидит чужой мусор, даёт неверный порог.
     """
-    critical, usual, minor = [], [], []
+    critical, usual, minor, shuffled = [], [], [], []
     for item in items:
+        if item.get("статус") == SHUFFLE and not numbers_moved(item):
+            shuffled.append(item)
+            continue
         verdict = classify.judge(
             item, rules,
             old_lines=snapshot_lines(item["домен"], item["страница"],
@@ -208,7 +289,7 @@ def sort_out(items: list[dict], rules: dict) -> tuple[list[dict], list[dict], li
             usual.append(item)
         else:
             minor.append(item)
-    return critical, usual, minor
+    return critical, usual, minor, shuffled
 
 
 # ─────────────────────────── журнал: о чём уже писали ─────────────────────────
@@ -485,15 +566,16 @@ def show(text: str) -> None:
 
 def run_day(day: str, cfg: dict, rules: dict, bot, args) -> int:
     items = day_deltas(day)
-    critical, usual, minor = sort_out(items, rules)
+    critical, usual, minor, shuffled = sort_out(items, rules)
     journal = read_journal()
 
     fresh = [i for i in critical if args.resend or alert_key(i) not in journal["алерты"]]
     fresh_keys = {alert_key(i) for i in fresh}
     again = len(critical) - len(fresh)
 
-    print(f"Разбор за {day}. Находок: {len(items)} — срочных {len(critical)}, "
-          f"в сводку {len(usual)}, мелочи {len(minor)}.")
+    empty = f", пустых {len(shuffled)}" if shuffled else ""
+    print(f"Разбор за {day}. Находок: {len(items) - len(shuffled)} — срочных "
+          f"{len(critical)}, в сводку {len(usual)}, мелочи {len(minor)}{empty}.")
     for item in critical:
         mark = "КРИТИЧНО" if alert_key(item) in fresh_keys else "уже присылали"
         print(f"  {mark:<14} {item['конкурент']} · {page_name(item['страница'])}: "
@@ -514,7 +596,7 @@ def run_day(day: str, cfg: dict, rules: dict, bot, args) -> int:
         why = "send_critical выключен в config.yaml: критичное уйдёт в сводке"
     elif fresh:
         read_sources(fresh, cfg)
-        text = alert_text(day, fresh, cfg)
+        text = obkatka(alert_text(day, fresh, cfg), load_calibration())
         print(f"\nСрочное сообщение ({len(text)} символов):")
         show(text)
         sent, why, ids = deliver(bot, text, args.to, args.dry_run)
@@ -543,7 +625,7 @@ def run_day(day: str, cfg: dict, rules: dict, bot, args) -> int:
         "бот": bot.masked if bot else None,
         "чат": args.to or (bot.chat_id if bot else None),
         "итоги": {"критично": len(critical), "обычно": len(usual),
-                  "мелочь": len(minor),
+                  "мелочь": len(minor), "перестановка": len(shuffled),
                   "отправлено": len(fresh) if sent else 0,
                   "уже присылали": again},
         "критично": [_row(i, sent) for i in critical],
@@ -626,11 +708,11 @@ def run_digest(day: str, cfg: dict, rules: dict, bot, args) -> int:
                 by_hand[who] = why
 
         items = day_deltas(stamp)
-        critical, usual, minor = sort_out(items, rules)
+        critical, usual, minor, shuffled = sort_out(items, rules)
         critical_count += len(critical)
         changes += len(critical) + len(usual)
 
-        for item in critical + usual + minor:
+        for item in critical + usual + minor + shuffled:
             last_ok[f"{item['конкурент']} · {item['страница']}"] = stamp
         for item in critical + usual:
             changed_names.add(item["конкурент"])
@@ -662,7 +744,9 @@ def run_digest(day: str, cfg: dict, rules: dict, bot, args) -> int:
     stats = {"изменений": changes, "критичных": critical_count,
              "дней": (end - start).days + 1, "дней с отчётом": days_with_report}
 
-    text = digest_text(start, end, by_competitor, quiet, small, health, stats, cfg)
+    text = obkatka(
+        digest_text(start, end, by_competitor, quiet, small, health, stats, cfg),
+        load_calibration())
     print(f"Сводка за {start.isoformat()} — {end.isoformat()}: "
           + plural(changes, "изменение", "изменения", "изменений") + " у "
           + plural(len(by_competitor), "конкурента", "конкурентов", "конкурентов")
@@ -777,8 +861,16 @@ def main() -> int:
     args = ap.parse_args()
 
     cfg = load_config()
+    cal = load_calibration()
     rules = classify.load_rules(ROOT / "rules.yaml")
     day = args.date or date.today().isoformat()
+
+    # Чат обкатки. Смысл в том, чтобы неделю калибровки сообщения шли туда, где
+    # их читает один человек и оценивает, а не туда, куда радар будет писать
+    # в боевом режиме. Заданный руками --to сильнее настройки: он и нужен для
+    # разовой отправки в другое место.
+    if cal["mode"] and cal["chat"] and not args.to:
+        args.to = str(cal["chat"])
 
     try:
         bot = telegram.load(ROOT)
@@ -802,6 +894,10 @@ def main() -> int:
     if bot is None:
         print("Бот не настроен — сообщения будут показаны на экране "
               "(как в неделю обкатки Фазы 6). Завести бота — TELEGRAM-BOT.md.\n")
+
+    note = obkatka_note(cal, day)
+    if note:
+        print(note + "\n")
 
     if args.digest:
         return run_digest(day, cfg, rules, bot, args)
