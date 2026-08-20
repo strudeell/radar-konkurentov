@@ -369,7 +369,8 @@ def launcher() -> str:
 
 
 def plan(cfg: dict) -> dict:
-    """Настройки для установщика задачи. Только латиница: JSON читает PowerShell."""
+    """Настройки для установщика задачи. Только латиница: JSON читают
+    PowerShell под Windows и bash под macOS."""
     hours, _, minutes = str(cfg["time_utc"]).partition(":")
     at_utc = datetime.combine(date.today(), clock(int(hours), int(minutes)),
                               timezone.utc)

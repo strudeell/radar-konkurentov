@@ -4,6 +4,7 @@
 # Установка:
 #   python -m venv .venv
 #   .venv\Scripts\Activate.ps1      # Windows PowerShell
+#   source .venv/bin/activate       # macOS, Терминал
 #   pip install -r requirements.txt
 #
 # Здесь закреплены только прямые зависимости — то, что радар просит сам. Их

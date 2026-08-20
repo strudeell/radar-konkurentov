@@ -73,9 +73,19 @@
 
 Нужен Python версии 3.12 или новее. Дальше три команды:
 
+Windows, PowerShell:
+
 ```
 python -m venv .venv
 .venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+macOS, Терминал:
+
+```
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -161,7 +171,8 @@ radar/
     ├── wording.py          как укоротить чужую длинную строку и не оборвать слово
     ├── health.py           здоровье сбора: идёт ли он вообще и что сказать, если нет
     ├── console.py          защита вывода от падения на своих же знаках
-    ├── schedule.ps1        установка ежедневного запуска в планировщик Windows
+    ├── schedule.ps1        установка ежедневного запуска: планировщик Windows
+    ├── schedule.sh         то же самое для macOS: launchd
     ├── calibrate.py        калибровка на живых данных: порог, шумодав, источники
                             ├── calibrate_check.py проверка расчётов калибровки на выдуманных находках
     ├── noise_check.py      замер фонового шума: обоснование порога
@@ -182,12 +193,13 @@ radar/
 python daily.py
 ```
 
-Её и запускает планировщик задач Windows раз в сутки в 11:37. Поставить,
-проверить и снять расписание — одной командой каждое, порядок и ограничения в
-[RASPISANIE.md](docs/RASPISANIE.md):
+Её и запускает раз в сутки в 11:37 планировщик задач Windows или launchd в
+macOS. Поставить, проверить и снять расписание — одной командой каждое, порядок
+и ограничения в [RASPISANIE.md](docs/RASPISANIE.md):
 
 ```
-powershell -ExecutionPolicy Bypass -File tools\schedule.ps1 -Action install
+powershell -ExecutionPolicy Bypass -File tools\schedule.ps1 -Action install   # Windows
+bash tools/schedule.sh install                                      # macOS
 ```
 
 Остальные способы запуска:
